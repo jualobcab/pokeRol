@@ -1,200 +1,21 @@
 import sqlite3
+import os
 
-conn = sqlite3.connect('../pokeRol.db')
+# Nombre del archivo
+db_name = "../pokeRol.db"
+
+# Borrar si existe
+if os.path.exists(db_name):
+    os.remove(db_name)
+    print("Archivo pokeRol.db eliminado.")
+
+# Crear la base de datos
+conn = sqlite3.connect(db_name)
 cursor = conn.cursor()
 
-cursor.execute("PRAGMA foreign_keys = ON;")
-
-# sizes
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS sizes (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL
-    )
-''')
-
-# types
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS types (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL
-    )
-''')
-
-# abilities
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS abilities (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL,
-        description TEXT NOT NULL,
-        transformation BOOLEAN NOT NULL,
-        legendary BOOLEAN NOT NULL
-    )
-''')
-
-# environments
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS environments (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL
-    )
-''')
-
-# pokemons
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS pokemons (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        dex_num INTEGER NOT NULL,
-        name TEXT NOT NULL,
-        size_id INTEGER NOT NULL,
-        evasion TEXT NOT NULL,
-        vitality INTEGER NOT NULL,
-        strength TEXT NOT NULL,
-        agility TEXT NOT NULL,
-        endurance TEXT NOT NULL,
-        mind TEXT NOT NULL,
-        spirit TEXT NOT NULL,
-        presence TEXT NOT NULL,
-        min_level INTEGER NOT NULL,
-        capture_rate INTEGER NOT NULL,
-        diet TEXT,
-        sex TEXT,
-        habitat TEXT,
-        FOREIGN KEY(size_id) REFERENCES sizes(id)
-    )
-''')
-
-# pokemon_types
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS pokemon_types (
-        pokemon_id INTEGER NOT NULL,
-        type_id INTEGER NOT NULL,
-        PRIMARY KEY (pokemon_id, type_id),
-        FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-        FOREIGN KEY(type_id) REFERENCES types(id)
-    )
-''')
-
-# proficiencies
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS proficiencies (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL
-    )
-''')
-
-# pokemon_proficiencies
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS pokemon_proficiencies (
-        pokemon_id INTEGER NOT NULL,
-        proficiency_id INTEGER NOT NULL,
-        PRIMARY KEY (pokemon_id, proficiency_id),
-        FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-        FOREIGN KEY(proficiency_id) REFERENCES proficiencies(id)
-    )
-''')
-
-# pokemon_abilities
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS pokemon_abilities (
-        pokemon_id INTEGER NOT NULL,
-        ability_id INTEGER NOT NULL,
-        PRIMARY KEY (pokemon_id, ability_id),
-        FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-        FOREIGN KEY(ability_id) REFERENCES abilities(id)
-    )
-''')
-
-# pokemon_hiddenAbilities
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS pokemon_hiddenAbilities (
-        pokemon_id INTEGER NOT NULL,
-        ability_id INTEGER NOT NULL,
-        PRIMARY KEY (pokemon_id, ability_id),
-        FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-        FOREIGN KEY(ability_id) REFERENCES abilities(id)
-    )
-''')
-
-# pokemon_velocities
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS pokemon_velocities (
-        pokemon_id INTEGER NOT NULL,
-        velocity_id INTEGER NOT NULL,
-        quantity INTEGER NOT NULL,
-        PRIMARY KEY (pokemon_id, velocity_id),
-        FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-        FOREIGN KEY(velocity_id) REFERENCES environments(id)
-    )
-''')
-
-# evolutions
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS evolutions (
-        pokemon_id INTEGER NOT NULL,
-        pokemon_evolutionId INTEGER NOT NULL,
-        evolution_level INTEGER NOT NULL,
-        description TEXT,
-        PRIMARY KEY (pokemon_id, pokemon_evolutionId),
-        FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-        FOREIGN KEY(pokemon_evolutionId) REFERENCES pokemons(id)
-    )
-''')
-
-# movements
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS movements (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        type_id INTEGER NOT NULL,
-        action TEXT NOT NULL,
-        range TEXT NOT NULL,
-        cost TEXT NOT NULL,
-        associated_stats TEXT,
-        damage TEXT,
-        description TEXT NOT NULL,
-        FOREIGN KEY(type_id) REFERENCES types(id)
-    )
-''')
-
-# tag
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS tag (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL
-    )
-''')
-
-# movement_tags
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS movement_tags (
-        movement_id INTEGER NOT NULL,
-        tag_id INTEGER NOT NULL,
-        PRIMARY KEY (movement_id, tag_id),
-        FOREIGN KEY(movement_id) REFERENCES movements(id),
-        FOREIGN KEY(tag_id) REFERENCES tag(id)
-    )
-''')
-
-# moveset_per_level
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS moveset_per_level (
-        pokemon_id INTEGER,
-        movement_id INTEGER,
-        level INTEGER,
-        FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-        FOREIGN KEY(movement_id) REFERENCES movements(id)
-    )
-''')
-
-# learnset
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS learnset (
-        pokemon_id INTEGER,
-        movement_id INTEGER,
-        FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-        FOREIGN KEY(movement_id) REFERENCES movements(id)
-    )
-''')
+with open("../database/pokeRol.sql") as file:
+    sql = file.read()
+    cursor.executescript(sql)
 
 conn.commit()
 conn.close()
