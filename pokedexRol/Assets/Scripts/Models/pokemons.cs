@@ -1,4 +1,5 @@
-public class Pokemon
+using SQLite;
+public class pokemons
 {
     [PrimaryKey, AutoIncrement]
     public int id { get; set; }

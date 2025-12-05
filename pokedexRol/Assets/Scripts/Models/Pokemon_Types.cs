@@ -1,3 +1,4 @@
+using SQLite;
 public class Pokemon_Types
 {
     [PrimaryKey]

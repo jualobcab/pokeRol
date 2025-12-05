@@ -1,3 +1,4 @@
+using SQLite;
 using UnityEngine;
 // The library contains simple attributes that you can use
 // to control the construction of tables, ORM style
