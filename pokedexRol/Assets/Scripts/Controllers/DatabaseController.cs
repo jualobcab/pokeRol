@@ -29,7 +29,7 @@ public class DatabaseController : MonoBehaviour
 
         // Si ya existe en persistentDataPath, usar esa
         if (File.Exists(persistentPath))
-            return persistentPath;
+            persistentPath.Remove(0);
 
         // ANDROID requiere WWW para leer StreamingAssets
         if (Application.platform == RuntimePlatform.Android)
