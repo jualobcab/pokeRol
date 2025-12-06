@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS pokemons (
     name TEXT NOT NULL,
     size_id INTEGER NOT NULL,
     evasion TEXT NOT NULL,
-    vitality INTEGER NOT NULL,
+    vitality TEXT NOT NULL,
     strength TEXT NOT NULL,
     agility TEXT NOT NULL,
     endurance TEXT NOT NULL,
@@ -164,4 +164,13 @@ CREATE TABLE IF NOT EXISTS pokemon_habitats (
     PRIMARY KEY (pokemon_id, habitat_id),
     FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
     FOREIGN KEY(habitat_id) REFERENCES habitats(id)
+);
+
+CREATE TABLE IF NOT EXISTS items (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    type TEXT NOT NULL,
+    rarity TEXT NOT NULL,
+    cost INTEGER,
+    description TEXT NOT NULL
 );
