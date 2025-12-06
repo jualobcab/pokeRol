@@ -1,5 +1,7 @@
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
+import utils
+import dbUtils
 
 def scrap_pokedex(urlBase, urlPokedex):
     url = urlBase + urlPokedex
@@ -37,13 +39,13 @@ def scrap_pokedex(urlBase, urlPokedex):
 
             nameNumber = pkmHeader.select_one("h2").text.split(" ",1)
 
-            number = nameNumber[0].replace("#", "")
-            name = nameNumber[1]
+            pkmNumber = nameNumber[0].replace("#", "")
+            pkmName = nameNumber[1]
 
             typesSpan = pkmHeader.findAll("span",class_="type-badge")
             types = []
             for type in typesSpan:
-                types.append(type.text)
+                types.append(int(dbUtils.typesDB[type.text]))
 
             
             # stats 1 -> size, proficiencies, evasion, vitality, velocities[]
@@ -53,6 +55,7 @@ def scrap_pokedex(urlBase, urlPokedex):
 
             size = pkmSizeProficiencies[0].split(" ")[1]
 
+            #TODO: arceus -> Todas las habilidades
             proficiencies = []
             if len(pkmSizeProficiencies) == 2:
                 proficiencies = [
@@ -60,25 +63,60 @@ def scrap_pokedex(urlBase, urlPokedex):
                     for p in pkmSizeProficiencies[1].split("en ", 1)[1].split(" y ")
                 ]
 
-            # 0 -> evasion
-            # 1 -> vitality
             pkmEvasionVitality = pkmUnifiedStats.findAll("div",class_="vital-stat-row")
             evasion = pkmEvasionVitality[0].select_one(".vital-stat-value").text
             vitality = pkmEvasionVitality[1].select_one(".vital-stat-value").text
 
-            pkmVelocity = pkmUnifiedStats.select_one(".speeds-inline").text
-            #TODO: esto hay que hacer un array y quitar los metros (m)
+            pkmVelocities = pkmUnifiedStats.select_one(".speeds-inline").text
+            velocities = utils.parse_velocities(pkmVelocities)
 
-            print(number," - ",name," - ",types," - ",size," - ",
-                  proficiencies," - ",evasion," - ",vitality," - ",pkmVelocity)
+            # stats 2 -> fue,agi,res,men,esp,pre
+            pkmUnifiedStats = info.select_one(".stats-section")
+            pkmStats = pkmUnifiedStats.findAll("tr")
 
-            results.append({
-                "number": number,
-                "name": name,
+            stats = {}
+            for stat in pkmStats:
+                pkmRow = stat.findAll("td")
+                pkmStatName = pkmRow[0].text
+                pkmStatValue = pkmRow[1].text
+
+                statName,statValue = utils.parse_stat(pkmStatName,pkmStatValue)
+
+                stats[statName] = statValue
+
+            #TODO: habilidades
+
+            #TODO: linea evolutiva
+
+            #TODO: informacion secundaria
+            pkmSecondaryInfo = info.select_one(".detail-section.otros .otros-table")
+            pkmSecondaryInfoNames = pkmSecondaryInfo.findAll("span",class_="th")
+            pkmSecondaryInfoValues = pkmSecondaryInfo.findAll("span",class_="td")
+
+            secondaryInfo = {}
+            for name, value in zip(pkmSecondaryInfoNames, pkmSecondaryInfoValues):
+                siName,siValue =utils.parse_secondaryInfo(name.text, value.text)
+                secondaryInfo[siName] = siValue
+
+
+            #TODO: movimientos
+
+
+            pokemon = {
+                "number": pkmNumber,
+                "name": pkmName,
                 "types": types,
                 "size": size,
                 "proficiencies": proficiencies,
-            })
+                "evasion": evasion,
+                "vitality": vitality,
+                "velocities": velocities,
+                "stats":stats,
+                "secondaryInfo":secondaryInfo
+            }
+            print(pokemon)
+
+            results.append(pokemon)
 
         # Obtener HTML renderizado
         html = page.content()
