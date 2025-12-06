@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS evolutions (
     pokemon_id INTEGER NOT NULL,
     pokemon_evolutionId INTEGER NOT NULL,
     evolution_level INTEGER NOT NULL,
-    description TEXT,
+    extra_requisites TEXT,
     PRIMARY KEY (pokemon_id, pokemon_evolutionId),
     FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
     FOREIGN KEY(pokemon_evolutionId) REFERENCES pokemons(id)
