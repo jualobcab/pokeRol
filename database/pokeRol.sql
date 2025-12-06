@@ -40,7 +40,6 @@ CREATE TABLE IF NOT EXISTS pokemons (
     capture_rate INTEGER NOT NULL,
     diet TEXT,
     sex TEXT,
-    habitat TEXT,
     FOREIGN KEY(size_id) REFERENCES sizes(id)
 );
 
@@ -152,4 +151,17 @@ CREATE TABLE IF NOT EXISTS pokemon_senses (
     PRIMARY KEY (pokemon_id, sense_id),
     FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
     FOREIGN KEY(sense_id) REFERENCES senses(id)
+);
+
+CREATE TABLE IF NOT EXISTS habitats (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS pokemon_habitats (
+    pokemon_id INTEGER NOT NULL,
+    habitat_id INTEGER NOT NULL,
+    PRIMARY KEY (pokemon_id, habitat_id),
+    FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
+    FOREIGN KEY(habitat_id) REFERENCES habitats(id)
 );
