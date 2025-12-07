@@ -147,7 +147,7 @@ CREATE TABLE IF NOT EXISTS senses (
 CREATE TABLE IF NOT EXISTS pokemon_senses (
     pokemon_id INTEGER NOT NULL,
     sense_id INTEGER NOT NULL,
-    quantity TEXT NOT NULL,
+    quantity TEXT,
     PRIMARY KEY (pokemon_id, sense_id),
     FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
     FOREIGN KEY(sense_id) REFERENCES senses(id)
