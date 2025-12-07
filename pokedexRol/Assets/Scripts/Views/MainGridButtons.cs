@@ -15,9 +15,9 @@ public class MainGridButtons : MonoBehaviour
         GenerateGrid(items);
     }
 
-    void GenerateGrid(List<pokemons> items)
+    void GenerateGrid(List<pokemons> pokemons)
     {
-        foreach (var item in items)
+        foreach (var pokemon in pokemons)
         {
             GameObject btnObj = Instantiate(buttonPrefab, gridParent);
             Button btn = btnObj.GetComponent<Button>();
@@ -25,26 +25,21 @@ public class MainGridButtons : MonoBehaviour
             TMP_Text[] txts = btnObj.GetComponentsInChildren<TMP_Text>();
             foreach (var txt in txts)
             {
-                Debug.Log(txt.name);
+                //Debug.Log(txt.name);
                 switch (txt.name)
                 {
                     case "Name":
-                        txt.text = item.name;
+                        txt.text = pokemon.name;
                         break;
                     case "dex_num":
-                        txt.text = $"#{item.dex_num:D4}";
+                        txt.text = $"#{pokemon.dex_num:D4}";
                         break;
                 }
-            //txt.text = item.name;
             }
 
             // Evento del botón
-            btn.onClick.AddListener(() => OnItemClick(item));
+            btn.GetComponent<PokemonButtonActions>().Initialize(pokemon);
+            btn.onClick.AddListener(() => btn.GetComponent<PokemonButtonActions>().ShowDetail());
         }
-    }
-
-    void OnItemClick(pokemons item)
-    {
-        Debug.Log($"Has pulsado: {item.dex_num} - {item.name}");
     }
 }
