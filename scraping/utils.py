@@ -1,3 +1,7 @@
+import dbUtils
+import json
+import os
+
 ################################################
 ## scraping
 ################################################
@@ -32,17 +36,42 @@ def parse_velocities(text):
         
         # Cambiar "Velocidad" → "normal"
         if name.lower() == "velocidad":
-            name = "normal"
+            name = "Normal"
 
         # Quitar la "m" final del valor
         if value.endswith("m"):
             value = value[:-1].strip()
+
+        if name not in dbUtils.environmentsDB:
+            dbUtils.insertEnvironment(name)
+    
+        nameID = dbUtils.environmentsDB[name]
+
         result.append({
-            "name": name,
+            "id": nameID,
             "value": int(value)
         })
 
     return result
+
+def parse_size(size):
+    if size not in dbUtils.sizesDB:
+        dbUtils.insertSize(size)
+    
+    return dbUtils.sizesDB[size]
+
+def parse_proficiencies(proficienciesText):
+    proficiencies = []
+
+    for p in proficienciesText.split("en ", 1)[1].split(" y "):
+        p = p.strip().lower()
+
+        if p not in dbUtils.proficienciesDB:
+            dbUtils.insertProficiency(p)
+        
+        proficiencies.append(dbUtils.proficienciesDB[p])
+
+    return proficiencies
 
 def parse_stat(name,value):
     match name:
@@ -74,42 +103,76 @@ def parse_secondaryInfo(name,value):
         case "Sexo":
             name = "sex"
         case "Hábitat":
-            name = "habitat"
-            value = value.split(", ")
+            name = "habitats"
+            value = parse_habitats(value.split(", "))
         case "Sentidos":
             name = "senses"
             value = parse_sense(value)
 
     return name,value
 
+def parse_habitats(habitats):
+    habitatsClean = []
+
+    for habitat in habitats:
+        if habitat not in dbUtils.habitatsDB:
+            dbUtils.insertHabitat(habitat)
+        habitatsClean.append(dbUtils.habitatsDB[habitat])
+
+    return habitatsClean
+
 def parse_sense(value):
-    #TODO: 381 ['Visión en la oscuridad (100 m)', 'Ecolocalización (Todo el océano)']
     senses = []
+
+    value = value.replace(".","").lower()
 
     sensesSplit = value.split(", ")
 
     if sensesSplit[0] == "Ninguno":
+        senseName = "Ninguno"
+
+        if senseName not in dbUtils.sensesDB:
+            dbUtils.insertSense(senseName)
+    
+        nameID = dbUtils.sensesDB[senseName]
+
         senses.append({
-                "name": "Ninguno",
-                "value": ""
+                "id": nameID,
+                "value": None
             })
     elif "(" not in sensesSplit[0]:
-        senses.append({
-                "name": sensesSplit[0],
-                "value": ""
-            })
-    else :
-        print(sensesSplit)
+        senseName = sensesSplit[0].strip()
+
+        if senseName != "":
+            if senseName not in dbUtils.sensesDB:
+                dbUtils.insertSense(senseName)
+        
+            nameID = dbUtils.sensesDB[senseName]
+            senses.append({
+                    "id": nameID,
+                    "value": None
+                })
+    else:
         for sense in sensesSplit:
             if sense != "":
-                if "." in sense:
-                    sense = sense.replace(".","")
-                dataSplit = sense.split(" (")
-                senseName = dataSplit[0] 
-                senseValue = int(dataSplit[1].replace(" m)",""))
+                if "Cetitan" in sense:
+                    senseName = "Percibir otros Cetitan"
+                    senseValue = "4 km"
+                else:
+                    dataSplit = sense.split(" (")
+                    senseName = dataSplit[0].strip()
+                    if " m)" in sense:
+                        senseValue = dataSplit[1].replace(")","")
+                    else:
+                        senseValue = dataSplit[1]
+
+                if senseName not in dbUtils.sensesDB:
+                    dbUtils.insertSense(senseName)
+            
+                nameID = dbUtils.sensesDB[senseName]
 
                 senses.append({
-                    "name": senseName,
+                    "id": nameID,
                     "value": senseValue
                 })
 
@@ -121,9 +184,10 @@ def parse_sense(value):
 def prepare_pokemon_for_db(pokemon):
     return (
         int(pokemon["number"]),
-        pokemon["name"],                 # size_id
+        pokemon["name"],
+        pokemon["size"],
         pokemon["evasion"].strip(),
-        int(pokemon["vitality"]),
+        pokemon["vitality"],
         pokemon["stats"]["strength"],
         pokemon["stats"]["agility"],
         pokemon["stats"]["endurance"],
@@ -136,3 +200,19 @@ def prepare_pokemon_for_db(pokemon):
         pokemon["secondaryInfo"]["sex"],
     )
 
+################################################
+## others
+################################################
+def save_json(filename, data):
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+    print(f"[OK] Guardado {filename}")
+
+
+def load_json(filename):
+    if not os.path.exists(filename):
+        print(f"[INFO] No existe {filename}, se omite.")
+        return None
+
+    with open(filename, "r", encoding="utf-8") as f:
+        return json.load(f)

@@ -4,6 +4,95 @@ import utils
 db_name = "../pokeRol.db"
 
 typesDB = {}
+sizesDB = {}
+habitatsDB = {}
+environmentsDB = {}
+proficienciesDB = {}
+sensesDB = {}
+
+DB_FILES = {
+    "typesDB": "./json/typesDB.json",
+    "sizesDB": "./json/sizesDB.json",
+    "habitatsDB": "./json/habitatsDB.json",
+    "environmentsDB": "./json/environmentsDB.json",
+    "proficienciesDB": "./json/proficienciesDB.json",
+    "sensesDB": "./json/sensesDB.json"
+}
+
+def save_all_db_dicts():
+    global typesDB
+    global sizesDB
+    global habitatsDB
+    global environmentsDB
+    global proficienciesDB
+    global sensesDB
+
+    data_map = {
+        "typesDB": typesDB,
+        "sizesDB": sizesDB,
+        "habitatsDB": habitatsDB,
+        "environmentsDB": environmentsDB,
+        "proficienciesDB": proficienciesDB,
+        "sensesDB": sensesDB
+    }
+
+    for key, filename in DB_FILES.items():
+        utils.save_json(filename, data_map[key])
+
+    print("\n[OK] Todos los diccionarios han sido guardados.\n")
+
+def load_all_db_dicts():
+    results = {}
+
+    for key, filename in DB_FILES.items():
+        data = utils.load_json(filename)
+        results[key] = data if data is not None else {}
+
+    print("\n[OK] Todos los diccionarios han sido cargados.\n")
+
+    global typesDB
+    typesDB = results["typesDB"]
+    global sizesDB
+    sizesDB = results["sizesDB"]
+    global habitatsDB
+    habitatsDB = results["habitatsDB"]
+    global environmentsDB
+    environmentsDB = results["environmentsDB"]
+    global proficienciesDB
+    proficienciesDB = results["proficienciesDB"]
+    global sensesDB
+    sensesDB = results["sensesDB"]
+
+    insert_all_dbs()
+
+def insert_all_dbs():
+    global typesDB, sizesDB, habitatsDB, environmentsDB, proficienciesDB, sensesDB
+
+    insert_dict_into_table("types", typesDB)
+    insert_dict_into_table("sizes", sizesDB)
+    insert_dict_into_table("habitats", habitatsDB)
+    insert_dict_into_table("environments", environmentsDB)
+    insert_dict_into_table("proficiencies", proficienciesDB)
+    insert_dict_into_table("senses", sensesDB)
+
+    print("[OK] Todos los diccionarios han sido insertados y actualizados.")
+
+def insert_dict_into_table(table, data_dict):
+    """
+    Inserta todos los valores de un diccionario en una tabla SQLite.
+    data_dict === { "nombre": id (opcional) }
+    """
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    # Insertar todos los nombres sin duplicar
+    cursor.executemany(
+        f"INSERT OR IGNORE INTO {table} (name) VALUES (?)",
+        [(name,) for name in data_dict.keys()]
+    )
+
+    conn.commit()
+    conn.close()
 
 def insertTypes(types):
     conn = sqlite3.connect(db_name)
@@ -24,6 +113,100 @@ def insertTypes(types):
     global typesDB
     typesDB = {name: id for id, name in rows}
 
+    conn.close()
+
+def insertSize(size):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "INSERT INTO sizes (name) VALUES (?)",
+        (size,)
+    )
+
+    conn.commit()
+
+    size_id = cursor.lastrowid
+
+    # Guardar en el diccionario
+    global sizesDB
+    sizesDB[size]= size_id
+
+    conn.close()
+
+def insertHabitat(habitat):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "INSERT INTO habitats (name) VALUES (?)",
+        (habitat,)
+    )
+
+    conn.commit()
+
+    habitat_id = cursor.lastrowid
+
+    # Guardar en el diccionario
+    global habitatsDB
+    habitatsDB[habitat]= habitat_id
+
+    conn.close()
+
+def insertEnvironment(name):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "INSERT INTO environments (name) VALUES (?)",
+        (name,)
+    )
+
+    conn.commit()
+
+    environment_id = cursor.lastrowid
+
+    # Guardar en el diccionario
+    global environmentsDB
+    environmentsDB[name]= environment_id
+
+    conn.close()
+
+def insertProficiency(name):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "INSERT INTO proficiencies (name) VALUES (?)",
+        (name,)
+    )
+
+    conn.commit()
+
+    proficiency_id = cursor.lastrowid
+
+    # Guardar en el diccionario
+    global proficienciesDB
+    proficienciesDB[name]= proficiency_id
+
+    conn.close()
+
+def insertSense(name):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "INSERT INTO senses (name) VALUES (?)",
+        (name,)
+    )
+
+    conn.commit()
+
+    sense_id = cursor.lastrowid
+
+    # Guardar en el diccionario
+    global sensesDB
+    sensesDB[name]= sense_id
 
     conn.close()
 
@@ -35,14 +218,16 @@ def insertPokemons(pokemons):
         pokemonPrepared = utils.prepare_pokemon_for_db(pokemon)
         cursor.execute("""
             INSERT OR REPLACE INTO pokemons (
-                dex_num, name, evasion, vitality,
+                dex_num, name, size_id, evasion, vitality,
                 strength, agility, endurance, mind, spirit, presence,
-                min_level, capture_rate, diet, sex, habitat
+                min_level, capture_rate, diet, sex
             )
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, pokemonPrepared)
 
         pokemon_id = cursor.lastrowid
+
+        #types
         for type in pokemon['types']:
             cursor.execute("""
                 INSERT OR REPLACE INTO pokemon_types (
@@ -50,6 +235,55 @@ def insertPokemons(pokemons):
                 )
                 VALUES (?, ?)
             """, (pokemon_id,type))
+        
+        # habitats
+        if pokemon['secondaryInfo'].get('habitats'):
+            for habitat in pokemon['secondaryInfo']['habitats']:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO pokemon_habitats (
+                        pokemon_id, habitat_id
+                    )
+                    VALUES (?, ?)
+                """, (pokemon_id,habitat))
+
+        # environments
+        if pokemon.get('velocities'):
+            for velocity in pokemon['velocities']:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO pokemon_velocities (
+                        pokemon_id, environment_id, quantity
+                    )
+                    VALUES (?, ?, ?)
+                """, (pokemon_id,velocity['id'],velocity['value']))
+
+        # proficiencies
+        if pokemon.get('proficiencies'):
+            for proficiency in pokemon['proficiencies']:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO pokemon_proficiencies (
+                        pokemon_id, proficiency_id
+                    )
+                    VALUES (?, ?)
+                """, (pokemon_id,proficiency))
+
+        # senses
+        print(pokemon)
+        if pokemon['secondaryInfo'].get('senses'):
+            for sense in pokemon['secondaryInfo']['senses']:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO pokemon_senses (
+                        pokemon_id, sense_id, quantity
+                    )
+                    VALUES (?, ?, ?)
+                """, (pokemon_id,sense['id'],sense['value']))
+        else:
+            global sensesDB
+            cursor.execute("""
+                    INSERT OR REPLACE INTO pokemon_senses (
+                        pokemon_id, sense_id
+                    )
+                    VALUES (?, ?)
+                """, (pokemon_id,sensesDB['Ninguno']))
 
 
     conn.commit()

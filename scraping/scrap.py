@@ -2,6 +2,7 @@ from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import utils
 import dbUtils
+import time
 
 def scrap_pokedex(urlBase, urlPokedex):
     url = urlBase + urlPokedex
@@ -17,12 +18,16 @@ def scrap_pokedex(urlBase, urlPokedex):
         # Esperar a que se carguen los elementos del pokedex
         page.wait_for_selector(".pokemon-card")
 
-        # Extraemos todas las tarjetas
-        cards = page.query_selector_all(".pokemon-card")
+        # Contamos cuántas tarjetas hay
+        count = page.locator(".pokemon-card").count()
 
-        for card in cards:
+        for i in range(count):
+            # Seleccionar la tarjeta POR ÍNDICE (siempre válida)
+            card = page.locator(".pokemon-card").nth(i)
             # Hacemos click en la tarjeta
             card.click()
+
+            time.sleep(0.1)
 
             # Esperar a que cargue el div con los datos (ajusta el selector)
             page.wait_for_selector(".details-section .pokemon-details")
@@ -45,7 +50,8 @@ def scrap_pokedex(urlBase, urlPokedex):
             typesSpan = pkmHeader.findAll("span",class_="type-badge")
             types = []
             for type in typesSpan:
-                types.append(int(dbUtils.typesDB[type.text]))
+                if type.text != "Variable":
+                    types.append(int(dbUtils.typesDB[type.text]))
 
             
             # stats 1 -> size, proficiencies, evasion, vitality, velocities[]
@@ -53,15 +59,12 @@ def scrap_pokedex(urlBase, urlPokedex):
 
             pkmSizeProficiencies = pkmUnifiedStats.select_one(".pokemon-size").text.split(", ")
 
-            size = pkmSizeProficiencies[0].split(" ")[1]
+            size = utils.parse_size(pkmSizeProficiencies[0].split(" ")[1])
 
             #TODO: arceus -> Todas las habilidades
             proficiencies = []
             if len(pkmSizeProficiencies) == 2:
-                proficiencies = [
-                    p.strip()
-                    for p in pkmSizeProficiencies[1].split("en ", 1)[1].split(" y ")
-                ]
+                proficiencies = utils.parse_proficiencies(pkmSizeProficiencies[1])
 
             pkmEvasionVitality = pkmUnifiedStats.findAll("div",class_="vital-stat-row")
             evasion = pkmEvasionVitality[0].select_one(".vital-stat-value").text
@@ -88,7 +91,7 @@ def scrap_pokedex(urlBase, urlPokedex):
 
             #TODO: linea evolutiva
 
-            #TODO: informacion secundaria
+            # informacion secundaria
             pkmSecondaryInfo = info.select_one(".detail-section.otros .otros-table")
             pkmSecondaryInfoNames = pkmSecondaryInfo.findAll("span",class_="th")
             pkmSecondaryInfoValues = pkmSecondaryInfo.findAll("span",class_="td")
