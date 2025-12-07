@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS pokemon_abilities (
     FOREIGN KEY(ability_id) REFERENCES abilities(id)
 );
 
-CREATE TABLE IF NOT EXISTS pokemon_hiddenAbilities (
+CREATE TABLE IF NOT EXISTS pokemon_hidden_abilities (
     pokemon_id INTEGER NOT NULL,
     ability_id INTEGER NOT NULL,
     PRIMARY KEY (pokemon_id, ability_id),
@@ -91,12 +91,12 @@ CREATE TABLE IF NOT EXISTS pokemon_velocities (
 
 CREATE TABLE IF NOT EXISTS evolutions (
     pokemon_id INTEGER NOT NULL,
-    pokemon_evolutionId INTEGER NOT NULL,
+    pokemon_evolution_id INTEGER NOT NULL,
     evolution_level INTEGER NOT NULL,
     extra_requisites TEXT,
-    PRIMARY KEY (pokemon_id, pokemon_evolutionId),
+    PRIMARY KEY (pokemon_id, pokemon_evolution_id),
     FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
-    FOREIGN KEY(pokemon_evolutionId) REFERENCES pokemons(id)
+    FOREIGN KEY(pokemon_evolution_id) REFERENCES pokemons(id)
 );
 
 CREATE TABLE IF NOT EXISTS movements (
