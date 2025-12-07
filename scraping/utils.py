@@ -211,6 +211,16 @@ def prepare_pokemon_for_db(pokemon):
         pokemon["secondaryInfo"]["sex"],
     )
 
+def prepare_abilities_for_db(abilities):
+    return [
+        (
+            a["name"],
+            a["description"],
+            int(a["transformation"]),  # BOOLEAN → 0/1
+            int(a["legendary"])        # BOOLEAN → 0/1
+        )
+        for a in abilities
+    ]
 ################################################
 ## others
 ################################################

@@ -31,6 +31,7 @@ def scrap_pokedex(urlBase, urlPokedex):
 
             # Esperar a que cargue el div con los datos (ajusta el selector)
             page.wait_for_selector(".details-section .pokemon-details")
+            page.wait_for_selector(".abilities-container")
 
             # Obtener el HTML ahora que está cargado el panel
             html = page.content()
@@ -46,6 +47,8 @@ def scrap_pokedex(urlBase, urlPokedex):
 
             pkmNumber = nameNumber[0].replace("#", "")
             pkmName = nameNumber[1]
+
+            print(pkmNumber+" "+pkmName)
 
             typesSpan = pkmHeader.findAll("span",class_="type-badge")
             types = []
@@ -86,7 +89,18 @@ def scrap_pokedex(urlBase, urlPokedex):
 
                 stats[statName] = statValue
 
-            #TODO: habilidades
+            # abilities
+            abilities = []
+            hiddenAbilities = []
+            pkmAbilities = info.select_one(".abilities-section .abilities-container").findAll("div",class_="ability-item")
+            for pkmAbility in pkmAbilities:
+                abilityName = pkmAbility.select_one(".ability-name").text.strip()
+                abilityId = dbUtils.abilitiesDB[abilityName]
+
+                if pkmAbility.select_one(".hidden-label") is not None:
+                    hiddenAbilities.append(abilityId)
+                else:
+                    abilities.append(abilityId)
 
             #TODO: linea evolutiva
 
@@ -114,9 +128,10 @@ def scrap_pokedex(urlBase, urlPokedex):
                 "vitality": vitality,
                 "velocities": velocities,
                 "stats":stats,
+                "abilities":abilities,
+                "hiddenAbilities":hiddenAbilities,
                 "secondaryInfo":secondaryInfo
             }
-            print(pokemon)
 
             results.append(pokemon)
 
@@ -151,6 +166,70 @@ def scrap_tipos(urlBase, urlTipos):
     for type in types:
         typeName = type.find("div").text.replace(" ", "")
 
+        print(typeName)
+
         results.append(typeName)
+
+    return results
+
+def scrap_abilities(urlBase, urlAbilities):
+    url = urlBase + urlAbilities
+    results = []
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+
+        # Ir a la página
+        page.goto(url)
+
+        # Esperar a que se carguen las filas
+        page.wait_for_selector(".div-tabla table tbody tr")
+        time.sleep(1)
+
+        # Obtener filas clicables desde Playwright
+        row_elements = page.query_selector_all(".div-tabla table tbody tr")
+
+        # Obtener HTML inicial para BS4
+        html = page.content()
+
+        # Parseo inicial
+        soup = BeautifulSoup(html, "html.parser")
+        table = soup.select_one(".div-tabla table tbody")
+        abilities = table.find_all("tr")
+
+        # Recorremos filas por índice
+        for i, ability in enumerate(abilities):
+            # Hacer click en la fila real del navegador
+            row_elements[i].click()
+            time.sleep(0.3)
+
+            # Esperar panel con los datos cargados
+            page.wait_for_selector(".seleccionado")
+
+            # HTML actualizado después del click
+            html = page.content()
+            soup = BeautifulSoup(html, "html.parser")
+
+            # Descripción
+            abilityDescription = soup.select_one("div.descripcion p").text.strip()
+
+            # Datos de la fila original
+            abilityData = ability.find_all("td")
+            abilityName = abilityData[0].text.strip()
+            abilityLegendary = abilityData[1].text.strip() == "✔"
+            abilityTransformation = abilityData[2].text.strip() == "✔"
+
+            print(abilityName)
+
+            # Añadir resultado
+            results.append({
+                'name': abilityName,
+                'legendary': abilityLegendary,
+                'transformation': abilityTransformation,
+                'description': abilityDescription
+            })
+
+        browser.close()
 
     return results

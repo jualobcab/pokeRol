@@ -9,6 +9,7 @@ habitatsDB = {}
 environmentsDB = {}
 proficienciesDB = {}
 sensesDB = {}
+abilitiesDB = {"dataDB":[]}
 
 DB_FILES = {
     "typesDB": "./json/typesDB.json",
@@ -16,7 +17,8 @@ DB_FILES = {
     "habitatsDB": "./json/habitatsDB.json",
     "environmentsDB": "./json/environmentsDB.json",
     "proficienciesDB": "./json/proficienciesDB.json",
-    "sensesDB": "./json/sensesDB.json"
+    "sensesDB": "./json/sensesDB.json",
+    "abilitiesDB": "./json/abilitiesDB.json"
 }
 
 def save_all_db_dicts():
@@ -26,6 +28,7 @@ def save_all_db_dicts():
     global environmentsDB
     global proficienciesDB
     global sensesDB
+    global abilitiesDB
 
     data_map = {
         "typesDB": typesDB,
@@ -33,7 +36,8 @@ def save_all_db_dicts():
         "habitatsDB": habitatsDB,
         "environmentsDB": environmentsDB,
         "proficienciesDB": proficienciesDB,
-        "sensesDB": sensesDB
+        "sensesDB": sensesDB,
+        "abilitiesDB": abilitiesDB
     }
 
     for key, filename in DB_FILES.items():
@@ -62,11 +66,13 @@ def load_all_db_dicts():
     proficienciesDB = results["proficienciesDB"]
     global sensesDB
     sensesDB = results["sensesDB"]
+    global abilitiesDB
+    abilitiesDB = results["abilitiesDB"]
 
     insert_all_dbs()
 
 def insert_all_dbs():
-    global typesDB, sizesDB, habitatsDB, environmentsDB, proficienciesDB, sensesDB
+    global typesDB, sizesDB, habitatsDB, environmentsDB, proficienciesDB, sensesDB, abilitiesDB
 
     insert_dict_into_table("types", typesDB)
     insert_dict_into_table("sizes", sizesDB)
@@ -74,6 +80,7 @@ def insert_all_dbs():
     insert_dict_into_table("environments", environmentsDB)
     insert_dict_into_table("proficiencies", proficienciesDB)
     insert_dict_into_table("senses", sensesDB)
+    insert_dict_into_table("abilities", abilitiesDB)
 
     print("[OK] Todos los diccionarios han sido insertados y actualizados.")
 
@@ -85,11 +92,24 @@ def insert_dict_into_table(table, data_dict):
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
 
-    # Insertar todos los nombres sin duplicar
-    cursor.executemany(
-        f"INSERT OR IGNORE INTO {table} (name) VALUES (?)",
-        [(name,) for name in data_dict.keys()]
-    )
+    if table == 'abilities':
+        # Preparar datos para executemany
+        abilitiesPrepared = utils.prepare_abilities_for_db(data_dict["dataDB"])
+
+        cursor.executemany(
+            """
+            INSERT OR IGNORE INTO abilities
+            (name, description, transformation, legendary)
+            VALUES (?, ?, ?, ?)
+            """,
+            abilitiesPrepared
+        )
+    else:
+        # Insertar todos los nombres sin duplicar
+        cursor.executemany(
+            f"INSERT OR IGNORE INTO {table} (name) VALUES (?)",
+            [(name,) for name in data_dict.keys()]
+        )
 
     conn.commit()
     conn.close()
@@ -112,6 +132,42 @@ def insertTypes(types):
     # Guardar en el diccionario
     global typesDB
     typesDB = {name: id for id, name in rows}
+
+    conn.close()
+
+def insertAbilities(abilities):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    # Preparar datos para executemany
+    abilitiesPrepared = utils.prepare_abilities_for_db(abilities)
+
+    cursor.executemany(
+        """
+        INSERT OR IGNORE INTO abilities
+        (name, description, transformation, legendary)
+        VALUES (?, ?, ?, ?)
+        """,
+        abilitiesPrepared
+    )
+
+    conn.commit()
+
+    # Recargar IDs desde la tabla
+    cursor.execute("SELECT id, name, description, transformation, legendary FROM abilities")
+    rows = cursor.fetchall()
+
+    global abilitiesDB
+    for id, name, description, transformation, legendary in rows:
+        abilitiesDB[name] = id
+
+        abilitiesDB['dataDB'].append({
+            'id': id,
+            'name': name,
+            'description': description,
+            'transformation': transformation,
+            'legendary': legendary
+            })
 
     conn.close()
 
@@ -236,6 +292,26 @@ def insertPokemons(pokemons):
                 VALUES (?, ?)
             """, (pokemon_id,type))
         
+        # abilities
+        if len(pokemon['abilities'])>0:
+            for abilityId in pokemon['abilities']:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO pokemon_abilities (
+                        pokemon_id, ability_id
+                    )
+                    VALUES (?, ?)
+                """, (pokemon_id,abilityId))
+
+        # hidden abilities
+        if len(pokemon['hiddenAbilities'])>0:
+            for hiddenAbilityId in pokemon['hiddenAbilities']:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO pokemon_hidden_abilities (
+                        pokemon_id, ability_id
+                    )
+                    VALUES (?, ?)
+                """, (pokemon_id,hiddenAbilityId))
+
         # habitats
         if pokemon['secondaryInfo'].get('habitats'):
             for habitat in pokemon['secondaryInfo']['habitats']:
