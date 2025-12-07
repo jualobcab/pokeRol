@@ -1,8 +1,9 @@
 using SQLite;
-public class Pokemon_Types
+
+public class learnset
 {
     [PrimaryKey]
     public int pokemon_id { get; set; }
     [PrimaryKey]
-    public int type_id { get; set; }
+    public int movement_id { get; set; }
 }

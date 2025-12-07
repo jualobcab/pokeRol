@@ -18,5 +18,4 @@ public class pokemons
     public int capture_rate { get; set; }
     public string diet { get; set; }
     public string sex { get; set; }
-    public string habitat { get; set; }
 }

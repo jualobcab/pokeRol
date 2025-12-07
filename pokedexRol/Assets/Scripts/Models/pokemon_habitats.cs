@@ -1,6 +1,6 @@
-using SQLite;
+﻿using SQLite;
 
-public class pokemon_abilities
+public class pokemon_habitats
 {
     [PrimaryKey]
     public int pokemon_id { get; set; }
