@@ -1,0 +1,20 @@
+{
+    "Acero": 1,
+    "Volador": 2,
+    "Agua": 3,
+    "Hielo": 4,
+    "Planta": 5,
+    "Bicho": 6,
+    "Eléctrico": 7,
+    "Normal": 8,
+    "Roca": 9,
+    "Tierra": 10,
+    "Fuego": 11,
+    "Lucha": 12,
+    "Hada": 13,
+    "Psíquico": 14,
+    "Veneno": 15,
+    "Dragón": 16,
+    "Fantasma": 17,
+    "Siniestro": 18
+}

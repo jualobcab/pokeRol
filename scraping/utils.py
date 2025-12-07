@@ -1,6 +1,7 @@
 import dbUtils
 import json
 import os
+import re
 
 ################################################
 ## scraping
@@ -64,7 +65,7 @@ def parse_proficiencies(proficienciesText):
     proficiencies = []
 
     for p in proficienciesText.split("en ", 1)[1].split(" y "):
-        p = p.strip().lower()
+        p = clean_string(p)
 
         if p not in dbUtils.proficienciesDB:
             dbUtils.insertProficiency(p)
@@ -115,8 +116,14 @@ def parse_habitats(habitats):
     habitatsClean = []
 
     for habitat in habitats:
+        habitat = clean_string(habitat)
+
+        if habitat == "" or habitat == "???":
+            habitat = "Desconocido"
+
         if habitat not in dbUtils.habitatsDB:
             dbUtils.insertHabitat(habitat)
+
         habitatsClean.append(dbUtils.habitatsDB[habitat])
 
     return habitatsClean
@@ -124,7 +131,7 @@ def parse_habitats(habitats):
 def parse_sense(value):
     senses = []
 
-    value = value.replace(".","").lower()
+    value = clean_string(value)
 
     sensesSplit = value.split(", ")
 
@@ -155,12 +162,16 @@ def parse_sense(value):
     else:
         for sense in sensesSplit:
             if sense != "":
-                if "Cetitan" in sense:
+                if "cetitan" in sense:
                     senseName = "Percibir otros Cetitan"
                     senseValue = "4 km"
                 else:
                     dataSplit = sense.split(" (")
-                    senseName = dataSplit[0].strip()
+                    senseName = clean_string(dataSplit[0])
+                    
+                    if "Electrorecepción" in senseName:
+                        senseName = "Electrorrecepción"
+
                     if " m)" in sense:
                         senseValue = dataSplit[1].replace(")","")
                     else:
@@ -216,3 +227,27 @@ def load_json(filename):
 
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
+
+def clean_string(text):
+    if not text:
+        return ""
+
+    # Quitar espacios raros: \xa0, \t, \n, etc.
+    text = text.replace("\xa0", " ")
+
+    # Quitar espacios duplicados
+    text = re.sub(r"\s+", " ", text)
+
+    # Quitar espacios al inicio y al final
+    text = text.strip()
+
+    # Quitar puntos
+    text = text.replace(".", "")
+
+    # Convertir todo a minúsculas
+    text = text.lower()
+
+    # Primera letra en mayúsculas
+    text = text.capitalize()
+
+    return text
