@@ -129,6 +129,7 @@ CREATE TABLE IF NOT EXISTS moveset_per_level (
     pokemon_id INTEGER,
     movement_id INTEGER,
     level INTEGER,
+    PRIMARY KEY (pokemon_id, movement_id),
     FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
     FOREIGN KEY(movement_id) REFERENCES movements(id)
 );
@@ -136,6 +137,7 @@ CREATE TABLE IF NOT EXISTS moveset_per_level (
 CREATE TABLE IF NOT EXISTS learnset (
     pokemon_id INTEGER,
     movement_id INTEGER,
+    PRIMARY KEY (pokemon_id, movement_id),
     FOREIGN KEY(pokemon_id) REFERENCES pokemons(id),
     FOREIGN KEY(movement_id) REFERENCES movements(id)
 );
