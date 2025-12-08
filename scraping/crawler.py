@@ -17,19 +17,11 @@ createDB.initialice()
 if modeDevelop:
     dbUtils.load_all_db_dicts()
 
-    print("scraping movements")
-    movements = scrap.scrap_movements(urlBase, urlMovements)
-    
-    print("inserting movements")
-    dbUtils.insertMovements(movements)
-    print("==============================================")
-
-    '''
     print("scraping pokemon")
     pokemons = scrap.scrap_pokedex(urlBase, urlPokedex)
 
     utils.save_json("./json/pokemons.json",pokemons)
-    '''
+    
     dbUtils.save_all_db_dicts()
 
 elif not modeJSON:

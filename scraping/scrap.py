@@ -277,17 +277,23 @@ def scrap_movements(urlBase, urlMovements):
             stats = soup.select_one(".seleccionado")
             movementStats = None
             if stats:
-                p = stats.find("p", string=lambda t: t and "Estadísticas asociadas" in t)
-                if p:
-                    movementStats = p.text.strip()
+                # Busca el <strong> cuyo texto contiene "Estadísticas asociadas"
+                strong_tag = stats.find("strong", string=lambda s: s and "Estadísticas asociadas" in s)
+
+                if strong_tag:
+                    p_tag = strong_tag.parent  # el <p> que lo contiene
+                    movementStats = p_tag.get_text(strip=True).replace("Estadísticas asociadas:", "").strip()
 
             damage = soup.select_one(".seleccionado div.datos")
             movementDamage = None
             if damage:
-                p = stats.find("p", string=lambda t: t and "Daño" in t)
-                if p:
-                    movementDamage = p.text.strip()
-            
+                # Busca el <strong> cuyo texto contiene "Estadísticas asociadas"
+                strong_tag = damage.find("strong", string=lambda s: s and "Daño" in s)
+
+                if strong_tag:
+                    p_tag = strong_tag.parent  # el <p> que lo contiene
+                    movementDamage = p_tag.get_text(strip=True).replace("Daño:", "").strip()
+
             movementDescription = soup.select_one("div.descripcion p").text.strip()
 
             # Datos de la fila original
