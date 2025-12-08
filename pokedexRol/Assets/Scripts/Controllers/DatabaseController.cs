@@ -7,7 +7,15 @@ using UnityEditor;
 
 public class DatabaseController : MonoBehaviour
 {
+    public static DatabaseController Instance;
     private SQLiteConnection db;
+    void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(this);
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,5 +64,16 @@ public class DatabaseController : MonoBehaviour
     public List<pokemons> LoadPokemons()
     {
         return db.Table<pokemons>().ToList();
+    }
+
+    public List<types> LoadPokemonTypes(int pokemonId)
+    {
+        string query = @"
+        SELECT t.*
+        FROM types t
+        JOIN pokemon_types pt ON t.id = pt.type_id
+        WHERE pt.pokemon_id = ?";
+
+        return db.Query<types>(query, pokemonId);
     }
 }

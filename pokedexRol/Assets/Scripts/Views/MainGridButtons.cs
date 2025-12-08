@@ -5,13 +5,14 @@ using TMPro; // Si usas TextMeshPro
 
 public class MainGridButtons : MonoBehaviour
 {
-    public DatabaseController dbLoader;
+    private DatabaseController _dbLoader;
     public Transform gridParent;           // Content del ScrollView
     public GameObject buttonPrefab;        // Un botón base
 
     void Start()
     {
-        List<pokemons> items = dbLoader.LoadPokemons();
+        _dbLoader = DatabaseController.Instance;
+        List<pokemons> items = _dbLoader.LoadPokemons();
         GenerateGrid(items);
     }
 
