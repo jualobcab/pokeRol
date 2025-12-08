@@ -233,3 +233,91 @@ def scrap_abilities(urlBase, urlAbilities):
         browser.close()
 
     return results
+
+def scrap_movements(urlBase, urlMovements):
+    url = urlBase + urlMovements
+    results = []
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+
+        # Ir a la página
+        page.goto(url)
+
+        # Esperar a que se carguen las filas
+        page.wait_for_selector(".div-tabla table tbody tr")
+        time.sleep(1)
+
+        # Obtener filas clicables desde Playwright
+        row_elements = page.query_selector_all(".div-tabla table tbody tr")
+
+        # Obtener HTML inicial para BS4
+        html = page.content()
+
+        # Parseo inicial
+        soup = BeautifulSoup(html, "html.parser")
+        table = soup.select_one(".div-tabla table tbody")
+        movements = table.find_all("tr")
+
+        # Recorremos filas por índice
+        for i, movement in enumerate(movements):
+            # Hacer click en la fila real del navegador
+            row_elements[i].click()
+            time.sleep(0.3)
+
+            # Esperar panel con los datos cargados
+            page.wait_for_selector(".seleccionado")
+
+            # HTML actualizado después del click
+            html = page.content()
+            soup = BeautifulSoup(html, "html.parser")
+
+            # Datos de seleccionado
+            stats = soup.select_one(".seleccionado")
+            movementStats = None
+            if stats:
+                p = stats.find("p", string=lambda t: t and "Estadísticas asociadas" in t)
+                if p:
+                    movementStats = p.text.strip()
+
+            damage = soup.select_one(".seleccionado div.datos")
+            movementDamage = None
+            if damage:
+                p = stats.find("p", string=lambda t: t and "Daño" in t)
+                if p:
+                    movementDamage = p.text.strip()
+            
+            movementDescription = soup.select_one("div.descripcion p").text.strip()
+
+            # Datos de la fila original
+            movementData = movement.find_all("td")
+            movementName = movementData[0].text.strip()
+            movementType = int(dbUtils.typesDB[utils.clean_type(movementData[1].text.strip())])
+            movementCost = movementData[2].text.strip()
+            movementAction = movementData[3].text.strip()
+            movementRange = movementData[4].text.strip()
+            if movementRange == 'Por Tierra':
+                movementTag = utils.parse_tag(movementRange)
+                movementRange = movementData[5].text.strip()
+            else:
+                movementTag = utils.parse_tag(movementData[5].text.strip())
+
+            print(movementName)
+
+            # Añadir resultado
+            results.append({
+                'name': movementName,
+                'type': movementType,
+                'cost': movementCost,
+                'action': movementAction,
+                'range': movementRange,
+                'associated_stats': movementStats,
+                'damage': movementDamage,
+                'description': movementDescription,
+                'tag': movementTag
+            })
+
+        browser.close()
+
+    return results

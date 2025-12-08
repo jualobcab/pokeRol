@@ -10,6 +10,8 @@ environmentsDB = {}
 proficienciesDB = {}
 sensesDB = {}
 abilitiesDB = {"dataDB":[]}
+tagsDB = {}
+movementsDB = {"dataDB":[]}
 
 DB_FILES = {
     "typesDB": "./json/typesDB.json",
@@ -18,7 +20,9 @@ DB_FILES = {
     "environmentsDB": "./json/environmentsDB.json",
     "proficienciesDB": "./json/proficienciesDB.json",
     "sensesDB": "./json/sensesDB.json",
-    "abilitiesDB": "./json/abilitiesDB.json"
+    "abilitiesDB": "./json/abilitiesDB.json",
+    "tagsDB": "./json/tagsDB.json",
+    "movementsDB": "./json/movementsDB.json"
 }
 
 def save_all_db_dicts():
@@ -29,6 +33,8 @@ def save_all_db_dicts():
     global proficienciesDB
     global sensesDB
     global abilitiesDB
+    global tagsDB
+    global movementsDB
 
     data_map = {
         "typesDB": typesDB,
@@ -37,7 +43,9 @@ def save_all_db_dicts():
         "environmentsDB": environmentsDB,
         "proficienciesDB": proficienciesDB,
         "sensesDB": sensesDB,
-        "abilitiesDB": abilitiesDB
+        "abilitiesDB": abilitiesDB,
+        "tagsDB": tagsDB,
+        "movementsDB": movementsDB
     }
 
     for key, filename in DB_FILES.items():
@@ -68,11 +76,15 @@ def load_all_db_dicts():
     sensesDB = results["sensesDB"]
     global abilitiesDB
     abilitiesDB = results["abilitiesDB"]
+    global tagsDB
+    tagsDB = results["tagsDB"]
+    global movementsDB
+    movementsDB = results["movementsDB"]
 
     insert_all_dbs()
 
 def insert_all_dbs():
-    global typesDB, sizesDB, habitatsDB, environmentsDB, proficienciesDB, sensesDB, abilitiesDB
+    global typesDB, sizesDB, habitatsDB, environmentsDB, proficienciesDB, sensesDB, abilitiesDB, tagsDB, movementsDB
 
     insert_dict_into_table("types", typesDB)
     insert_dict_into_table("sizes", sizesDB)
@@ -81,6 +93,8 @@ def insert_all_dbs():
     insert_dict_into_table("proficiencies", proficienciesDB)
     insert_dict_into_table("senses", sensesDB)
     insert_dict_into_table("abilities", abilitiesDB)
+    insert_dict_into_table("tags", tagsDB)
+    #insert_dict_into_table("movements", movementsDB)
 
     print("[OK] Todos los diccionarios han sido insertados y actualizados.")
 
@@ -104,6 +118,31 @@ def insert_dict_into_table(table, data_dict):
             """,
             abilitiesPrepared
         )
+    elif table == 'movements':
+        for movement in data_dict["dataDB"]:
+            movementPrepared = utils.prepare_movements_for_db(movement)
+
+            cursor.execute(
+                """
+                INSERT OR IGNORE INTO movements
+                (name, type_id, action, range, cost, associated_stats, damage, description)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                movementPrepared
+            )
+
+            movement_id = cursor.lastrowid
+
+            
+            if len(movement['tag'])>0:
+                for tag_id in movement['tag']:
+                    cursor.execute("""
+                        INSERT OR REPLACE INTO movement_tags (
+                            movement_id, tag_id
+                        )
+                        VALUES (?, ?)
+                    """, (movement_id,tag_id))
+
     else:
         # Insertar todos los nombres sin duplicar
         cursor.executemany(
@@ -167,6 +206,60 @@ def insertAbilities(abilities):
             'description': description,
             'transformation': transformation,
             'legendary': legendary
+            })
+
+    conn.close()
+
+def insertMovements(movements):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    # Preparar datos para executemany
+    for movement in movements:
+        movementPrepared = utils.prepare_movements_for_db(movement)
+
+        cursor.execute(
+            """
+            INSERT OR IGNORE INTO movements
+            (name, type_id, action, range, cost, associated_stats, damage, description)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            movementPrepared
+        )
+
+        movement_id = cursor.lastrowid
+
+        
+        if len(movement['tag'])>0:
+            for tag_id in movement['tag']:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO movement_tags (
+                        movement_id, tag_id
+                    )
+                    VALUES (?, ?)
+                """, (movement_id,tag_id))
+
+
+    conn.commit()
+
+    # Recargar IDs desde la tabla
+    cursor.execute("SELECT id, name, type_id, action, range, cost, associated_stats, damage, description FROM movements")
+    rows = cursor.fetchall()
+
+    global movementsDB
+    for id, name, type_id, action, range, cost, associated_stats, damage, description in rows:
+        movementsDB[name] = id
+
+        movementsDB['dataDB'].append({
+            'id': id,
+            'name': name,
+            'type': type_id,
+            'action': action,
+            'range': range,
+            'cost': cost,
+            'associated_stats': associated_stats,
+            'damage': damage,
+            'description': description,
             })
 
     conn.close()
@@ -263,6 +356,25 @@ def insertSense(name):
     # Guardar en el diccionario
     global sensesDB
     sensesDB[name]= sense_id
+
+    conn.close()
+
+def insertTag(name):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "INSERT INTO tags (name) VALUES (?)",
+        (name,)
+    )
+
+    conn.commit()
+
+    tag_id = cursor.lastrowid
+
+    # Guardar en el diccionario
+    global tagsDB
+    tagsDB[name]= tag_id
 
     conn.close()
 

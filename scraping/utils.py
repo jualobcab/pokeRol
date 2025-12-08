@@ -193,6 +193,30 @@ def parse_sense(value):
 
     return senses
 
+def parse_tag(tag):
+    tags = []
+
+    tagsSplit = tag.split(", ")
+    for t in tagsSplit:
+        t = clean_string(t)
+        match t:
+            case '':
+                t= '—'
+            case 'Golpea múltiples veces':
+                t= 'Golpea varias veces'
+            case 'Golpea dos veces':
+                t= 'Golpea 2 veces'
+            case 'Golpea tres veces':
+                t= 'Golpea 3 veces'
+
+        if not t == '—':
+            if t not in dbUtils.tagsDB:
+                dbUtils.insertTag(t)
+            
+            tags.append(dbUtils.tagsDB[t])
+
+    return tags 
+
 def clean_sex(sex):
     match sex:
         case 'F':
@@ -227,6 +251,14 @@ def clean_diet(diet):
 
     return diet
 
+def clean_type(type):
+    match type:
+        case 'Dragon':
+            type = 'Dragón'
+
+
+    return type
+
 ################################################
 ## DB
 ################################################
@@ -259,6 +291,20 @@ def prepare_abilities_for_db(abilities):
         )
         for a in abilities
     ]
+
+def prepare_movements_for_db(movement):
+    return (
+            movement["name"],
+            int(movement["type"]),
+            movement["action"],
+            movement["range"],
+            movement["cost"],
+            movement["associated_stats"],
+            movement["damage"],
+            movement["description"]
+        )
+
+
 ################################################
 ## others
 ################################################

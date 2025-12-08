@@ -3,17 +3,36 @@ import dbUtils
 import createDB
 import utils
 
-modoJSON = False
+modeJSON = False
+modeDevelop = True
 
 urlBase = "https://pokemonrpa.net/"
 urlPokedex = "pokedex"
 urlTypes = "tablatipos"
 urlAbilities = "habilidades"
+urlMovements = "movimientos"
 
 createDB.initialice()
 
-if not modoJSON:
+if modeDevelop:
+    dbUtils.load_all_db_dicts()
+
+    print("scraping movements")
+    movements = scrap.scrap_movements(urlBase, urlMovements)
+    
+    print("inserting movements")
+    dbUtils.insertMovements(movements)
+    print("==============================================")
+
     '''
+    print("scraping pokemon")
+    pokemons = scrap.scrap_pokedex(urlBase, urlPokedex)
+
+    utils.save_json("./json/pokemons.json",pokemons)
+    '''
+    dbUtils.save_all_db_dicts()
+
+elif not modeJSON:
     print("scraping types")
     types = scrap.scrap_tipos(urlBase, urlTypes)
     print("inserting types")
@@ -25,9 +44,12 @@ if not modoJSON:
     print("inserting abilities")
     dbUtils.insertAbilities(abilities)
     print("==============================================")
-    '''
 
-    dbUtils.load_all_db_dicts()
+    print("scraping movements")
+    movements = scrap.scrap_movements(urlBase, urlMovements)
+    print("inserting movements")
+    dbUtils.insertMovements(movements)
+    print("==============================================")
 
     print("scraping pokemon")
     pokemons = scrap.scrap_pokedex(urlBase, urlPokedex)
@@ -40,6 +62,8 @@ else:
     pokemons = utils.load_json("./json/pokemons.json")
     dbUtils.load_all_db_dicts()
 
+'''
 print("inserting pokemon")
 dbUtils.insertPokemons(pokemons)
 print("==============================================")
+'''

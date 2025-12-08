@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS movements (
     FOREIGN KEY(type_id) REFERENCES types(id)
 );
 
-CREATE TABLE IF NOT EXISTS tag (
+CREATE TABLE IF NOT EXISTS tags (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT UNIQUE NOT NULL
 );
@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS movement_tags (
     tag_id INTEGER NOT NULL,
     PRIMARY KEY (movement_id, tag_id),
     FOREIGN KEY(movement_id) REFERENCES movements(id),
-    FOREIGN KEY(tag_id) REFERENCES tag(id)
+    FOREIGN KEY(tag_id) REFERENCES tags(id)
 );
 
 CREATE TABLE IF NOT EXISTS moveset_per_level (
