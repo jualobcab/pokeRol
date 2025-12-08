@@ -69,8 +69,8 @@ def scrap_pokedex(urlBase, urlPokedex):
                 proficiencies = utils.parse_proficiencies(pkmSizeProficiencies[1])
 
             pkmEvasionVitality = pkmUnifiedStats.findAll("div",class_="vital-stat-row")
-            evasion = pkmEvasionVitality[0].select_one(".vital-stat-value").text.strip()
-            vitality = pkmEvasionVitality[1].select_one(".vital-stat-value").text
+            evasion = pkmEvasionVitality[0].select_one(".vital-stat-value").text.strip().replace("  "," ")
+            vitality = pkmEvasionVitality[1].select_one(".vital-stat-value").text.strip()
 
             pkmVelocities = pkmUnifiedStats.select_one(".speeds-inline").text
             velocities = utils.parse_velocities(pkmVelocities)

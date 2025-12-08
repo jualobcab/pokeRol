@@ -2114,7 +2114,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 4
             ],
@@ -2163,7 +2163,7 @@
             "min_level": "6",
             "capture_rate": "13",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 4
             ],
@@ -2213,7 +2213,7 @@
             "min_level": "10",
             "capture_rate": "16",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 4
             ],
@@ -2459,7 +2459,7 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "17",
-            "diet": "Omnivoro",
+            "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
                 8,
@@ -2711,7 +2711,7 @@
         "secondaryInfo": {
             "min_level": "4",
             "capture_rate": "11",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -2755,7 +2755,7 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "16",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -3145,7 +3145,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "10",
-            "diet": "Carnivoro",
+            "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
                 1,
@@ -3200,7 +3200,7 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "14",
-            "diet": "Carnivoro",
+            "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -3756,7 +3756,7 @@
         "proficiencies": [
             8
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -5096,7 +5096,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -5113,7 +5113,7 @@
         "proficiencies": [
             7
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -5139,7 +5139,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -5182,7 +5182,7 @@
         "secondaryInfo": {
             "min_level": "10",
             "capture_rate": "17",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -5200,7 +5200,7 @@
         "proficiencies": [
             7
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -5226,7 +5226,7 @@
         "secondaryInfo": {
             "min_level": "10",
             "capture_rate": "17",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -5490,8 +5490,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "11",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 2
             ],
@@ -5540,8 +5540,8 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "14",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 2
             ],
@@ -5594,7 +5594,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 16
@@ -5637,7 +5637,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 16
@@ -6580,7 +6580,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "11",
-            "diet": "Electr.",
+            "diet": "Electricidad",
             "sex": "M/H",
             "habitats": [
                 10,
@@ -6631,7 +6631,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "11",
-            "diet": "Electr.",
+            "diet": "Electricidad",
             "sex": "M/H",
             "habitats": [
                 10,
@@ -6681,7 +6681,7 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "15",
-            "diet": "Electr.",
+            "diet": "Electricidad",
             "sex": "M/H",
             "habitats": [
                 10,
@@ -6732,7 +6732,7 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "15",
-            "diet": "Electr.",
+            "diet": "Electricidad",
             "sex": "M/H",
             "habitats": [
                 10,
@@ -6989,7 +6989,7 @@
         "proficiencies": [
             1
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -7433,7 +7433,7 @@
         "secondaryInfo": {
             "min_level": "4",
             "capture_rate": "15",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -7801,7 +7801,7 @@
         "proficiencies": [
             9
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -8850,7 +8850,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -9707,7 +9707,7 @@
             6,
             2
         ],
-        "evasion": "11 + ESP + BH  ó 11 + RES + BH",
+        "evasion": "11 + ESP + BH ó 11 + RES + BH",
         "vitality": "11 + RES",
         "velocities": [
             {
@@ -9908,8 +9908,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -9951,8 +9951,8 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -9994,8 +9994,8 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -10037,8 +10037,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 16
             ]
@@ -10080,8 +10080,8 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 16
             ]
@@ -10123,8 +10123,8 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 16
             ]
@@ -10141,7 +10141,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "9 +  ESP + BH",
+        "evasion": "9 + ESP + BH",
         "vitality": "10",
         "velocities": [
             {
@@ -10167,8 +10167,8 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 16
             ],
@@ -10217,7 +10217,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 3
             ]
@@ -10260,7 +10260,7 @@
             "min_level": "6",
             "capture_rate": "15",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 3
             ]
@@ -10303,7 +10303,7 @@
             "min_level": "12",
             "capture_rate": "18",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 3
             ]
@@ -10345,8 +10345,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "8",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 16
             ]
@@ -10392,8 +10392,8 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "11",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 16
             ]
@@ -10440,8 +10440,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "9",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -10464,7 +10464,7 @@
         "proficiencies": [
             5
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -10494,8 +10494,8 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "12",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -10548,8 +10548,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "8",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -10596,8 +10596,8 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "11",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -10645,7 +10645,7 @@
             "min_level": "1",
             "capture_rate": "8",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -10699,7 +10699,7 @@
             "min_level": "6",
             "capture_rate": "11",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -10753,7 +10753,7 @@
             "min_level": "12",
             "capture_rate": "17",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9,
                 1
@@ -10803,7 +10803,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 27
             ],
@@ -10857,7 +10857,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 27
             ],
@@ -10910,7 +10910,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -10963,7 +10963,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 8,
                 9
@@ -11013,8 +11013,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "10",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -11056,8 +11056,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "10",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 4
             ],
@@ -11080,7 +11080,7 @@
         "proficiencies": [
             7
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -11114,8 +11114,8 @@
         "secondaryInfo": {
             "min_level": "4",
             "capture_rate": "14",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 4
             ],
@@ -11168,8 +11168,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -11217,7 +11217,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Mediano",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4,
                 2
@@ -11260,8 +11260,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "11",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 4
             ],
@@ -11309,8 +11309,8 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "14",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 4
             ],
@@ -11358,8 +11358,8 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "17",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 4
             ],
@@ -11409,8 +11409,8 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "17",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 4
             ],
@@ -11459,7 +11459,7 @@
             "min_level": "12",
             "capture_rate": "17",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -11507,7 +11507,7 @@
             "min_level": "4",
             "capture_rate": "13",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 17
             ]
@@ -11555,7 +11555,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 17
             ]
@@ -11598,7 +11598,7 @@
             "min_level": "4",
             "capture_rate": "15",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -11645,7 +11645,7 @@
             "min_level": "10",
             "capture_rate": "17",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 14
             ]
@@ -11693,7 +11693,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -11741,7 +11741,7 @@
             "min_level": "6",
             "capture_rate": "13",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -11789,7 +11789,7 @@
             "min_level": "12",
             "capture_rate": "16",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -11836,7 +11836,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -11879,7 +11879,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -11922,7 +11922,7 @@
             "min_level": "6",
             "capture_rate": "15",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -11970,7 +11970,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1,
                 14
@@ -12019,7 +12019,7 @@
             "min_level": "1",
             "capture_rate": "11",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 11,
                 28
@@ -12064,7 +12064,7 @@
             "min_level": "1",
             "capture_rate": "11",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 28
             ],
@@ -12118,7 +12118,7 @@
             "min_level": "6",
             "capture_rate": "14",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 11,
                 28
@@ -12162,7 +12162,7 @@
             "min_level": "6",
             "capture_rate": "16",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -12205,7 +12205,7 @@
             "min_level": "6",
             "capture_rate": "16",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -12259,7 +12259,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -12313,7 +12313,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 3
             ]
@@ -12357,7 +12357,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 3
             ]
@@ -12400,7 +12400,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "???",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 19
             ],
@@ -12445,7 +12445,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "???",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 24
             ]
@@ -12488,7 +12488,7 @@
             "min_level": "4",
             "capture_rate": "15",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9
             ],
@@ -12538,7 +12538,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -12585,7 +12585,7 @@
             "min_level": "1",
             "capture_rate": "11",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -12633,7 +12633,7 @@
             "min_level": "8",
             "capture_rate": "15",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -12680,7 +12680,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9
             ],
@@ -12734,7 +12734,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9
             ],
@@ -12788,7 +12788,7 @@
             "min_level": "12",
             "capture_rate": "17",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9,
                 2
@@ -12844,7 +12844,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9,
                 2
@@ -12894,7 +12894,7 @@
             "min_level": "1",
             "capture_rate": "11",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -12937,7 +12937,7 @@
             "min_level": "6",
             "capture_rate": "15",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -12981,7 +12981,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -13025,7 +13025,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ],
@@ -13075,7 +13075,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -13120,7 +13120,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -13164,7 +13164,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 2
             ]
@@ -13216,7 +13216,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -13275,7 +13275,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -13325,7 +13325,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 26
             ],
@@ -13379,7 +13379,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 2
             ]
@@ -13426,7 +13426,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 2
             ],
@@ -13475,7 +13475,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 2
             ],
@@ -13528,7 +13528,7 @@
             "min_level": "1",
             "capture_rate": "11",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9,
                 13
@@ -13583,7 +13583,7 @@
             "min_level": "10",
             "capture_rate": "16",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9,
                 13
@@ -13634,7 +13634,7 @@
             "min_level": "1",
             "capture_rate": "11",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 29
             ],
@@ -13684,7 +13684,7 @@
             "min_level": "6",
             "capture_rate": "14",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 29
             ],
@@ -13738,7 +13738,7 @@
             "min_level": "1",
             "capture_rate": "14",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 30
             ]
@@ -13785,7 +13785,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 31
             ],
@@ -13834,7 +13834,7 @@
             "min_level": "1",
             "capture_rate": "11",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 15
             ]
@@ -13885,7 +13885,7 @@
             "min_level": "8",
             "capture_rate": "15",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 15
             ]
@@ -13933,7 +13933,7 @@
             "min_level": "1",
             "capture_rate": "14",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 26
             ]
@@ -13977,7 +13977,7 @@
             "min_level": "4",
             "capture_rate": "15",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 15
             ]
@@ -14025,7 +14025,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 2
             ]
@@ -14069,7 +14069,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1,
                 2
@@ -14120,7 +14120,7 @@
             "min_level": "6",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1,
                 2
@@ -14172,7 +14172,7 @@
             "min_level": "6",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1,
                 2
@@ -14227,7 +14227,7 @@
             "min_level": "10",
             "capture_rate": "18",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 15
             ]
@@ -14270,7 +14270,7 @@
             "min_level": "1",
             "capture_rate": "11",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -14319,7 +14319,7 @@
             "min_level": "8",
             "capture_rate": "15",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ],
@@ -14372,7 +14372,7 @@
             "min_level": "6",
             "capture_rate": "14",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -14415,7 +14415,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Herbívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -14458,7 +14458,7 @@
             "min_level": "1",
             "capture_rate": "15",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4,
                 10
@@ -14502,7 +14502,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 10,
                 2
@@ -14546,7 +14546,7 @@
             "min_level": "4",
             "capture_rate": "13",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 10,
                 2
@@ -14591,7 +14591,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 10,
                 2
@@ -14635,7 +14635,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 10,
                 2
@@ -14685,7 +14685,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 13,
                 2
@@ -14728,8 +14728,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "13",
-            "diet": "Hervíboro",
-            "sex": "F",
+            "diet": "Herbívoro",
+            "sex": "H",
             "habitats": [
                 4
             ]
@@ -14771,8 +14771,8 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "17",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -14817,7 +14817,7 @@
             "min_level": "1",
             "capture_rate": "25",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ],
@@ -14868,7 +14868,7 @@
             "min_level": "1",
             "capture_rate": "25",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 13,
                 2
@@ -14914,7 +14914,7 @@
             "min_level": "1",
             "capture_rate": "25",
             "diet": "Carnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 17,
                 3
@@ -14959,7 +14959,7 @@
             "min_level": "1",
             "capture_rate": "14",
             "diet": "Tierra",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9
             ],
@@ -15013,7 +15013,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Tierra",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9
             ],
@@ -15067,7 +15067,7 @@
             "min_level": "16",
             "capture_rate": "22",
             "diet": "Tierra",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9
             ],
@@ -15122,7 +15122,7 @@
             "min_level": "16",
             "capture_rate": "22",
             "diet": "Tierra",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 9
             ],
@@ -15184,7 +15184,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 15
             ]
@@ -15232,7 +15232,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "H/M",
+            "sex": "M/H",
             "habitats": [
                 32
             ]
@@ -15284,8 +15284,8 @@
         "secondaryInfo": {
             "min_level": "14",
             "capture_rate": "25",
-            "diet": "Hervíboro",
-            "sex": "H/M",
+            "diet": "Herbívoro",
+            "sex": "M/H",
             "habitats": [
                 1
             ]
@@ -15331,7 +15331,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1,
@@ -15379,7 +15379,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1,
@@ -15427,7 +15427,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1,
@@ -15477,7 +15477,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1,
@@ -15521,7 +15521,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -15565,7 +15565,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -15609,7 +15609,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -15654,7 +15654,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -16998,7 +16998,7 @@
             "min_level": "12",
             "capture_rate": "14",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 4
             ],
@@ -17049,7 +17049,7 @@
             "min_level": "12",
             "capture_rate": "14",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 4
             ],
@@ -17982,7 +17982,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -18036,7 +18036,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -18729,7 +18729,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "13",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -18782,7 +18782,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "13",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -18835,7 +18835,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "13",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4,
@@ -18883,7 +18883,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "13",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4,
@@ -18928,7 +18928,7 @@
         "secondaryInfo": {
             "min_level": "4",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4,
@@ -19506,7 +19506,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 2,
@@ -19524,7 +19524,7 @@
         "proficiencies": [
             9
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -19550,7 +19550,7 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "16",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 2,
@@ -20125,7 +20125,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -20156,7 +20156,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 9,
                 2
@@ -20180,7 +20180,7 @@
         "proficiencies": [
             1
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -20211,7 +20211,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 9,
                 2
@@ -20479,8 +20479,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "",
-            "sex": "",
+            "diet": "???",
+            "sex": "???",
             "habitats": [
                 16,
                 2,
@@ -20505,7 +20505,7 @@
         "proficiencies": [
             9
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -20535,8 +20535,8 @@
         "secondaryInfo": {
             "min_level": "10",
             "capture_rate": "17",
-            "diet": "",
-            "sex": "",
+            "diet": "???",
+            "sex": "???",
             "habitats": [
                 16,
                 2,
@@ -21186,7 +21186,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -22254,7 +22254,7 @@
             "min_level": "1",
             "capture_rate": "14",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 2
             ]
@@ -22302,7 +22302,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 2
             ],
@@ -22361,7 +22361,7 @@
             "min_level": "16",
             "capture_rate": "22",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 2
             ],
@@ -22421,7 +22421,7 @@
             "min_level": "16",
             "capture_rate": "22",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 2
             ],
@@ -22470,8 +22470,8 @@
         "secondaryInfo": {
             "min_level": "14",
             "capture_rate": "25",
-            "diet": "",
-            "sex": "",
+            "diet": "???",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -22520,8 +22520,8 @@
         "secondaryInfo": {
             "min_level": "14",
             "capture_rate": "25",
-            "diet": "",
-            "sex": "",
+            "diet": "???",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -22570,8 +22570,8 @@
         "secondaryInfo": {
             "min_level": "14",
             "capture_rate": "25",
-            "diet": "",
-            "sex": "",
+            "diet": "???",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -22595,7 +22595,7 @@
             7,
             11
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -22630,7 +22630,7 @@
             "min_level": "1",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 11
             ]
@@ -22648,7 +22648,7 @@
             7,
             11
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -22684,7 +22684,7 @@
             "min_level": "1",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 11
             ]
@@ -22702,7 +22702,7 @@
             9,
             11
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -22755,7 +22755,7 @@
             9,
             11
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -22838,7 +22838,7 @@
             "min_level": "18",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 15
             ],
@@ -22896,7 +22896,7 @@
             "min_level": "18",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 15
             ],
@@ -22957,7 +22957,7 @@
             "min_level": "18",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 40
             ],
@@ -23020,7 +23020,7 @@
             "min_level": "18",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 40
             ],
@@ -23078,7 +23078,7 @@
             "min_level": "18",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 41
             ]
@@ -23127,7 +23127,7 @@
             "min_level": "18",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 41
             ]
@@ -23145,7 +23145,7 @@
             7,
             3
         ],
-        "evasion": "11 + RES + BH  ó 11 + ESP + BH",
+        "evasion": "11 + RES + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -23180,7 +23180,7 @@
             "min_level": "10",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -23197,7 +23197,7 @@
             6,
             11
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -23232,7 +23232,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 42
             ]
@@ -24867,7 +24867,7 @@
             "min_level": "8",
             "capture_rate": "19",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 1
             ],
@@ -25914,7 +25914,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 45
             ]
@@ -27338,8 +27338,8 @@
         "secondaryInfo": {
             "min_level": "10",
             "capture_rate": "18",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 2
             ],
@@ -27917,7 +27917,7 @@
             "min_level": "10",
             "capture_rate": "18",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -28085,7 +28085,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -28170,7 +28170,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Carnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 38
             ],
@@ -28197,7 +28197,7 @@
         "proficiencies": [
             4
         ],
-        "evasion": "10 + ESP + BH  ó 8 + AGI + BH",
+        "evasion": "10 + ESP + BH ó 8 + AGI + BH",
         "vitality": "8 + AGI",
         "velocities": [
             {
@@ -28228,7 +28228,7 @@
             "min_level": "1",
             "capture_rate": "14",
             "diet": "Electricidad",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 19
             ],
@@ -28289,7 +28289,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 11
             ],
@@ -28346,7 +28346,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 11
             ],
@@ -28403,7 +28403,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 11
             ],
@@ -28462,7 +28462,7 @@
             "min_level": "20",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -28515,7 +28515,7 @@
             "min_level": "20",
             "capture_rate": "50",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -28568,7 +28568,7 @@
             "min_level": "20",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -28621,7 +28621,7 @@
             "min_level": "20",
             "capture_rate": "50",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -28723,8 +28723,8 @@
         "secondaryInfo": {
             "min_level": "16",
             "capture_rate": "40",
-            "diet": "",
-            "sex": "",
+            "diet": "???",
+            "sex": "???",
             "habitats": [
                 36
             ]
@@ -28741,7 +28741,7 @@
         "proficiencies": [
             14
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -28777,7 +28777,7 @@
             "min_level": "20",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -28800,7 +28800,7 @@
         "proficiencies": [
             14
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -28832,7 +28832,7 @@
             "min_level": "20",
             "capture_rate": "50",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -28855,7 +28855,7 @@
             7,
             3
         ],
-        "evasion": "11 + ESP + BH  ó 11 + RES + BH",
+        "evasion": "11 + ESP + BH ó 11 + RES + BH",
         "vitality": "11 + RES",
         "velocities": [
             {
@@ -28886,7 +28886,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 24
             ],
@@ -28956,7 +28956,7 @@
             7,
             8
         ],
-        "evasion": "11 + ESP + BH  ó 9 + AGI + BH",
+        "evasion": "11 + ESP + BH ó 9 + AGI + BH",
         "vitality": "9 + AGI",
         "velocities": [
             {
@@ -29004,7 +29004,7 @@
             2,
             4
         ],
-        "evasion": "11 + ESP + BH  ó 9 + AGI + BH",
+        "evasion": "11 + ESP + BH ó 9 + AGI + BH",
         "vitality": "9 + AGI",
         "velocities": [
             {
@@ -29188,7 +29188,7 @@
             "min_level": "20",
             "capture_rate": "50",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -29212,7 +29212,7 @@
             7,
             6
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -30690,7 +30690,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "11",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 9
@@ -30739,7 +30739,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "14",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 9
@@ -30788,7 +30788,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "17",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 9
@@ -30812,7 +30812,7 @@
         "proficiencies": [
             5
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -30862,7 +30862,7 @@
         "proficiencies": [
             5
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -31885,7 +31885,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 1
             ]
@@ -31928,7 +31928,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 1
             ]
@@ -31972,7 +31972,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Herbívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 1
             ]
@@ -32661,7 +32661,7 @@
         "proficiencies": [
             11
         ],
-        "evasion": "9 +  ESP + BH",
+        "evasion": "9 + ESP + BH",
         "vitality": "9",
         "velocities": [
             {
@@ -33295,7 +33295,7 @@
         "proficiencies": [
             12
         ],
-        "evasion": "6 + AGI + BH  ó ESP + BH",
+        "evasion": "6 + AGI + BH ó ESP + BH",
         "vitality": "ESP",
         "velocities": [
             {
@@ -33626,7 +33626,7 @@
         "proficiencies": [
             1
         ],
-        "evasion": "10 + ESP + BH  ó 10 + RES + BH",
+        "evasion": "10 + ESP + BH ó 10 + RES + BH",
         "vitality": "10 + RES",
         "velocities": [
             {
@@ -33669,7 +33669,7 @@
         "proficiencies": [
             1
         ],
-        "evasion": "10 + ESP + BH  ó 10 + RES + BH",
+        "evasion": "10 + ESP + BH ó 10 + RES + BH",
         "vitality": "10 + RES",
         "velocities": [
             {
@@ -34604,7 +34604,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 9,
                 45,
@@ -34655,7 +34655,7 @@
             "min_level": "6",
             "capture_rate": "15",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 9,
                 45,
@@ -34706,7 +34706,7 @@
             "min_level": "12",
             "capture_rate": "18",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 9,
                 45,
@@ -34784,7 +34784,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "10 + RES + BH  ó 8 + AGI + BH",
+        "evasion": "10 + RES + BH ó 8 + AGI + BH",
         "vitality": "8 + AGI",
         "velocities": [
             {
@@ -34838,7 +34838,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "10 + RES + BH  ó 8 + AGI + BH",
+        "evasion": "10 + RES + BH ó 8 + AGI + BH",
         "vitality": "8 + AGI",
         "velocities": [
             {
@@ -35409,7 +35409,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 9,
                 49
@@ -35776,7 +35776,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -35830,7 +35830,7 @@
             "min_level": "10",
             "capture_rate": "17",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -36617,7 +36617,7 @@
             6,
             7
         ],
-        "evasion": "11 + RES + BH  ó 9 + AGI + BH",
+        "evasion": "11 + RES + BH ó 9 + AGI + BH",
         "vitality": "9 + AGI",
         "velocities": [
             {
@@ -36644,7 +36644,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -36689,7 +36689,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -36734,7 +36734,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -36973,7 +36973,7 @@
             "min_level": "16",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -37028,7 +37028,7 @@
             "min_level": "16",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -37175,7 +37175,7 @@
             "min_level": "16",
             "capture_rate": "35",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -37193,7 +37193,7 @@
             11,
             7
         ],
-        "evasion": "11 + RES + BH  ó 9 + AGI + BH",
+        "evasion": "11 + RES + BH ó 9 + AGI + BH",
         "vitality": "9 + AGI",
         "velocities": [
             {
@@ -37224,7 +37224,7 @@
             "min_level": "16",
             "capture_rate": "45",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -37273,7 +37273,7 @@
             "min_level": "16",
             "capture_rate": "45",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -37318,7 +37318,7 @@
             "min_level": "1",
             "capture_rate": "20",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -37363,7 +37363,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -37417,7 +37417,7 @@
             "min_level": "8",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -37463,7 +37463,7 @@
             "min_level": "8",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -37481,7 +37481,7 @@
             6,
             13
         ],
-        "evasion": "9 + AGI + BH  ó 10 + RES + BH",
+        "evasion": "9 + AGI + BH ó 10 + RES + BH",
         "vitality": "10 + RES",
         "velocities": [
             {
@@ -37508,7 +37508,7 @@
             "min_level": "10",
             "capture_rate": "25",
             "diet": "Electricidad",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -37744,7 +37744,7 @@
         "proficiencies": [
             3
         ],
-        "evasion": "10 + ESP + BH  ó 8 + AGI + BH",
+        "evasion": "10 + ESP + BH ó 8 + AGI + BH",
         "vitality": "8 + AGI",
         "velocities": [
             {
@@ -38798,7 +38798,7 @@
         "proficiencies": [
             5
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -38842,7 +38842,7 @@
         "proficiencies": [
             5
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -38886,7 +38886,7 @@
         "proficiencies": [
             5
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -39133,7 +39133,7 @@
         "proficiencies": [
             3
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -39263,7 +39263,7 @@
         "proficiencies": [
             12
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -39318,7 +39318,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -40092,7 +40092,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Roca",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 9
             ]
@@ -40337,7 +40337,7 @@
         "proficiencies": [
             4
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -40853,7 +40853,7 @@
             "min_level": "16",
             "capture_rate": "40",
             "diet": "Herbívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 1
             ]
@@ -40901,7 +40901,7 @@
             "min_level": "16",
             "capture_rate": "40",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 2
             ],
@@ -40956,7 +40956,7 @@
             "min_level": "16",
             "capture_rate": "35",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 52
             ],
@@ -41007,7 +41007,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 32
             ]
@@ -41052,7 +41052,7 @@
             "min_level": "20",
             "capture_rate": "45",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 52
             ],
@@ -41100,7 +41100,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 32
             ]
@@ -41118,7 +41118,7 @@
             3,
             7
         ],
-        "evasion": "11 + RES + BH  ó 11 + ESP + BH",
+        "evasion": "11 + RES + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -41150,7 +41150,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 52
             ],
@@ -41174,7 +41174,7 @@
             3,
             7
         ],
-        "evasion": "11 + RES + BH  ó 11 + ESP + BH",
+        "evasion": "11 + RES + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -41207,7 +41207,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 52
             ],
@@ -41262,7 +41262,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -41280,7 +41280,7 @@
             12,
             3
         ],
-        "evasion": "11 + RES + BH  ó 11 + ESP + BH",
+        "evasion": "11 + RES + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -41311,7 +41311,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -41487,7 +41487,7 @@
         "proficiencies": [
             5
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -41851,7 +41851,7 @@
         "proficiencies": [
             8
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -42094,7 +42094,7 @@
         "proficiencies": [
             5
         ],
-        "evasion": "10 + RES + BH  ó 8 + AGI + BH",
+        "evasion": "10 + RES + BH ó 8 + AGI + BH",
         "vitality": "8 + AGI",
         "velocities": [
             {
@@ -42796,7 +42796,7 @@
             "min_level": "6",
             "capture_rate": "0",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 15
             ]
@@ -44012,7 +44012,7 @@
             "min_level": "1",
             "capture_rate": "14",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -44063,7 +44063,7 @@
             "min_level": "1",
             "capture_rate": "20",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -44125,7 +44125,7 @@
             "min_level": "1",
             "capture_rate": "13",
             "diet": "Partículas del aire",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 56
             ]
@@ -44282,7 +44282,7 @@
         "proficiencies": [
             12
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -44667,7 +44667,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 58
             ]
@@ -44720,7 +44720,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 59
             ]
@@ -44773,7 +44773,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 60
             ]
@@ -44826,7 +44826,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 61
             ]
@@ -44889,7 +44889,7 @@
         "proficiencies": [
             3
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -45024,7 +45024,7 @@
             "min_level": "18",
             "capture_rate": "40",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 62
             ],
@@ -45079,7 +45079,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45128,7 +45128,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45173,7 +45173,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45217,7 +45217,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Electricidad",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45266,7 +45266,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Herbívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45315,7 +45315,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45360,7 +45360,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Carnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45405,7 +45405,7 @@
             "min_level": "16",
             "capture_rate": "30",
             "diet": "Energía",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45453,7 +45453,7 @@
             "min_level": "16",
             "capture_rate": "45",
             "diet": "Energía",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45505,7 +45505,7 @@
             "min_level": "16",
             "capture_rate": "45",
             "diet": "Energía",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45553,7 +45553,7 @@
             "min_level": "16",
             "capture_rate": "45",
             "diet": "Energía",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45571,7 +45571,7 @@
             3,
             7
         ],
-        "evasion": "11 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "11 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -45598,7 +45598,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Energía",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -45710,7 +45710,7 @@
             "min_level": "1",
             "capture_rate": "20",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45759,7 +45759,7 @@
             "min_level": "10",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45804,7 +45804,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ]
@@ -45822,7 +45822,7 @@
             8,
             9
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -45849,7 +45849,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 62
             ],
@@ -45950,7 +45950,7 @@
             "min_level": "1",
             "capture_rate": "16",
             "diet": "Metal",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -45994,7 +45994,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Metal",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -46040,7 +46040,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -46087,7 +46087,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -46134,7 +46134,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -46177,7 +46177,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -46220,7 +46220,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -46263,7 +46263,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -46310,7 +46310,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 11,
@@ -46358,7 +46358,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 11,
@@ -46406,7 +46406,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 11,
@@ -46935,7 +46935,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "9",
-            "diet": "Luz solar, herbívoro",
+            "diet": "Luz solar, Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1,
@@ -47312,7 +47312,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "11",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 9,
@@ -47363,7 +47363,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "14",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 9,
@@ -47414,7 +47414,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "17",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 9,
@@ -47601,7 +47601,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Carnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 6
             ],
@@ -47650,7 +47650,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Carnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 6
             ],
@@ -47708,7 +47708,7 @@
             "min_level": "8",
             "capture_rate": "13",
             "diet": "Carnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 3
             ]
@@ -47751,7 +47751,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Carnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 15
             ]
@@ -47794,7 +47794,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Carnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 15
             ]
@@ -47838,7 +47838,7 @@
             "min_level": "1",
             "capture_rate": "10",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 16,
                 10
@@ -47890,7 +47890,7 @@
             "min_level": "4",
             "capture_rate": "15",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 16,
                 10
@@ -47942,7 +47942,7 @@
             "min_level": "4",
             "capture_rate": "15",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 16,
                 10
@@ -47997,7 +47997,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -48045,7 +48045,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 4
             ]
@@ -48092,7 +48092,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 3,
                 15
@@ -48140,7 +48140,7 @@
             "min_level": "8",
             "capture_rate": "16",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 3,
                 15
@@ -48188,7 +48188,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -48241,7 +48241,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -48734,7 +48734,7 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "17",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 16
@@ -48752,7 +48752,7 @@
         "proficiencies": [
             8
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -49736,7 +49736,7 @@
         "proficiencies": [
             9
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -49794,7 +49794,7 @@
         "proficiencies": [
             9
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -49853,7 +49853,7 @@
             9,
             4
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -50200,7 +50200,7 @@
         "proficiencies": [
             6
         ],
-        "evasion": "8 + AGI + BH  ó 10 + RES + BH",
+        "evasion": "8 + AGI + BH ó 10 + RES + BH",
         "vitality": "10 + RES",
         "velocities": [
             {
@@ -50230,7 +50230,7 @@
             "min_level": "1",
             "capture_rate": "17",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 65
             ]
@@ -50279,7 +50279,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 65
             ]
@@ -50328,7 +50328,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 65
             ]
@@ -50377,7 +50377,7 @@
             "min_level": "1",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 65
             ]
@@ -50420,8 +50420,8 @@
         "secondaryInfo": {
             "min_level": "14",
             "capture_rate": "25",
-            "diet": "",
-            "sex": "",
+            "diet": "???",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -50474,8 +50474,8 @@
         "secondaryInfo": {
             "min_level": "14",
             "capture_rate": "25",
-            "diet": "",
-            "sex": "",
+            "diet": "???",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -50525,7 +50525,7 @@
             "min_level": "16",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 26
             ]
@@ -50542,7 +50542,7 @@
             9,
             6
         ],
-        "evasion": "11 + ESP + BH  ó 9 + AGI + BH",
+        "evasion": "11 + ESP + BH ó 9 + AGI + BH",
         "vitality": "9 + AGI",
         "velocities": [
             {
@@ -50569,7 +50569,7 @@
             "min_level": "16",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 24
             ],
@@ -50620,7 +50620,7 @@
             "min_level": "8",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 24
             ]
@@ -50637,7 +50637,7 @@
             12,
             22
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -51035,7 +51035,7 @@
             3,
             12
         ],
-        "evasion": "11 + ESP + BH  ó 11 + RES + BH",
+        "evasion": "11 + ESP + BH ó 11 + RES + BH",
         "vitality": "11 + RES",
         "velocities": [
             {
@@ -51114,7 +51114,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -51163,7 +51163,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -51213,7 +51213,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -51325,7 +51325,7 @@
         "proficiencies": [
             8
         ],
-        "evasion": "10 + ESP + BH  ó 10 + RES + BH",
+        "evasion": "10 + ESP + BH ó 10 + RES + BH",
         "vitality": "10 + RES",
         "velocities": [
             {
@@ -52031,7 +52031,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "8",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -52078,7 +52078,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "11",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -52208,7 +52208,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -52252,7 +52252,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -52296,7 +52296,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 4
@@ -52387,7 +52387,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 2
@@ -52436,7 +52436,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "15",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 2
@@ -52485,7 +52485,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 2
@@ -52553,7 +52553,7 @@
         "proficiencies": [
             6
         ],
-        "evasion": "10 + RES + BH  ó 10 + ESP + BH",
+        "evasion": "10 + RES + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -52599,7 +52599,7 @@
         "proficiencies": [
             6
         ],
-        "evasion": "8 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -52680,7 +52680,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "12",
-            "diet": "Electr.",
+            "diet": "Electricidad",
             "sex": "M/H",
             "habitats": [
                 12,
@@ -52730,7 +52730,7 @@
         "secondaryInfo": {
             "min_level": "8",
             "capture_rate": "16",
-            "diet": "Electr.",
+            "diet": "Electricidad",
             "sex": "M/H",
             "habitats": [
                 12,
@@ -53063,7 +53063,7 @@
         "proficiencies": [
             9
         ],
-        "evasion": "8 +  AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -53113,7 +53113,7 @@
         "proficiencies": [
             9
         ],
-        "evasion": "8 +  AGI + BH  ó 10 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -53163,7 +53163,7 @@
         "proficiencies": [
             13
         ],
-        "evasion": "8 +  AGI + BH",
+        "evasion": "8 + AGI + BH",
         "vitality": "7",
         "velocities": [
             {
@@ -53208,7 +53208,7 @@
         "proficiencies": [
             13
         ],
-        "evasion": "8 +  AGI + BH",
+        "evasion": "8 + AGI + BH",
         "vitality": "9",
         "velocities": [
             {
@@ -53527,7 +53527,7 @@
         "proficiencies": [
             2
         ],
-        "evasion": "8 + AGI + BH  ó 9 + ESP + BH",
+        "evasion": "8 + AGI + BH ó 9 + ESP + BH",
         "vitality": "9 + ESP",
         "velocities": [
             {
@@ -54192,7 +54192,7 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "15",
-            "diet": "Mineral",
+            "diet": "Minerales",
             "sex": "M/H",
             "habitats": [
                 2,
@@ -54703,7 +54703,7 @@
         "proficiencies": [
             6
         ],
-        "evasion": "10 + RES + BH  ó 9 + ESP + BH",
+        "evasion": "10 + RES + BH ó 9 + ESP + BH",
         "vitality": "9 + ESP",
         "velocities": [
             {
@@ -55009,8 +55009,8 @@
             8,
             2
         ],
-        "evasion": "11 + ESP + BH  ó  11 + RES + BH",
-        "vitality": " 11 + RES",
+        "evasion": "11 + ESP + BH ó 11 + RES + BH",
+        "vitality": "11 + RES",
         "velocities": [
             {
                 "id": 1,
@@ -55105,7 +55105,7 @@
             2,
             12
         ],
-        "evasion": "11 + ESP + BH  ó 9 + AGI + BH",
+        "evasion": "11 + ESP + BH ó 9 + AGI + BH",
         "vitality": "9 + AGI",
         "velocities": [
             {
@@ -55209,7 +55209,7 @@
             13,
             2
         ],
-        "evasion": "9 +  AGI + BH",
+        "evasion": "9 + AGI + BH",
         "vitality": "11",
         "velocities": [
             {
@@ -55286,8 +55286,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -55341,8 +55341,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -55392,8 +55392,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -55417,7 +55417,7 @@
             11,
             2
         ],
-        "evasion": "11 + RES + BH  ó 9 + AGI + BH",
+        "evasion": "11 + RES + BH ó 9 + AGI + BH",
         "vitality": "9 + AGI",
         "velocities": [
             {
@@ -55447,8 +55447,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -55502,8 +55502,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -55553,8 +55553,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -55604,7 +55604,7 @@
             "min_level": "1",
             "capture_rate": "14",
             "diet": "Carnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 67
             ],
@@ -55654,7 +55654,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "Carnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 67
             ],
@@ -55705,7 +55705,7 @@
             "min_level": "116",
             "capture_rate": "22",
             "diet": "Carnívoro",
-            "sex": "F/M",
+            "sex": "M/H",
             "habitats": [
                 67
             ],
@@ -55753,7 +55753,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -55812,7 +55812,7 @@
             "min_level": "14",
             "capture_rate": "22",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -55863,7 +55863,7 @@
             "min_level": "16",
             "capture_rate": "30",
             "diet": "Energía vital",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -55922,7 +55922,7 @@
             "min_level": "16",
             "capture_rate": "30",
             "diet": "Energía vital",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -55977,7 +55977,7 @@
             "min_level": "16",
             "capture_rate": "30",
             "diet": "Energía vital",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -56040,7 +56040,7 @@
             "min_level": "16",
             "capture_rate": "30",
             "diet": "Energía vital",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 36
             ],
@@ -56153,8 +56153,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -56278,7 +56278,7 @@
             "min_level": "1",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -56377,8 +56377,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -56427,7 +56427,7 @@
         "secondaryInfo": {
             "min_level": "6",
             "capture_rate": "14",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -56476,7 +56476,7 @@
             "min_level": "1",
             "capture_rate": "12",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -56530,7 +56530,7 @@
             "min_level": "8",
             "capture_rate": "17",
             "diet": "???",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -56599,7 +56599,7 @@
             11,
             5
         ],
-        "evasion": "9 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -56648,7 +56648,7 @@
             3,
             12
         ],
-        "evasion": "9 + AGI + BH  ó 10 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 10 + ESP + BH",
         "vitality": "10 + ESP",
         "velocities": [
             {
@@ -56722,7 +56722,7 @@
             "min_level": "14",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 24
             ]
@@ -56767,7 +56767,7 @@
             "min_level": "14",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 24
             ]
@@ -56812,7 +56812,7 @@
             "min_level": "14",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 24
             ]
@@ -56857,7 +56857,7 @@
             "min_level": "14",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 24
             ]
@@ -56901,7 +56901,7 @@
             "min_level": "14",
             "capture_rate": "30",
             "diet": "Omnívoro",
-            "sex": "F",
+            "sex": "H",
             "habitats": [
                 24
             ]
@@ -56995,7 +56995,7 @@
         "secondaryInfo": {
             "min_level": "12",
             "capture_rate": "18",
-            "diet": "Hervíboro",
+            "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
                 1
@@ -57130,8 +57130,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -57155,7 +57155,7 @@
             11,
             7
         ],
-        "evasion": "9 + AGI + BH  ó 11 + ESP + BH",
+        "evasion": "9 + AGI + BH ó 11 + ESP + BH",
         "vitality": "11 + ESP",
         "velocities": [
             {
@@ -57181,8 +57181,8 @@
         "secondaryInfo": {
             "min_level": "1",
             "capture_rate": "22",
-            "diet": "Electr.",
-            "sex": "",
+            "diet": "Electricidad",
+            "sex": "???",
             "habitats": [
                 24
             ],
@@ -57235,7 +57235,7 @@
             "min_level": "1",
             "capture_rate": "22",
             "diet": "Herbívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -57291,7 +57291,7 @@
             "min_level": "18",
             "capture_rate": "30",
             "diet": "Herbívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -57339,7 +57339,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Herbívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ]
@@ -57388,7 +57388,7 @@
             "min_level": "14",
             "capture_rate": "25",
             "diet": "Omnívoro",
-            "sex": "",
+            "sex": "???",
             "habitats": [
                 24
             ],

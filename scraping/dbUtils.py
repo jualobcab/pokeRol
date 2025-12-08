@@ -343,7 +343,6 @@ def insertPokemons(pokemons):
                 """, (pokemon_id,proficiency))
 
         # senses
-        print(pokemon)
         if pokemon['secondaryInfo'].get('senses'):
             for sense in pokemon['secondaryInfo']['senses']:
                 cursor.execute("""

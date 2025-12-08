@@ -97,12 +97,16 @@ def parse_secondaryInfo(name,value):
     match name:
         case "Nivel mínimo":
             name = "min_level"
+            if value == 116:
+                value = 16
         case "Ratio de Captura":
             name = "capture_rate"
         case "Dieta":
             name = "diet"
+            value = clean_diet(value)
         case "Sexo":
             name = "sex"
+            value = clean_sex(value)
         case "Hábitat":
             name = "habitats"
             value = parse_habitats(value.split(", "))
@@ -188,6 +192,40 @@ def parse_sense(value):
                 })
 
     return senses
+
+def clean_sex(sex):
+    match sex:
+        case 'F':
+            sex = 'H'
+        case 'F/M':
+            sex = 'M/H'
+        case 'H/M':
+            sex = 'M/H'
+        case '':
+            sex = '???'
+
+    return sex
+
+def clean_diet(diet):
+    match diet:
+        case 'Electr.':
+            diet = 'Electricidad'
+        case 'Hervívoro':
+            diet = 'Herbívoro'
+        case 'Hervíboro':
+            diet = 'Herbívoro'
+        case 'Carnivoro':
+            diet = 'Carnívoro'
+        case 'Omnivoro':
+            diet = 'Omnívoro'
+        case 'Mineral':
+            diet = 'Minerales'
+        case '':
+            diet = '???'
+        case 'Luz solar, herbívoro':
+            diet = 'Luz solar, Herbívoro'
+
+    return diet
 
 ################################################
 ## DB
