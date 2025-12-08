@@ -3,7 +3,7 @@ import dbUtils
 import createDB
 import utils
 
-modoJSON = False
+modoJSON = True
 
 urlBase = "https://pokemonrpa.net/"
 urlPokedex = "pokedex"
@@ -13,7 +13,6 @@ urlAbilities = "habilidades"
 createDB.initialice()
 
 if not modoJSON:
-    '''
     print("scraping types")
     types = scrap.scrap_tipos(urlBase, urlTypes)
     print("inserting types")
@@ -25,8 +24,6 @@ if not modoJSON:
     print("inserting abilities")
     dbUtils.insertAbilities(abilities)
     print("==============================================")
-    '''
-    dbUtils.load_all_db_dicts()
 
     print("scraping pokemon")
     pokemons = scrap.scrap_pokedex(urlBase, urlPokedex)
