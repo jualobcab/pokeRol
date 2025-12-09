@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS pokemons (
     capture_rate INTEGER NOT NULL,
     diet TEXT,
     sex TEXT,
+    sex_differences INTEGER NOT NULL DEFAULT 0,
     FOREIGN KEY(size_id) REFERENCES sizes(id)
 );
 
