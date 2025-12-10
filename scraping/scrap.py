@@ -293,6 +293,7 @@ def scrap_movements(urlBase, urlMovements):
                 if strong_tag:
                     p_tag = strong_tag.parent  # el <p> que lo contiene
                     movementDamage = p_tag.get_text(strip=True).replace("Daño:", "").strip()
+                    movementDamage = utils.clean_damage(movementDamage)
 
             movementDescription = soup.select_one("div.descripcion p").text.strip()
 
@@ -300,7 +301,7 @@ def scrap_movements(urlBase, urlMovements):
             movementData = movement.find_all("td")
             movementName = movementData[0].text.strip()
             movementType = int(dbUtils.typesDB[utils.clean_type(movementData[1].text.strip())])
-            movementCost = movementData[2].text.strip()
+            movementCost = utils.clean_cost(movementData[2].text)
             movementAction = movementData[3].text.strip()
             movementRange = movementData[4].text.strip()
             if movementRange == 'Por Tierra':
@@ -308,6 +309,11 @@ def scrap_movements(urlBase, urlMovements):
                 movementRange = movementData[5].text.strip()
             else:
                 movementTag = utils.parse_tag(movementData[5].text.strip())
+
+            if movementDamage == 'Potenciación' or movementDamage == 'Legendario' or movementDamage == 'Clima':
+                movementTag = utils.addTag(movementTag,movementDamage)
+                movementDamage = None
+
 
             print(movementName)
 

@@ -208,6 +208,10 @@ def parse_tag(tag):
                 t= 'Golpea 2 veces'
             case 'Golpea tres veces':
                 t= 'Golpea 3 veces'
+            case 'Res':
+                t= '—'
+            case 'Lengendario':
+                t= 'Legendario'
 
         if not t == '—':
             if t not in dbUtils.tagsDB:
@@ -216,6 +220,35 @@ def parse_tag(tag):
             tags.append(dbUtils.tagsDB[t])
 
     return tags 
+
+def addTag(tags,tag):
+    tag = clean_string(tag)
+
+    if tag not in dbUtils.tagsDB:
+        dbUtils.insertTag(tag)
+    
+    tags.append(dbUtils.tagsDB[tag])
+
+    return tags 
+
+def clean_damage(damage):
+    damage = damage.replace("  "," ")
+
+    if '8+' in damage:
+        damage = damage.replace("8+","8 +")
+
+    if damage == 'Descripción':
+        damage = None
+
+    return damage
+
+def clean_cost(cost):
+    cost = cost.strip().replace("  "," ")
+    match cost:
+        case 'A Voluntad':
+            cost = 'A voluntad'
+
+    return cost
 
 def clean_sex(sex):
     match sex:

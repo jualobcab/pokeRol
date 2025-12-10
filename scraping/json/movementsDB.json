@@ -151,7 +151,7 @@
             "range": "Linea (30 m, 1 m)",
             "cost": "6 PP",
             "associated_stats": "FUE, AGI y MEN",
-            "damage": "8d8+ 2 × EST",
+            "damage": "8d8 + 2 × EST",
             "description": "Lanzas un rayo de aire a muy alta velocidad en una línea de 30 metros de longitud y 1 metro de radio, las criaturas en el área deben hacer una Tirada de Salvación de AGI. Un objetivo recibe daño, es empujado 4 metros y queda tumbado si falla la Salvación o recibe la mitad del daño si la pasa."
         },
         {
@@ -1216,7 +1216,7 @@
             "type": 4,
             "action": "Acción",
             "range": "5 m",
-            "cost": "1  PP",
+            "cost": "1 PP",
             "associated_stats": "FUE, AGI y MEN",
             "damage": "1d6 + EST",
             "description": "Lanzas carámbanos contra una criatura. Haz una Tirada de Ataque a rango contra la criatura. Si golpea, el objetivo recibe daño y, si la Tirada Natural fue de 10+, vuelve a atacar de la misma forma. Repite este proceso hasta que falles, saques menos de 10 en la Tirada Natural de una Tirada de Ataque o des 4 golpes."
@@ -2406,7 +2406,7 @@
             "range": "5 m",
             "cost": "Todos tus PP, 1 / Día",
             "associated_stats": "ESP",
-            "damage": "Legendario",
+            "damage": null,
             "description": "Haces a la luna para pedirle un favor que pagas con tu salud. Tus PV se reducen a 0. Una criatura recupera una cantidad de PV igual a tu nivel de d12 y recupera tantos PP como gastaste para lanzar este movimiento más tu ESP."
         },
         {
@@ -2934,7 +2934,7 @@
             "range": "Radio (10 m)",
             "cost": "4 PP, 1 / Escena",
             "associated_stats": null,
-            "damage": "Clima",
+            "damage": null,
             "description": "Hasta el final de la Escena, despejas el cielo sobre un radio de 10 metros a tu alrededor y, si es de día, creas un clima de Sol Abrasador."
         },
         {
@@ -3066,7 +3066,7 @@
             "range": "5 m",
             "cost": "3 PP",
             "associated_stats": "MEN",
-            "damage": "Descripción",
+            "damage": null,
             "description": "Tu y otra criatura compartís vuestro dolor. La criatura hace una Tirada de Salvación de ESP. Si la falla, calcula la diferencia entre vuestros PV. El que mas PV tenga pierde la mitad de esa diferencia y el que menos PV tenga recupera esa misma cantidad. Este movimiento no puede hacer que se pierda una cantidad de PV superior a 5 veces tu Nivel."
         },
         {
@@ -3209,7 +3209,7 @@
             "range": "10 m",
             "cost": "4 PP",
             "associated_stats": "FUE, AGI y MEN",
-            "damage": "5d10 + 2  × EST",
+            "damage": "5d10 + 2 × EST",
             "description": "Lanzas un rayo de energía contra una criatura. Haz una Tirada de Ataque a rango contra la criatura. Si golpea, la criatura recibe daño. Si tienes menos de la mitad de tus PV, añade un dado al daño base. Si tienes menos del 10%, añade otro dado más al daño base."
         },
         {
@@ -3273,7 +3273,7 @@
             "type": 6,
             "action": "Acción",
             "range": "Radio (2 m)",
-            "cost": "A Voluntad",
+            "cost": "A voluntad",
             "associated_stats": "FUE, AGI y MEN",
             "damage": "1d6 + EST",
             "description": "Generas una serie de púas que saltan hacia todas las criaturas en un radio a 2 metros de ti. Todas las criaturas en ese área hacen una Tirada de Salvación de AGI. Si la fallan reciben daño."
@@ -3297,7 +3297,7 @@
             "range": "Sobre ti",
             "cost": "4 PP",
             "associated_stats": null,
-            "damage": "Potenciación",
+            "damage": null,
             "description": "Realizas una danza extravagante y peligrosa con la que sacrificas tu integridad física para mejorar tus sentidos y habilidades. Pierdes 1/3 de tus PV máximos de vida a cambio de entrar en un estado de pelea mejorada. Hasta el final de la Escena, añades dos dados al daño base de todos tus Movimientos, haces tus Tiradas de ataque en Ventaja y tu Evasión aumenta en 2."
         },
         {
@@ -4848,7 +4848,7 @@
             "range": "5 m",
             "cost": "4 PP",
             "associated_stats": "MEN y PRE",
-            "damage": "Descripción",
+            "damage": null,
             "description": "Cuando te hacen daño con un Movimiento y este daño te debilita, te intentas llevar a alguien contigo. La criatura hace una Tirada de Salvación de ESP. Si la falla, este Movimiento le hace una cantidad daño igual al daño que te ha hecho caer insconsciente."
         },
         {
@@ -7904,7 +7904,7 @@
             "type": 13,
             "action": "Acción",
             "range": "Cono (2 m)",
-            "cost": "A Voluntad",
+            "cost": "A voluntad",
             "associated_stats": "FUE, AGI y MEN",
             "damage": "1d6 + EST",
             "description": "Imbuyes el viento con energía faerica y lo usas para atacar a las criaturas en un cono de 2 metros de largo. Las criaturas en el área hacen una Tirada de Salvación de RES, recibiendo daño si la fallan y, si además la Tirada Natural es de 1, ganan 1 Nivel de Infatuación de ti,"
@@ -7992,7 +7992,7 @@
             "type": 13,
             "action": "Acción",
             "range": "Cono (2 m)",
-            "cost": "A Voluntad",
+            "cost": "A voluntad",
             "associated_stats": "MEN y PRE",
             "damage": "1d6 + EST",
             "description": "Cautivas con tu voz a las criaturas en un cono de 2 metros de largo. Las criaturas en el área hacen una Tirada de Salvación de ESP, recibiendo daño si la fallan y, si además la Tirada Natural es de 1, ganan 1 Nivel de Infatuación de ti."
