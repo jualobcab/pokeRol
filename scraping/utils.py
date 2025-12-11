@@ -126,10 +126,7 @@ def parse_habitats(habitats):
             case "" | "???":
                 habitat = "Desconocido"
 
-            case "Rio":
-                habitat = "Ríos"
-            
-            case "Río":
+            case "Rio" | "Río":
                 habitat = "Ríos"
 
             case "Ruina":
