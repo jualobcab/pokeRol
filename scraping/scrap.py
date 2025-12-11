@@ -115,7 +115,7 @@ def scrap_pokedex(urlBase, urlPokedex):
                 secondaryInfo[siName] = siValue
 
 
-            #TODO: movimientos
+            # movimientos
             pkmMovements = info.select_one(".moves-container")
             pkmMovementsTables = pkmMovements.findAll("table",class_="moves-table")
 

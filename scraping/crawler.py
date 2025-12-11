@@ -12,14 +12,17 @@ urlTypes = "tablatipos"
 urlAbilities = "habilidades"
 urlMovements = "movimientos"
 
+jsonItems = './json/items.json'
+
 createDB.initialice()
 
 if modeDevelop:
-    dbUtils.load_all_db_dicts()
-    pokemons = utils.load_json("./json/pokemons.json")
-
-    print("inserting pokemon")
-    dbUtils.insertPokemons(pokemons)
+    #TODO: items
+    print("scraping items")
+    items = scrap.scrap_items(jsonItems)
+    print("inserting items")
+    dbUtils.insertItems(items)
+    print("==============================================")
 
 elif not modeJSON:
     print("scraping types")

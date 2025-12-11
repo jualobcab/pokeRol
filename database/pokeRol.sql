@@ -40,6 +40,8 @@ CREATE TABLE IF NOT EXISTS pokemons (
     capture_rate INTEGER NOT NULL,
     diet TEXT,
     sex TEXT,
+    sex_differences INTEGER NOT NULL DEFAULT 0,
+    different_forms INTEGER NOT NULL DEFAULT 0,
     FOREIGN KEY(size_id) REFERENCES sizes(id)
 );
 
@@ -170,8 +172,14 @@ CREATE TABLE IF NOT EXISTS pokemon_habitats (
 CREATE TABLE IF NOT EXISTS items (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT UNIQUE NOT NULL,
-    type TEXT NOT NULL,
-    rarity TEXT NOT NULL,
+    type INTEGER NOT NULL,
+    rarity TEXT CHECK(rarity IN ('Común', 'Poco común', 'Raro', 'Muy raro', 'Insólito')) NOT NULL,
     cost INTEGER,
-    description TEXT NOT NULL
+    description TEXT NOT NULL,
+    FOREIGN KEY(type) REFERENCES item_types(item_id)
+);
+
+CREATE TABLE IF NOT EXISTS item_types (
+    item_id INTEGER PRIMARY KEY,
+    name TEXT UNIQUE NOT NULL    
 );
