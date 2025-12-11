@@ -38,6 +38,11 @@ public class MainGridButtons : MonoBehaviour
                 }
             }
 
+            Transform imgTransform = btnObj.transform.Find("PokemonImg");
+            Image img = imgTransform.GetComponent<Image>();
+            string imgRoute = "Images/PokemonSprites/"+pokemon.id;
+            img.sprite = Resources.Load<Sprite>(imgRoute);
+
             // Evento del botón
             btn.GetComponent<PokemonButtonActions>().Initialize(pokemon);
             btn.onClick.AddListener(() => btn.GetComponent<PokemonButtonActions>().ShowDetail());

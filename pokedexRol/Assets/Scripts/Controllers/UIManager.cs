@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     [Header("TypesPanel")] 
     public Transform typesPanel;
     public GameObject typePrefab;
+    public Sprite[] typeBadges;
 
     void Awake()
     {
@@ -63,11 +64,11 @@ public class UIManager : MonoBehaviour
             // Obtener referencia al script del prefab
             var buttonItem = btnObj.GetComponent<TypeButton>();
             // Determinar color según el texto
-            Color color = GetColorForValue(type.name);
+            //Color color = GetColorForValue(type.name);
             Color textColor = GetTextColorForValue(type.name);
 
             // Inicializar
-            buttonItem.Setup(type.name, textColor, color);
+            buttonItem.Setup(type.name, textColor, GetSpriteForValue(type.name));
         }
 
         StartCoroutine(AnimatePanels(mainPanel, detailsPanel));
@@ -110,6 +111,32 @@ public class UIManager : MonoBehaviour
         from.SetActive(false);
     }
 
+    private Sprite GetSpriteForValue(string value)
+    {
+        switch (value)
+        {
+            case "Acero": return typeBadges[0];
+            case "Agua": return typeBadges[1];
+            case "Bicho": return typeBadges[2];
+            case "Dragón": return typeBadges[3];
+            case "Eléctrico": return typeBadges[4];
+            case "Fantasma": return typeBadges[5];
+            case "Fuego": return typeBadges[6];
+            case "Hada": return typeBadges[7];
+            case "Hielo": return typeBadges[8];
+            case "Lucha": return typeBadges[9];
+            case "Normal": return typeBadges[10];
+            case "Planta": return typeBadges[11];
+            case "Psíquico": return typeBadges[12];
+            case "Roca": return typeBadges[13];
+            case "Siniestro": return typeBadges[14];
+            case "Tierra": return typeBadges[15];
+            case "Veneno": return typeBadges[16];
+            case "Volador": return typeBadges[17];
+            default: return typeBadges[10];
+        }
+    }
+
     private Color GetColorForValue(string value)
     {
         switch (value)
@@ -140,7 +167,7 @@ public class UIManager : MonoBehaviour
     {
         switch (value)
         {
-            default: return Color.white;
+            default: return HexToColor("#FFFFFF00");
         }
     }
     

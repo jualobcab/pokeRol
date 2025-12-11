@@ -7,10 +7,10 @@ public class TypeButton : MonoBehaviour
     public TMP_Text label;
     public Image background;
 
-    public void Setup(string texto, Color textColor, Color color)
+    public void Setup(string texto, Color textColor, Sprite sprite)
     {
         label.text = texto;
         label.color = textColor;
-        background.color = color;
+        background.sprite = sprite;
     }
 }
