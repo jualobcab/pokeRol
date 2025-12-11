@@ -116,6 +116,28 @@ def scrap_pokedex(urlBase, urlPokedex):
 
 
             #TODO: movimientos
+            pkmMovements = info.select_one(".moves-container")
+            pkmMovementsTables = pkmMovements.findAll("table",class_="moves-table")
+
+            # movimientos por nivel
+            pkmMovesetPerLevel = pkmMovementsTables[0]
+            movesetPerLevel = []
+            for row in pkmMovesetPerLevel.select_one("tbody").findAll("tr"):
+                level = int(row.select_one(".level-cell").text.strip())
+                movements = utils.parse_movements_pokemon([span.text.strip() for span in row.find_all("span", class_="move-name")])
+                
+                movesetPerLevel.append({
+                    'level': level,
+                    'movements': movements
+                })
+
+            # movimientos enseñables
+            pkmLearnset = []
+            if pkmName == 'Mew':
+                learnset = utils.parse_movements_pokemon_mew()
+            else: 
+                pkmLearnset = pkmMovementsTables[1]
+                learnset = utils.parse_movements_pokemon([span.text.strip() for span in pkmLearnset.find_all("span", class_="move-name")])
 
 
             pokemon = {
@@ -130,7 +152,9 @@ def scrap_pokedex(urlBase, urlPokedex):
                 "stats":stats,
                 "abilities":abilities,
                 "hiddenAbilities":hiddenAbilities,
-                "secondaryInfo":secondaryInfo
+                "secondaryInfo":secondaryInfo,
+                "movesetPerLevel": movesetPerLevel,
+                "learnset": learnset
             }
 
             results.append(pokemon)

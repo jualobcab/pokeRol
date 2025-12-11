@@ -231,6 +231,17 @@ def addTag(tags,tag):
 
     return tags 
 
+def parse_movements_pokemon(movements):
+    res = []
+
+    for move in movements:
+        res.append(dbUtils.movementsDB[move])
+
+    return res
+
+def parse_movements_pokemon_mew():
+    return dbUtils.getLearnsetMew()
+
 def clean_damage(damage):
     damage = damage.replace("  "," ")
 

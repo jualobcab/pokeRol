@@ -94,7 +94,7 @@ def insert_all_dbs():
     insert_dict_into_table("senses", sensesDB)
     insert_dict_into_table("abilities", abilitiesDB)
     insert_dict_into_table("tags", tagsDB)
-    #insert_dict_into_table("movements", movementsDB)
+    insert_dict_into_table("movements", movementsDB)
 
     print("[OK] Todos los diccionarios han sido insertados y actualizados.")
 
@@ -250,6 +250,12 @@ def insertMovements(movements):
     for id, name, type_id, action, range, cost, associated_stats, damage, description in rows:
         movementsDB[name] = id
 
+        cursor.execute("SELECT tag_id, movement_id FROM movement_tags where movement_id=?", (id,))
+        tags = []
+        rowTags = cursor.fetchall()
+        for tag_id,movement_id in rowTags:
+            tags.append(tag_id)
+
         movementsDB['dataDB'].append({
             'id': id,
             'name': name,
@@ -260,6 +266,7 @@ def insertMovements(movements):
             'associated_stats': associated_stats,
             'damage': damage,
             'description': description,
+            'tag': tags
             })
 
     conn.close()
@@ -472,7 +479,44 @@ def insertPokemons(pokemons):
                     VALUES (?, ?)
                 """, (pokemon_id,sensesDB['Ninguno']))
 
+        # movements per level
+        if pokemon.get('movesetPerLevel'):
+            for moveset in pokemon['movesetPerLevel']:
+                for move in moveset['movements']:
+                    cursor.execute("""
+                        INSERT OR REPLACE INTO moveset_per_level (
+                            pokemon_id, movement_id, level
+                        )
+                        VALUES (?, ?, ?)
+                    """, (pokemon_id,move,moveset['level']))
+        
+        # movements per level
+        if pokemon.get('learnset'):
+            for move in pokemon['learnset']:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO learnset (
+                        pokemon_id, movement_id
+                    )
+                    VALUES (?, ?)
+                """, (pokemon_id,move))
 
     conn.commit()
 
     conn.close()
+
+
+def getLearnsetMew():
+    learnset = []
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    cursor.execute("select m.id as 'id', m.name as 'name' from movements m, movement_tags mt, tags t where m.id=mt.movement_id and mt.tag_id=t.id and t.name is not 'Legendario'")
+    rows = cursor.fetchall()
+
+    for id,name in rows:
+        learnset.append(id)
+
+    conn.commit()
+    conn.close()
+
+    return learnset
