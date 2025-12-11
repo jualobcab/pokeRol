@@ -122,9 +122,34 @@ def parse_habitats(habitats):
     for habitat in habitats:
         habitat = clean_string(habitat)
 
-        if habitat == "" or habitat == "???":
-            habitat = "Desconocido"
+        match habitat:
+            case "" | "???":
+                habitat = "Desconocido"
 
+            case "Río":
+                habitat = "Ríos"
+            
+            case "Ruina":
+                habitat = "Ruinas"
+            
+            case "Playa arenosa":
+                habitat = "Playa"
+            
+            case "Lugar malidto":
+                habitat = "Lugar maldito"
+            
+            case "Espacio":
+                habitat = "Espacio exterior"
+            
+            case "Cueva":
+                habitat = "Cuevas"
+            
+            case "Cualquier":
+                habitat = "Cualquiera"
+            
+            case "Bosque":
+                habitat = "Bosques"
+        
         if habitat not in dbUtils.habitatsDB:
             dbUtils.insertHabitat(habitat)
 
