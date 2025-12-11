@@ -58356,7 +58356,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                32
+                23
             ]
         },
         "movesetPerLevel": [
@@ -65497,7 +65497,7 @@
             "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
-                33,
+                12,
                 11
             ]
         },
@@ -65649,7 +65649,7 @@
             "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
-                33,
+                12,
                 11
             ]
         },
@@ -67107,7 +67107,7 @@
             "sex": "M/H",
             "habitats": [
                 1,
-                34
+                19
             ],
             "senses": [
                 {
@@ -74740,7 +74740,7 @@
             "sex": "M/H",
             "habitats": [
                 2,
-                35
+                32
             ]
         },
         "movesetPerLevel": [
@@ -75326,7 +75326,7 @@
             "sex": "M/H",
             "habitats": [
                 2,
-                35
+                32
             ]
         },
         "movesetPerLevel": [
@@ -78715,7 +78715,7 @@
             "habitats": [
                 16,
                 2,
-                36
+                33
             ],
             "senses": [
                 {
@@ -78891,7 +78891,7 @@
             "habitats": [
                 16,
                 2,
-                36
+                33
             ],
             "senses": [
                 {
@@ -81487,7 +81487,7 @@
             "sex": "M/H",
             "habitats": [
                 1,
-                37
+                34
             ]
         },
         "movesetPerLevel": [
@@ -82387,7 +82387,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                38
+                35
             ],
             "senses": [
                 {
@@ -82539,7 +82539,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                38
+                35
             ],
             "senses": [
                 {
@@ -82730,7 +82730,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                38
+                35
             ],
             "senses": [
                 {
@@ -82925,7 +82925,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                39
+                36
             ]
         },
         "movesetPerLevel": [
@@ -83078,7 +83078,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                39
+                36
             ]
         },
         "movesetPerLevel": [
@@ -83243,7 +83243,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                39
+                36
             ]
         },
         "movesetPerLevel": [
@@ -85638,7 +85638,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -85839,7 +85839,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -86034,7 +86034,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -87542,7 +87542,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                40
+                37
             ],
             "senses": [
                 {
@@ -87773,7 +87773,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                40
+                37
             ],
             "senses": [
                 {
@@ -87999,7 +87999,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                41
+                38
             ]
         },
         "movesetPerLevel": [
@@ -88217,7 +88217,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                41
+                38
             ]
         },
         "movesetPerLevel": [
@@ -88655,7 +88655,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                42
+                39
             ]
         },
         "movesetPerLevel": [
@@ -90110,7 +90110,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                43
+                40
             ],
             "senses": [
                 {
@@ -90286,7 +90286,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                43
+                40
             ],
             "senses": [
                 {
@@ -90484,7 +90484,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                43
+                40
             ],
             "senses": [
                 {
@@ -96001,7 +96001,7 @@
             "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
-                44
+                41
             ],
             "senses": [
                 {
@@ -96176,7 +96176,7 @@
             "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
-                44
+                41
             ],
             "senses": [
                 {
@@ -98263,7 +98263,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                45
+                33
             ]
         },
         "movesetPerLevel": [
@@ -98427,7 +98427,7 @@
             "diet": "???",
             "sex": "M/H",
             "habitats": [
-                45
+                33
             ]
         },
         "movesetPerLevel": [
@@ -99016,7 +99016,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                37,
+                34,
                 1
             ]
         },
@@ -99384,7 +99384,7 @@
             "sex": "M/H",
             "habitats": [
                 9,
-                37
+                34
             ],
             "senses": [
                 {
@@ -99561,7 +99561,7 @@
             "sex": "M/H",
             "habitats": [
                 9,
-                37
+                34
             ],
             "senses": [
                 {
@@ -99744,7 +99744,7 @@
             "sex": "M/H",
             "habitats": [
                 9,
-                37
+                34
             ],
             "senses": [
                 {
@@ -99959,7 +99959,7 @@
             "sex": "M/H",
             "habitats": [
                 9,
-                37
+                34
             ],
             "senses": [
                 {
@@ -102158,7 +102158,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                46,
+                42,
                 28
             ]
         },
@@ -102792,7 +102792,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                38
+                35
             ]
         },
         "movesetPerLevel": [
@@ -102954,7 +102954,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                38
+                35
             ]
         },
         "movesetPerLevel": [
@@ -103156,7 +103156,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                38
+                35
             ]
         },
         "movesetPerLevel": [
@@ -107104,7 +107104,7 @@
             "diet": "Carnívoro",
             "sex": "H",
             "habitats": [
-                38
+                35
             ],
             "senses": [
                 {
@@ -109210,7 +109210,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                36
+                33
             ]
         },
         "movesetPerLevel": [
@@ -123899,7 +123899,7 @@
             "diet": "???",
             "sex": "M/H",
             "habitats": [
-                36
+                33
             ]
         },
         "movesetPerLevel": [
@@ -124082,7 +124082,7 @@
             "diet": "???",
             "sex": "M/H",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -124246,7 +124246,7 @@
             "diet": "???",
             "sex": "M/H",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -124419,7 +124419,7 @@
             "diet": "???",
             "sex": "M/H",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -127340,7 +127340,7 @@
             "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
-                32
+                23
             ]
         },
         "movesetPerLevel": [
@@ -127496,7 +127496,7 @@
             "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
-                32
+                23
             ]
         },
         "movesetPerLevel": [
@@ -127658,7 +127658,7 @@
             "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
-                32
+                23
             ]
         },
         "movesetPerLevel": [
@@ -128190,7 +128190,7 @@
             "diet": "Agua",
             "sex": "M/H",
             "habitats": [
-                47
+                43
             ]
         },
         "movesetPerLevel": [
@@ -128321,7 +128321,7 @@
             "diet": "Agua",
             "sex": "M/H",
             "habitats": [
-                47
+                43
             ]
         },
         "movesetPerLevel": [
@@ -128464,7 +128464,7 @@
             "diet": "Agua",
             "sex": "M/H",
             "habitats": [
-                47
+                43
             ]
         },
         "movesetPerLevel": [
@@ -130963,7 +130963,7 @@
             "sex": "???",
             "habitats": [
                 9,
-                45,
+                33,
                 10
             ],
             "senses": [
@@ -131112,7 +131112,7 @@
             "sex": "???",
             "habitats": [
                 9,
-                45,
+                33,
                 10
             ],
             "senses": [
@@ -131264,7 +131264,7 @@
             "sex": "???",
             "habitats": [
                 9,
-                45,
+                33,
                 10
             ],
             "senses": [
@@ -131443,7 +131443,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                48,
+                44,
                 15
             ],
             "senses": [
@@ -131542,7 +131542,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                48,
+                44,
                 15
             ],
             "senses": [
@@ -131711,7 +131711,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                48,
+                44,
                 15
             ],
             "senses": [
@@ -133373,7 +133373,7 @@
             "sex": "M/H",
             "habitats": [
                 9,
-                49
+                45
             ]
         },
         "movesetPerLevel": [
@@ -133560,7 +133560,7 @@
             "sex": "M/H",
             "habitats": [
                 9,
-                49
+                45
             ]
         },
         "movesetPerLevel": [
@@ -133768,7 +133768,7 @@
             "sex": "???",
             "habitats": [
                 9,
-                49
+                45
             ]
         },
         "movesetPerLevel": [
@@ -134995,7 +134995,7 @@
             "sex": "M/H",
             "habitats": [
                 9,
-                45
+                33
             ],
             "senses": [
                 {
@@ -135193,7 +135193,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -135394,7 +135394,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -147085,7 +147085,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                36,
+                33,
                 19
             ],
             "senses": [
@@ -147232,7 +147232,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                36,
+                33,
                 19
             ],
             "senses": [
@@ -147395,7 +147395,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                36,
+                33,
                 19
             ],
             "senses": [
@@ -153324,7 +153324,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                50
+                46
             ]
         },
         "movesetPerLevel": [
@@ -153473,8 +153473,8 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                50,
-                51
+                46,
+                47
             ]
         },
         "movesetPerLevel": [
@@ -153656,7 +153656,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                50
+                46
             ]
         },
         "movesetPerLevel": [
@@ -154584,7 +154584,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                52
+                9
             ],
             "senses": [
                 {
@@ -154759,7 +154759,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                32
+                23
             ]
         },
         "movesetPerLevel": [
@@ -154815,7 +154815,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                52
+                9
             ],
             "senses": [
                 {
@@ -155003,7 +155003,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                32
+                23
             ]
         },
         "movesetPerLevel": [
@@ -155147,7 +155147,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                52
+                9
             ],
             "senses": [
                 {
@@ -155349,7 +155349,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                52
+                9
             ],
             "senses": [
                 {
@@ -159479,7 +159479,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                50
+                46
             ]
         },
         "movesetPerLevel": [
@@ -164075,7 +164075,7 @@
             "diet": "Herbívoro",
             "sex": "M/H",
             "habitats": [
-                53
+                48
             ]
         },
         "movesetPerLevel": [
@@ -164659,7 +164659,7 @@
             "sex": "M/H",
             "habitats": [
                 3,
-                54
+                49
             ]
         },
         "movesetPerLevel": [
@@ -164733,7 +164733,7 @@
             "sex": "M/H",
             "habitats": [
                 3,
-                54
+                49
             ]
         },
         "movesetPerLevel": [
@@ -164931,7 +164931,7 @@
             "diet": "Arena",
             "sex": "M/H",
             "habitats": [
-                55
+                5
             ]
         },
         "movesetPerLevel": [
@@ -165109,7 +165109,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                55
+                5
             ]
         },
         "movesetPerLevel": [
@@ -165783,7 +165783,7 @@
             "diet": "Partículas del aire",
             "sex": "???",
             "habitats": [
-                56
+                50
             ]
         },
         "movesetPerLevel": [
@@ -167105,7 +167105,7 @@
             "sex": "???",
             "habitats": [
                 15,
-                57
+                51
             ]
         },
         "movesetPerLevel": [
@@ -167862,7 +167862,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                58
+                52
             ]
         },
         "movesetPerLevel": [
@@ -168054,7 +168054,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                59
+                53
             ]
         },
         "movesetPerLevel": [
@@ -168248,7 +168248,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                60
+                54
             ]
         },
         "movesetPerLevel": [
@@ -168453,7 +168453,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                61
+                55
             ]
         },
         "movesetPerLevel": [
@@ -168641,7 +168641,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -168701,7 +168701,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -168777,7 +168777,7 @@
             "diet": "Omnívoro",
             "sex": "M",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -168980,7 +168980,7 @@
             "diet": "Omnívoro",
             "sex": "H",
             "habitats": [
-                62
+                56
             ],
             "senses": [
                 {
@@ -169186,7 +169186,7 @@
             "diet": "Carnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -169376,7 +169376,7 @@
             "diet": "Carnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -169558,7 +169558,7 @@
             "diet": "Carnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -169736,7 +169736,7 @@
             "diet": "Electricidad",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -169919,7 +169919,7 @@
             "diet": "Herbívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -170107,7 +170107,7 @@
             "diet": "Carnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -170268,7 +170268,7 @@
             "diet": "Carnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -170461,7 +170461,7 @@
             "diet": "Energía",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -170657,7 +170657,7 @@
             "diet": "Energía",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -170857,7 +170857,7 @@
             "diet": "Energía",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -171053,7 +171053,7 @@
             "diet": "Energía",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -171246,7 +171246,7 @@
             "diet": "Energía",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -171669,7 +171669,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -171827,7 +171827,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -172018,7 +172018,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ]
         },
         "movesetPerLevel": [
@@ -172197,7 +172197,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                62
+                56
             ],
             "senses": [
                 {
@@ -182190,7 +182190,7 @@
             "diet": "???",
             "sex": "M/H",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -183280,7 +183280,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                36
+                33
             ]
         },
         "movesetPerLevel": [
@@ -183452,7 +183452,7 @@
             "sex": "M/H",
             "habitats": [
                 26,
-                63
+                57
             ]
         },
         "movesetPerLevel": [
@@ -186870,7 +186870,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                64
+                39
             ]
         },
         "movesetPerLevel": [
@@ -187037,7 +187037,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                64
+                39
             ]
         },
         "movesetPerLevel": [
@@ -187202,7 +187202,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                65
+                1
             ]
         },
         "movesetPerLevel": [
@@ -187363,7 +187363,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                65
+                1
             ]
         },
         "movesetPerLevel": [
@@ -187556,7 +187556,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                65
+                1
             ]
         },
         "movesetPerLevel": [
@@ -187748,7 +187748,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                65
+                1
             ]
         },
         "movesetPerLevel": [
@@ -187945,7 +187945,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -188120,7 +188120,7 @@
             "diet": "???",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -190092,7 +190092,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                66
+                58
             ]
         },
         "movesetPerLevel": [
@@ -199332,7 +199332,7 @@
             "sex": "M/H",
             "habitats": [
                 2,
-                36
+                33
             ],
             "senses": [
                 {
@@ -199484,7 +199484,7 @@
             "sex": "M/H",
             "habitats": [
                 2,
-                36
+                33
             ],
             "senses": [
                 {
@@ -199638,7 +199638,7 @@
             "sex": "M/H",
             "habitats": [
                 2,
-                36
+                33
             ],
             "senses": [
                 {
@@ -202422,7 +202422,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                38
+                35
             ],
             "senses": [
                 {
@@ -202581,7 +202581,7 @@
             "diet": "Omnívoro",
             "sex": "M/H",
             "habitats": [
-                38
+                35
             ],
             "senses": [
                 {
@@ -206573,7 +206573,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                67
+                59
             ],
             "senses": [
                 {
@@ -206711,7 +206711,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                67
+                59
             ],
             "senses": [
                 {
@@ -206849,7 +206849,7 @@
             "diet": "Carnívoro",
             "sex": "M/H",
             "habitats": [
-                67
+                59
             ],
             "senses": [
                 {
@@ -207036,7 +207036,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -207128,7 +207128,7 @@
             "diet": "Omnívoro",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -207310,7 +207310,7 @@
             "diet": "Energía vital",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -207503,7 +207503,7 @@
             "diet": "Energía vital",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -207687,7 +207687,7 @@
             "diet": "Energía vital",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
@@ -207879,7 +207879,7 @@
             "diet": "Energía vital",
             "sex": "???",
             "habitats": [
-                36
+                33
             ],
             "senses": [
                 {
