@@ -218,6 +218,12 @@ def parse_sense(value):
 
     return senses
 
+def parse_typeItem(type):
+    if type not in dbUtils.itemTypesDB:
+        dbUtils.insertItemType(type)
+    
+    return dbUtils.itemTypesDB[type]
+
 def parse_tag(tag):
     tags = []
 
@@ -373,6 +379,17 @@ def prepare_movements_for_db(movement):
             movement["description"]
         )
 
+def prepare_items_for_db(items):
+    return [
+        (
+            item["name"],
+            int(item["type"]),
+            item["rarity"],
+            item["cost"],
+            item["description"]
+        )
+        for item in items
+    ]
 
 ################################################
 ## others

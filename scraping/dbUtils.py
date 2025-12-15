@@ -12,6 +12,8 @@ sensesDB = {}
 abilitiesDB = {"dataDB":[]}
 tagsDB = {}
 movementsDB = {"dataDB":[]}
+itemTypesDB = {}
+itemsDB = []
 
 DB_FILES = {
     "typesDB": "./json/typesDB.json",
@@ -22,7 +24,9 @@ DB_FILES = {
     "sensesDB": "./json/sensesDB.json",
     "abilitiesDB": "./json/abilitiesDB.json",
     "tagsDB": "./json/tagsDB.json",
-    "movementsDB": "./json/movementsDB.json"
+    "movementsDB": "./json/movementsDB.json",
+    "itemTypesDB": "./json/itemTypesDB.json",
+    "itemsDB": "./json/itemsDB.json"
 }
 
 def save_all_db_dicts():
@@ -35,6 +39,8 @@ def save_all_db_dicts():
     global abilitiesDB
     global tagsDB
     global movementsDB
+    global itemTypesDB
+    global itemsDB
 
     data_map = {
         "typesDB": typesDB,
@@ -45,7 +51,9 @@ def save_all_db_dicts():
         "sensesDB": sensesDB,
         "abilitiesDB": abilitiesDB,
         "tagsDB": tagsDB,
-        "movementsDB": movementsDB
+        "movementsDB": movementsDB,
+        "itemTypesDB": itemTypesDB,
+        "itemsDB": itemsDB
     }
 
     for key, filename in DB_FILES.items():
@@ -80,11 +88,15 @@ def load_all_db_dicts():
     tagsDB = results["tagsDB"]
     global movementsDB
     movementsDB = results["movementsDB"]
+    global itemTypesDB
+    itemTypesDB = results["itemTypesDB"]
+    global itemsDB
+    itemsDB = results["itemsDB"]
 
     insert_all_dbs()
 
 def insert_all_dbs():
-    global typesDB, sizesDB, habitatsDB, environmentsDB, proficienciesDB, sensesDB, abilitiesDB, tagsDB, movementsDB
+    global typesDB, sizesDB, habitatsDB, environmentsDB, proficienciesDB, sensesDB, abilitiesDB, tagsDB, movementsDB, itemTypesDB, itemsDB
 
     insert_dict_into_table("types", typesDB)
     insert_dict_into_table("sizes", sizesDB)
@@ -95,6 +107,8 @@ def insert_all_dbs():
     insert_dict_into_table("abilities", abilitiesDB)
     insert_dict_into_table("tags", tagsDB)
     insert_dict_into_table("movements", movementsDB)
+    insert_dict_into_table("item_types", itemTypesDB)
+    insert_dict_into_table("items", itemsDB)
 
     print("[OK] Todos los diccionarios han sido insertados y actualizados.")
 
@@ -142,7 +156,18 @@ def insert_dict_into_table(table, data_dict):
                         )
                         VALUES (?, ?)
                     """, (movement_id,tag_id))
+    elif table == 'items':
+        # Preparar datos para executemany
+        itemsPrepared = utils.prepare_items_for_db(data_dict)
 
+        cursor.executemany(
+            """
+            INSERT OR IGNORE INTO items
+            (name, type, rarity, cost, description)
+            VALUES (?, ?, ?, ?, ?)
+            """,
+            itemsPrepared
+        )
     else:
         # Insertar todos los nombres sin duplicar
         cursor.executemany(
@@ -151,6 +176,61 @@ def insert_dict_into_table(table, data_dict):
         )
 
     conn.commit()
+    conn.close()
+
+def insertItemType(type):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "INSERT INTO item_types (name) VALUES (?)",
+        (type,)
+    )
+
+    conn.commit()
+
+    type_id = cursor.lastrowid
+
+    # Guardar en el diccionario
+    global itemTypesDB
+    itemTypesDB[type]= type_id
+
+    conn.close()
+
+def insertItems(items):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    # Preparar datos para executemany
+    itemsPrepared = utils.prepare_items_for_db(items)
+    print(itemsPrepared)
+
+    cursor.executemany(
+        """
+        INSERT OR IGNORE INTO items
+        (name, type, rarity, cost, description)
+        VALUES (?, ?, ?, ?, ?)
+        """,
+        itemsPrepared
+    )
+
+    conn.commit()
+
+    # Recargar IDs desde la tabla
+    cursor.execute("SELECT id, name, type, rarity, cost, description FROM items")
+    rows = cursor.fetchall()
+
+    global itemsDB
+    for id, name, type, rarity, cost, description in rows:
+        itemsDB.append({
+            'id': id,
+            'name': name,
+            'type': type,
+            'rarity': rarity,
+            'cost': cost,
+            'description': description
+            })
+
     conn.close()
 
 def insertTypes(types):

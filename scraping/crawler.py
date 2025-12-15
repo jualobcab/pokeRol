@@ -17,11 +17,13 @@ jsonItems = './json/items.json'
 createDB.initialice()
 
 if modeDevelop:
-    #TODO: items
-    print("scraping items")
-    items = scrap.scrap_items(jsonItems)
-    print("inserting items")
-    dbUtils.insertItems(items)
+    dbUtils.load_all_db_dicts()
+    dbUtils.save_all_db_dicts()
+
+    pokemons = utils.load_json("./json/pokemons.json")
+
+    print("inserting pokemon")
+    dbUtils.insertPokemons(pokemons)
     print("==============================================")
 
 elif not modeJSON:
@@ -41,6 +43,12 @@ elif not modeJSON:
     movements = scrap.scrap_movements(urlBase, urlMovements)
     print("inserting movements")
     dbUtils.insertMovements(movements)
+    print("==============================================")
+
+    print("scraping items")
+    items = scrap.scrap_items(jsonItems)
+    print("inserting items")
+    dbUtils.insertItems(items)
     print("==============================================")
 
     print("scraping pokemon")

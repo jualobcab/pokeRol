@@ -1,0 +1,1346 @@
+[
+    {
+        "id": 3,
+        "name": "Ultra Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1200",
+        "description": "Obtienes un bono de +6 a la Tirada de Lanzar Poké Ball."
+    },
+    {
+        "id": 4,
+        "name": "Aero Ball",
+        "type": 1,
+        "rarity": "Muy raro",
+        "cost": "2000",
+        "description": "La distancia a la que puedes Lanzar una Poké Ball es el cuádruple de la normal. Además, obtienes un bono de +4 a la tirada de Lanzar esta Poké Ball."
+    },
+    {
+        "id": 7,
+        "name": "Gloria Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "5000",
+        "description": "Es igual que una Poké Ball, pero mucho más rara."
+    },
+    {
+        "id": 9,
+        "name": "Parque Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "5000",
+        "description": "Es igual que una Poké Ball, pero te la regalan en algunos safaris."
+    },
+    {
+        "id": 12,
+        "name": "Ala Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "La distancia a la que puedes Lanzar una Poké Ball es el triple de la normal. Además, obtienes un bono de +2 a la tirada de Lanzar esta Poké Ball."
+    },
+    {
+        "id": 14,
+        "name": "Acopio Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon de una especie que ya has capturado con anterioridad."
+    },
+    {
+        "id": 15,
+        "name": "Amor Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon que está infatuado."
+    },
+    {
+        "id": 16,
+        "name": "Buceo Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon que está en el agua."
+    },
+    {
+        "id": 17,
+        "name": "Cebo Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon que está en el agua."
+    },
+    {
+        "id": 18,
+        "name": "Ensueño Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon que está dormida."
+    },
+    {
+        "id": 19,
+        "name": "Luna Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es de noche."
+    },
+    {
+        "id": 20,
+        "name": "Malla Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon de Tipo Agua o Bicho."
+    },
+    {
+        "id": 21,
+        "name": "Nido Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon de nivel 5 o menos."
+    },
+    {
+        "id": 22,
+        "name": "Nivel Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon de menor nivel que tu."
+    },
+    {
+        "id": 23,
+        "name": "Ocaso Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon que está en la oscuridad."
+    },
+    {
+        "id": 24,
+        "name": "Peso Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon de tamaño grande o mayor."
+    },
+    {
+        "id": 25,
+        "name": "Rapid Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es para capturar un Pokémon con al menos una velocidad igual o superior a 8."
+    },
+    {
+        "id": 26,
+        "name": "Turno Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es lanzada después del cuarto turno de la Iniciativa."
+    },
+    {
+        "id": 27,
+        "name": "Veloz Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Obtienes un bono de +8 a la Tirada de Lanzar Poké Ball si es lanzada en el primer o segundo turno de la iniciativa."
+    },
+    {
+        "id": 28,
+        "name": "Amigo Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Un Pokémon capturado con esta Poké Ball ve su nivel de Amistad aumentado en 1 por encima del que tendría de otra forma."
+    },
+    {
+        "id": 29,
+        "name": "Sana Ball",
+        "type": 1,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Cuando capturas a un Pokémon con esta Poké Ball, este recupera todos sus PV."
+    },
+    {
+        "id": 33,
+        "name": "Hiperpoción",
+        "type": 2,
+        "rarity": "Raro",
+        "cost": "1200",
+        "description": "Como Acción puedes aplicarla sobre ti u otra criatura. Cuando lo haces, la criatura recupera 20d6 PV."
+    },
+    {
+        "id": 34,
+        "name": "Poción máxima",
+        "type": 2,
+        "rarity": "Muy raro",
+        "cost": "2500",
+        "description": "Como Acción puedes aplicarla sobre ti u otra criatura. Cuando lo haces, la criatura recupera todos sus PV."
+    },
+    {
+        "id": 35,
+        "name": "Restaurar todo",
+        "type": 2,
+        "rarity": "Muy raro",
+        "cost": "3000",
+        "description": "Como Acción puedes aplicarla sobre ti u otra criatura. Cuando lo haces, la criatura recupera todos sus PV y dejas de estar envenenado, helado, paralizado, quemado o dormido."
+    },
+    {
+        "id": 38,
+        "name": "Hiperremedio",
+        "type": 2,
+        "rarity": "Raro",
+        "cost": "800",
+        "description": "Como Acción Extendida que dura 1 minuto puedes aplicarlo sobre ti u otra criatura. Cuando lo haces, la criatura recupera 20d8 PV."
+    },
+    {
+        "id": 44,
+        "name": "Cura total",
+        "type": 2,
+        "rarity": "Raro",
+        "cost": "500",
+        "description": "Como Acción puedes aplicarla sobre ti u otra criatura. Cuando lo haces, la criatura deja de estar envenenado, helado, paralizado, quemado o dormido."
+    },
+    {
+        "id": 46,
+        "name": "Éter Máximo",
+        "type": 2,
+        "rarity": "Raro",
+        "cost": "4000",
+        "description": "Como Acción puedes aplicarla sobre ti u otra criatura. Cuando lo haces, recuperas todos los usos de un Movimiento que puede usarse una cantidad máxima de veces por Escena o Día."
+    },
+    {
+        "id": 48,
+        "name": "Elixir máximo",
+        "type": 2,
+        "rarity": "Raro",
+        "cost": "2000",
+        "description": "Como Acción puedes aplicarla sobre ti u otra criatura. Cuando lo haces, restauras todos los PP a una criatura sobre la que se aplica."
+    },
+    {
+        "id": 49,
+        "name": "Revivir",
+        "type": 2,
+        "rarity": "Raro",
+        "cost": "1500",
+        "description": "Al comerse como Acción Extendida, recupera 10d6 PV y reduce los niveles de fatiga en 1. Sólo puede consumirse un objeto que reduce la fatiga por día."
+    },
+    {
+        "id": 50,
+        "name": "Revivir máximo",
+        "type": 2,
+        "rarity": "Muy raro",
+        "cost": "4000",
+        "description": "Al comerse como Acción Extendida, recupera 20d6 PV y reduce los niveles de fatiga en 2. Sólo puede consumirse un objeto que reduce la fatiga por día."
+    },
+    {
+        "id": 51,
+        "name": "Antifatiga",
+        "type": 2,
+        "rarity": "Muy raro",
+        "cost": "4000",
+        "description": "Al comerse como Acción Extendida, reduce los niveles de fatiga en 3. Sólo puede consumirse un objeto que reduce la fatiga por día."
+    },
+    {
+        "id": 62,
+        "name": "Gragea multi",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "1500",
+        "description": "Esta Gragea tiene el efecto de otras dos Grageas."
+    },
+    {
+        "id": 63,
+        "name": "Calcio mental",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Esta Vitamina aumenta la Mente en 1 hasta el final del día. "
+    },
+    {
+        "id": 64,
+        "name": "Calcio presencia",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Esta Vitamina aumenta la Presencia en 1 hasta el final del día."
+    },
+    {
+        "id": 65,
+        "name": "Carburante",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Esta Vitamina aumenta la Agilidad en 1 hasta el final del día."
+    },
+    {
+        "id": 66,
+        "name": "Hierro",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Esta Vitamina aumenta la Resistencia en 1 hasta el final del día."
+    },
+    {
+        "id": 67,
+        "name": "Proteína",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Esta Vitamina aumenta la Fuerza en 1 hasta el final del día."
+    },
+    {
+        "id": 68,
+        "name": "Zinc",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Esta Vitamina aumenta el Espíritu en 1 hasta el final del día."
+    },
+    {
+        "id": 69,
+        "name": "Más PP",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Esta Vitamina aumenta tus PP en 2 hasta el final del día."
+    },
+    {
+        "id": 70,
+        "name": "Más PS",
+        "type": 3,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Esta Vitamina aumenta tu Vitalidad en 2 hasta el final del día."
+    },
+    {
+        "id": 71,
+        "name": "Bi-tamina",
+        "type": 3,
+        "rarity": "Muy raro",
+        "cost": "5000",
+        "description": "Esta Vitamina tiene el efecto de otras dos Vitaminas."
+    },
+    {
+        "id": 73,
+        "name": "Hierba copia",
+        "type": 4,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Cuando la llevas encima y como Reacción cuando una criatura a menos de 3 metros aumenta el daño base de sus Movimientos, alguna de sus Velocidades o su Evasión, copias el efecto. Cuando lo haces, la hoja se vuelve polvo."
+    },
+    {
+        "id": 75,
+        "name": "Semilla bruma",
+        "type": 4,
+        "rarity": "Raro",
+        "cost": "1200",
+        "description": "Puedes sacar esta semilla cuando estás en un Campo de Niebla como Acción y esta reacciona con el campo, consumiéndose, y ganas Ventaja en Tiradas de Salvación de Espíritu hasta el final de la Escena."
+    },
+    {
+        "id": 76,
+        "name": "Semilla electro",
+        "type": 4,
+        "rarity": "Raro",
+        "cost": "1200",
+        "description": "Puedes sacar esta semilla cuando estás en un Campo Eléctrico como Acción y esta reacciona con el campo, consumiéndose, y tus Velocidades aumentan en 2 metros y los ataques de oportunidad que generas se hacen en Desventaja hasta el final de la Escena."
+    },
+    {
+        "id": 77,
+        "name": "Semilla hierba",
+        "type": 4,
+        "rarity": "Raro",
+        "cost": "1200",
+        "description": "Puedes sacar esta semilla cuando estás en un Campo de Hierba como Acción y esta reacciona con el campo, consumiéndose, y tu Evasión aumenta en 1 hasta el final de la Escena."
+    },
+    {
+        "id": 78,
+        "name": "Semilla psique",
+        "type": 4,
+        "rarity": "Raro",
+        "cost": "1200",
+        "description": "Puedes sacar esta semilla cuando estás en un Campo Psíquico como Acción y esta reacciona con el campo, consumiéndose, y tu Mente y tu presencia aumentan en 1 hasta el final de la Escena."
+    },
+    {
+        "id": 79,
+        "name": "Semilla dominio",
+        "type": 4,
+        "rarity": "Muy raro",
+        "cost": "8000",
+        "description": "Como una Acción Extendida que dura 10 minutos, un Pokémon puede comer una semilla y aprender un Movimiento de su lista de Movimientos Enseñables. El coste de PP Máximos de este Movimiento depende del nivel. Hasta nivel 6 es 1 PP, de nivel 7 a 12 es 2 PP y de Nivel 13 en adelante es 3 PP."
+    },
+    {
+        "id": 80,
+        "name": "Raíz energía",
+        "type": 4,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Como Acción Extendida que dura 1 minuto puedes aplicarlo sobre ti u otra criatura. Cuando lo haces, la criatura pierde 1 nivel de fatiga. Sólo puede consumirse un objeto que reduce la fatiga por día."
+    },
+    {
+        "id": 81,
+        "name": "Hierba revivir",
+        "type": 4,
+        "rarity": "Muy raro",
+        "cost": "2000",
+        "description": "Al comerse como una Acción Extendida que dura 1 minuto, restaura los PV de una criatura hasta la mitad de sus PV máximos y reduce los niveles de fatiga en 1. Sólo puede consumirse un objeto que reduce la fatiga por día."
+    },
+    {
+        "id": 82,
+        "name": "Menta",
+        "type": 4,
+        "rarity": "Raro",
+        "cost": "3000",
+        "description": "Hay una menta para cada naturaleza. Al ser comida como Acción Extendida por un Pokémon como una Acción Extendida que dura 1 minuto, este Pokémon cambia su naturaleza y personalidad a una asociada a la de la menta."
+    },
+    {
+        "id": 106,
+        "name": "Caoca",
+        "type": 5,
+        "rarity": "Raro",
+        "cost": "300$ para objetos que reducen el daño super efectivo.",
+        "description": "Cuando recibes daño super efectivo, decides reducir en 4 este daño antes de multiplicarlo."
+    },
+    {
+        "id": 107,
+        "name": "Biglia",
+        "type": 5,
+        "rarity": "Raro",
+        "cost": "300$ para objetos que reducen el daño super efectivo.",
+        "description": "Después de hacer una Tirada de Salvación de Fuerza, Agilidad o Resistencia pero antes de saber el resultado, decides ganar un +2 a la Tirada."
+    },
+    {
+        "id": 108,
+        "name": "Maranga",
+        "type": 5,
+        "rarity": "Raro",
+        "cost": "300$ para objetos que reducen el daño super efectivo.",
+        "description": "Después de hacer una Tirada de Salvación de Mente, Espíritu o Presencia pero antes de saber el resultado, decides ganar un +2 a la Tirada."
+    },
+    {
+        "id": 121,
+        "name": "Pastas agudas",
+        "type": 6,
+        "rarity": "Raro",
+        "cost": "1400",
+        "description": "Al principio de uno de tus turnos, eliges aumentar tu Rango de Crítico para los Movimientos con la Etiqueta Cortante en 2 hasta el final de la Escena."
+    },
+    {
+        "id": 122,
+        "name": "Helado impacto",
+        "type": 6,
+        "rarity": "Raro",
+        "cost": "1400",
+        "description": "Al principio de uno de tus turnos, eliges que los Movimientos que hacen Tiradas de Ataque cuerpo a cuerpo empujen 1 metro cuando golpean por primera vez."
+    },
+    {
+        "id": 123,
+        "name": "Restos",
+        "type": 6,
+        "rarity": "Raro",
+        "cost": "1400",
+        "description": "Al principio de uno de tus turnos, eliges ganar Escudo igual a tu Vitalidad. Por el resto del combate, al principio de cada uno de tus turnos ganas esa misma cantidad de Escudo."
+    },
+    {
+        "id": 124,
+        "name": "Curri caliente",
+        "type": 6,
+        "rarity": "Raro",
+        "cost": "1400",
+        "description": "Al principio de uno de tus turnos, eliges aumentar tus Velocidades en 2 metros y que los ataques de oportunidad que generas se hagan en Desventaja hasta el final de la Escena."
+    },
+    {
+        "id": 125,
+        "name": "Lentejas lejanas",
+        "type": 6,
+        "rarity": "Raro",
+        "cost": "1400",
+        "description": "Al principio de uno de tus turnos, eliges que los Movimientos que usas que hacen Tiradas de Ataque a rango aumenten su rango en 5 metros hasta el final de la Escena."
+    },
+    {
+        "id": 126,
+        "name": "Caramelo Raro",
+        "type": 6,
+        "rarity": "Raro",
+        "cost": "2000",
+        "description": "Al consumirse como Acción Extendida, este Caramelo aumenta el nivel de un Pokémon que lo consume en 1 si su entrenador es de Nivel superior a él."
+    },
+    {
+        "id": 127,
+        "name": "Plato gigante",
+        "type": 6,
+        "rarity": "Muy raro",
+        "cost": "3000",
+        "description": "Existen múltiples platos gigantes. Estos otorgan los beneficios de dos comidas distintas y su efecto no acaba hasta que se usan ambos efectos."
+    },
+    {
+        "id": 128,
+        "name": "Armadura auspiciosa",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Charcadet la requiere para evolucionar a Armarouge. Es de tamaño pequeño."
+    },
+    {
+        "id": 129,
+        "name": "Bloque de turba",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Ursaring la requiere para evolucionar a Ursaluna."
+    },
+    {
+        "id": 130,
+        "name": "Colmillo agudo",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Además, cuando Gligar necesita este objeto para evolucionar a Gliscor."
+    },
+    {
+        "id": 131,
+        "name": "Corona galanuez",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Slowpoke de Galar lo requiere para evolucionar a Slowking de Galar."
+    },
+    {
+        "id": 132,
+        "name": "Diente marino",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Clamperl lo requiere para evolucionar a Huntail."
+    },
+    {
+        "id": 133,
+        "name": "Dulce de nata",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Swirlix lo requiere para evolucionar a Slurpuff."
+    },
+    {
+        "id": 134,
+        "name": "Escama bella",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Feebas lo requiere para evolucionar a Milotic."
+    },
+    {
+        "id": 135,
+        "name": "Escama marina",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Clamperl la requiere para evolucionar a Gorebyss."
+    },
+    {
+        "id": 136,
+        "name": "Magmatizador",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Magmar lo requiere para evolucionar a Magmortar."
+    },
+    {
+        "id": 137,
+        "name": "Armadura maldita",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Charcadet la requiere para evolucionar a Ceruledge. Es de tamaño pequeño."
+    },
+    {
+        "id": 138,
+        "name": "Brazal galanuez",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Slowpoke de Galar lo requiere para evolucionar a Slowbro de Galar."
+    },
+    {
+        "id": 139,
+        "name": "Confite",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Alcremie lo requiere para evolucionar."
+    },
+    {
+        "id": 140,
+        "name": "Cuenco exquisito",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Poltchageist lo necesita para evolucionar a Sinistcha."
+    },
+    {
+        "id": 141,
+        "name": "Disco extraño",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Porygon2 lo requiere para evolucionar a Porygon Z."
+    },
+    {
+        "id": 142,
+        "name": "Electrizador",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Electabuzz lo requiere para evolucionar a Electivire."
+    },
+    {
+        "id": 143,
+        "name": "Escama dragón",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Seadra lo requiere para evolucionar a Kingdra."
+    },
+    {
+        "id": 144,
+        "name": "Garra afilada",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Sneasel y Sneasel de Hisui la requieren para evolucionar a Weavile y Sneasler, respectivamente."
+    },
+    {
+        "id": 145,
+        "name": "Manuscrito aguas",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Kubfu lo requiere para evolucionar a Urshifu estilo fluido."
+    },
+    {
+        "id": 146,
+        "name": "Manuscrito sombras",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Kubfu lo requiere para evolucionar a Urshifu estilo brusco."
+    },
+    {
+        "id": 147,
+        "name": "Manzana dulce",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Applin lo requiere para evolucionar a Appletun."
+    },
+    {
+        "id": 148,
+        "name": "Mejora",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Porygon la requiere para evolucionar a Porygon2."
+    },
+    {
+        "id": 149,
+        "name": "Mineral negro",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Scyther lo requiere para evolucionar a Kleavor."
+    },
+    {
+        "id": 150,
+        "name": "Piedra oval",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Happiny lo requiere para evolucionar a Chansey."
+    },
+    {
+        "id": 151,
+        "name": "Revestimiento metálico",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Onyx y Scither lo requieren para evolucionar a Steelyx y Scizor, respectivamente."
+    },
+    {
+        "id": 152,
+        "name": "Tela terrible",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Dusclops la requiere para evolucionar a Dusknoir."
+    },
+    {
+        "id": 153,
+        "name": "Manzana ácida",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Applin lo requiere para evolucionar a Dipplin."
+    },
+    {
+        "id": 154,
+        "name": "Metal compuesto",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Duraludon la requiere para evolucionar a Archaludon."
+    },
+    {
+        "id": 155,
+        "name": "Néctar de colores",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Estos néctares permiten a Oricorio cambiar de tipo."
+    },
+    {
+        "id": 156,
+        "name": "Protector",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Rhydon la requiere para evolucionar a Rhyperior. Es de tamaño pequeño."
+    },
+    {
+        "id": 157,
+        "name": "Saquito fragrante",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Spritzee la requiere para evolucionar a Aromatisse."
+    },
+    {
+        "id": 158,
+        "name": "Tetera rota",
+        "type": 7,
+        "rarity": "Raro",
+        "cost": "15000",
+        "description": "Sinistea la requiere para evolucionar a Polteageist."
+    },
+    {
+        "id": 188,
+        "name": "Banda recia",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Tu Espíritu aumenta en 1, pero tus Velocidades se reducen en 2m."
+    },
+    {
+        "id": 189,
+        "name": "Cinto recio",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Tu Resistencia aumenta en 1, pero tus Velocidades se reducen en 2m."
+    },
+    {
+        "id": 190,
+        "name": "Pesa recia",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Tu Vitalidad aumenta en 2, pero tus Velocidades se reducen en 2m."
+    },
+    {
+        "id": 191,
+        "name": "Amuleto",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando sacas un 1 en la Tirada Natural de una Tirada de d20 puedes repetir la tirada."
+    },
+    {
+        "id": 192,
+        "name": "Amuleto puro",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando tienes Desventaja en una Tirada de Ataque o Salvación, puedes ignorarla. Puedes usar esta propiedad una vez por Escena y recargarla por 1 PP."
+    },
+    {
+        "id": 193,
+        "name": "Banda aguante",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "La primera vez después de Descansar que fueras a recibir daño que te fuese a dejar insconsciente, quedas a 1 PV. "
+    },
+    {
+        "id": 194,
+        "name": "Bola luminosa",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando un Pikachu está ligado a ella, su Agilidad, Mente y Presencia aumentan en 1."
+    },
+    {
+        "id": 195,
+        "name": "Cinta elección",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas un Movimiento que hace una Tirada de Ataque en dos turnos consecutivos, tienes Ventaja en sus Tirada de Ataque."
+    },
+    {
+        "id": 196,
+        "name": "Cinta aguante",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Reduces todo el daño recibido en una cantidad igual a la mitad de tu BH."
+    },
+    {
+        "id": 197,
+        "name": "Cola plúmbea",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Tus Velocidades se reducen en 4 metros hasta un mínimo de 1. No puedes volar ni ser empujado."
+    },
+    {
+        "id": 199,
+        "name": "Escudo habilidad",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "No pueden quitar, cambiar ni copiar ninguna de tus habilidades contra tu voluntad."
+    },
+    {
+        "id": 200,
+        "name": "Gafas especiales",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Obtienes un bono de +1 a las Tiradas de Ataque a rango."
+    },
+    {
+        "id": 201,
+        "name": "Garra garfio",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "La Dificultad de los Movimientos que Apresan que lanzas aumenta en 1."
+    },
+    {
+        "id": 202,
+        "name": "Lazo destino",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Las criaturas que te dejan infatuado quedan infatuadas por ti."
+    },
+    {
+        "id": 203,
+        "name": "Lodo negro",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Si eres tipo Veneno, al principio de tus turnos ganas Escudo igual a tu Vitalidad."
+    },
+    {
+        "id": 204,
+        "name": "Periscopio",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Tu Rango de Crítico aumenta en 1."
+    },
+    {
+        "id": 205,
+        "name": "Refleluz",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Usar Reflejo, Pantalla de Luz o Velo aurora no te cuesta PP."
+    },
+    {
+        "id": 206,
+        "name": "Roca calor",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas Día Soleado, el radio del área afectada se duplica y el coste en PP se reduce en 1."
+    },
+    {
+        "id": 207,
+        "name": "Roca lluvia",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas Danza lluvia, el radio de la nube se duplica y el coste en PP se reduce en 1."
+    },
+    {
+        "id": 208,
+        "name": "Seguro debilidad",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "La primera vez tras Descansar que recibes daño super efectivo, el daño base de todos tus Movimientos aumenta en un dado hasta el final de la Escena."
+    },
+    {
+        "id": 209,
+        "name": "Tarjeta roja",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando recibes daño super efectivo puedes elegir volver a tu Poké Ball como si hubieses caído debilitado. Sólo puede usarse este efecto una vez al día."
+    },
+    {
+        "id": 210,
+        "name": "Brazal recio",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Tu Fuerza aumenta en 1, pero tu Evasión se reduce en 1."
+    },
+    {
+        "id": 211,
+        "name": "Lente recia",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Tu Mente y tu Presencia aumentan en 1, pero tu Evasión se reduce en 1."
+    },
+    {
+        "id": 212,
+        "name": "Franja recia",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Tu Agilidad aumenta en 1, pero tu Evasión se reduce en 2."
+    },
+    {
+        "id": 213,
+        "name": "Amuleto protector",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "La primera vez que recibes daño después de Descansar, lo ignoras."
+    },
+    {
+        "id": 214,
+        "name": "Amuleto salud",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando fueses a quedar envenenado, paralizado, helado o quemado, puedes evitarlo. Puedes usar esta propiedad una vez al Día."
+    },
+    {
+        "id": 215,
+        "name": "Banda atadura",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas un Movimiento que apresa al menos una criatura, el daño base de este Movimiento aumenta en un dado."
+    },
+    {
+        "id": 216,
+        "name": "Cascabel concha",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando haces daño a un Pokémon, ganas un Escudo igual a un cuarto del daño que has realizado."
+    },
+    {
+        "id": 217,
+        "name": "Cinta experto",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando haces daño super efectivo, añades un bono al daño (antes de duplicarlo) igual a la tu BH."
+    },
+    {
+        "id": 218,
+        "name": "Cinta fuerte",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Añades un bono igual a un cuarto de tu Nivel al daño base de tus Movimientos."
+    },
+    {
+        "id": 219,
+        "name": "Dado trucado",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas un Movimiento con la etiqueta Golpea varias veces, este golpea una vez más de lo normal."
+    },
+    {
+        "id": 220,
+        "name": "Distintivo de líder",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Un Kingambit ligado a este amuleto añade la mitad de su BH al daño base de sus Movimientos."
+    },
+    {
+        "id": 221,
+        "name": "Gafas elección",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas un Movimiento que fuerza una Tirada de Salvación en dos turnos consecutivos, las criaturas afectadas tienen Desventaja en la Salvación."
+    },
+    {
+        "id": 223,
+        "name": "Garra rápida",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Una vez por día, puedes usar dos Movimientos con coste de Acción que no te cuesta PP usar con una única Acción."
+    },
+    {
+        "id": 224,
+        "name": "Llamasfera",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Al final de tu turno, ganas 1 Nivel de Quemado."
+    },
+    {
+        "id": 225,
+        "name": "Lupa",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Ganas +1 a las Tiradas de Ataque."
+    },
+    {
+        "id": 226,
+        "name": "Raíz grande",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas Arraigo o un Movimiento que hace daño y te recupera PV, recuperas 3 PV más."
+    },
+    {
+        "id": 227,
+        "name": "Roca del rey",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando haces una Tirada de Ataque y la Tirada Natural es de 18+, el objetivo es empujado 1 metro."
+    },
+    {
+        "id": 228,
+        "name": "Roca helada",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas Paisaje Nevado, el radio de la nube se duplica y el coste en PP se reduce en 1."
+    },
+    {
+        "id": 229,
+        "name": "Roca suave",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando usas Tormenta de arena, el radio de la tormenta de arena se duplica y el coste en PP se reduce en 1."
+    },
+    {
+        "id": 230,
+        "name": "Telescopio",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Obtienes un bono de +2 cuando haces una Tirada de Ataque contra una criatura que toma sus turnos antes que tu en la Iniciativa."
+    },
+    {
+        "id": 231,
+        "name": "Toxiesfera",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Al final de tu turno, ganas 1 Nivel de Envenenado."
+    },
+    {
+        "id": 232,
+        "name": "Vida esfera",
+        "type": 8,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Durante el combate, el daño base de tus Movimientos aumenta en una cantidad igual a tu Vitalidad pero pierdes PV igual a tu Vitalidad al final de cada uno de tus turnos en los que has usado un Movimiento que hace daño."
+    },
+    {
+        "id": 233,
+        "name": "Botas gruesas",
+        "type": 9,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Cuando llevas puestas estas botas, no recibes daño por púas, rocas afiladas y objetos similares en el suelo."
+    },
+    {
+        "id": 234,
+        "name": "Capa furtiva",
+        "type": 9,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Esta capa está hecha de una tela especial que te protege de los efectos secundarios de los Movimientos provocados por obtener una cierta Tirada Natural."
+    },
+    {
+        "id": 235,
+        "name": "Casco dentado",
+        "type": 9,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Cuando llevas este casco puesto y te asestan un golpe crítico con una Tirada de Ataque Cuerpo a cuerpo, la criatura que realizó la Tirada de Ataque recibe la misma cantidad de daño tipo Roca."
+    },
+    {
+        "id": 236,
+        "name": "Chaleco asalto",
+        "type": 9,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Cuando llevas este Chaleco puesto y recibes daño provocado por una Tirada de Ataque a rango, reduce este daño en una cantidad igual a 3. Este Equipo es pequeño."
+    },
+    {
+        "id": 237,
+        "name": "Cubresuelos",
+        "type": 9,
+        "rarity": "Muy raro",
+        "cost": "15000",
+        "description": "Un movimiento puede usar un Movimiento de Campo sobre este objeto. Luego, cualquier criatura puede usar su Acción para liberar el campo con el que el cubresuelos quedó cargado sin gastar PP. Este Equipo es pequeño."
+    },
+    {
+        "id": 239,
+        "name": "Gafa protectora",
+        "type": 9,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Cuando llevas estas gafas puestas, eres inmune a los movimientos con la etiqueta de Polvo, la Habilidad Efecto espora y tu visión no puede verse afectada por el polvo, barro o sustancias similares."
+    },
+    {
+        "id": 241,
+        "name": "Pieza de Armadura Pesada",
+        "type": 9,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Una pieza de Armadura que te protege del daño a costa de tu movilidad. Las partes que cubren una pieza de la armadura son pecho, brazos, piernas o cabeza. Por cada pieza de armadura pesada que llevas, tu Evasión aumenta en 1 y tus Velocidades se reducen en 1. Este Equipo es pequeño pero pesa como uno Mediano."
+    },
+    {
+        "id": 242,
+        "name": "Pieza de Armadura Ligera",
+        "type": 9,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Una pieza de Armadura que te protege del daño levemente. Las partes que cubren una pieza de la armadura son pecho, brazos, piernas o cabeza. Por cada dos piezas de armadura ligera que llevas, tu Evasión aumenta en 1. Este Equipo es pequeño."
+    },
+    {
+        "id": 248,
+        "name": "Ámbar Viejo",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Aerodactyl."
+    },
+    {
+        "id": 249,
+        "name": "Fósil Coraza",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Shieldon."
+    },
+    {
+        "id": 250,
+        "name": "Fósil Domo",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Kabuto."
+    },
+    {
+        "id": 251,
+        "name": "Fósil Hélix",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Omanyte."
+    },
+    {
+        "id": 252,
+        "name": "Fósil Pluma",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Archen."
+    },
+    {
+        "id": 253,
+        "name": "Fósil Tapa",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Tirtouga."
+    },
+    {
+        "id": 256,
+        "name": "Fósil Aleta",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Amaura."
+    },
+    {
+        "id": 257,
+        "name": "Fósil Cráneo",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Cranidos."
+    },
+    {
+        "id": 258,
+        "name": "Fósil Garra",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Anorith."
+    },
+    {
+        "id": 259,
+        "name": "Fósil Mandíbula",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Tyrunt."
+    },
+    {
+        "id": 260,
+        "name": "Fósil Raíz",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "Puede ser restaurado en un Lileep."
+    },
+    {
+        "id": 261,
+        "name": "Fósil Extra",
+        "type": 10,
+        "rarity": "Raro",
+        "cost": null,
+        "description": "¡Crea tus propio fósil!"
+    },
+    {
+        "id": 296,
+        "name": "Pokédex",
+        "type": 12,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Como Acción, escaneas un Pokémon. Puedes leer su entrada de la Pokédex y tu DJ puede darte información sobre este."
+    },
+    {
+        "id": 297,
+        "name": "Flauta amarilla",
+        "type": 12,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Puedes tocar esta flauta como Acción y gastar 2 PP para sanar de estar envenenado, quemado, helado, paralizado a las criaturas a 5 metros de ti."
+    },
+    {
+        "id": 298,
+        "name": "Flauta azul",
+        "type": 12,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Puedes tocar esta flauta como Acción y gastar 2 PP para sanar de estar dormido a las criaturas a 5 metros de ti."
+    },
+    {
+        "id": 299,
+        "name": "Flauta roja",
+        "type": 12,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Puedes tocar esta flauta como Acción y gastar 2 PP para sanar de estar infatuado a las criaturas a 5 metros de ti."
+    },
+    {
+        "id": 300,
+        "name": "Flauta blanca",
+        "type": 12,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Puedes tocar esta flauta como Acción y gastar 2 PP. Cuando lo haces, las criaturas a menos de 2 metros de ti hacen una Tirada de Salvación de Espíritu Dificultad 15. Si la fallan, quedan infatuados por ti hasta el final de la Escena."
+    },
+    {
+        "id": 301,
+        "name": "Flauta negra",
+        "type": 12,
+        "rarity": "Raro",
+        "cost": "10000",
+        "description": "Puedes tocar esta flauta como Acción y gastar 1 PP. Cuando lo haces, las criaturas a menos de 2 metros de ti hacen una Tirada de Salvación de Espíritu Dificultad 15. Si la fallan, quedan asustados de ti hasta el final de su próximo turno."
+    },
+    {
+        "id": 303,
+        "name": "Sincromisor",
+        "type": 12,
+        "rarity": "Muy raro",
+        "cost": "25000",
+        "description": "Como Acción, tomas el control de uno de tus Pokémon si este te lo permite mediante ondas psíquicas que tienen un rango de 1 kilómetro. Puedes controlarlo como si fueras el Pokémon y puedes ver lo que ve en la pantallita."
+    },
+    {
+        "id": 305,
+        "name": "Pokéradar",
+        "type": 12,
+        "rarity": "Muy raro",
+        "cost": "25000",
+        "description": "Como Acción, puedes escanear un Pokémon a menos de 10 metros de ti. Posteriormente puedes usar tu Acción para localizar los Pokémon de una especie que has escaneado a menos de 1 kilómetro de ti."
+    },
+    {
+        "id": 306,
+        "name": "Traje de buzo",
+        "type": 12,
+        "rarity": "Raro",
+        "cost": "20000",
+        "description": "Cuando llevas puesto este traje, puedes respirar bajo el agua y no te ves afectado por altas presiones por estar bajo el agua."
+    },
+    {
+        "id": 309,
+        "name": "Aerosol sigilo",
+        "type": 13,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Cuando lo usas, hasta el final del día tu y hasta 5 criaturas más ganáis un bono de +5 a las Tiradas de Sigilo."
+    },
+    {
+        "id": 314,
+        "name": "Bola pegajosa",
+        "type": 13,
+        "rarity": "Raro",
+        "cost": "600",
+        "description": "Puedes lanzar esta bola como Acción a una distancia de 5 metros. La bola explota en un radio de 2 metros, esparciendo un líquido sobre el suelo. El suelo manchado por el líquido se considera Terreno Difícil hasta el final de la Escena y las criaturas que inician su turno en este área o que entran en esta hacen una Tirada de Salvación de Fuerza Dificultad 14. Si la fallan, quedan pegadas al suelo y se consideran apresadas.\nComo Acción, una criatura puede repetir la Tirada, despegándose de la red y dejando de estar apresadas si la pasan."
+    },
+    {
+        "id": 317,
+        "name": "Abrojos metálicos",
+        "type": 13,
+        "rarity": "Raro",
+        "cost": "600",
+        "description": "Lanzas abrojos en un área circular de 1 metro de radio a menos de 5 metros de ti. Este área es considerada Terreno Difícil y, por cada metro que una criatura avance dentro de los abrojos, recibe daño 2d6 de daño de tipo Acero."
+    },
+    {
+        "id": 318,
+        "name": "Toxiestrellas",
+        "type": 13,
+        "rarity": "Raro",
+        "cost": "600",
+        "description": "Lanzas estrellas tóxicas en un área circular de 1 metro de radio a menos de 5 metros de ti. Este área es considerada Terreno Difícil y, cuando una criatura empieza su turno o entra en el área hace una Tirada de Salvación de Resistencia Dificultad 14. Si la falla, queda envenenada hasta el final de su próximo turno."
+    },
+    {
+        "id": 319,
+        "name": "Gema de tipo",
+        "type": 13,
+        "rarity": "Raro",
+        "cost": "1000",
+        "description": "Hay una gema de cada Tipo Elemental. Puedes aumentar en dos dados el daño base de un Movimiento del mismo tipo que el de la gema, tras lo cual la gema pierde su poder."
+    }
+]

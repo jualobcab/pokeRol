@@ -357,3 +357,29 @@ def scrap_movements(urlBase, urlMovements):
         browser.close()
 
     return results
+
+def scrap_items(jsonItems):
+    items = []
+    itemsLeidos = utils.load_json(jsonItems)
+    for item in itemsLeidos:
+        nombre = item['Nombre']
+        descripcion = item['Descripcion']
+        rareza = item['Rareza']
+
+        coste = None
+        if item['Coste']:
+            coste = item['Coste']
+        elif item['ValorMaterial']:
+            coste = item['ValorMaterial']
+
+        tipo = utils.parse_typeItem(item['Tipo'])
+
+        items.append({
+            'name': nombre,
+            'type': tipo,
+            'rarity': rareza,
+            'cost': coste,
+            'description': descripcion
+        })
+
+    return items
