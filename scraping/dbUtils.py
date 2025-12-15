@@ -91,7 +91,10 @@ def load_all_db_dicts():
     global itemTypesDB
     itemTypesDB = results["itemTypesDB"]
     global itemsDB
-    itemsDB = results["itemsDB"]
+    if results["itemsDB"]:
+        itemsDB = results["itemsDB"]
+    else:
+        itemsDB = []
 
     insert_all_dbs()
 
@@ -203,8 +206,7 @@ def insertItems(items):
 
     # Preparar datos para executemany
     itemsPrepared = utils.prepare_items_for_db(items)
-    print(itemsPrepared)
-
+    
     cursor.executemany(
         """
         INSERT OR IGNORE INTO items

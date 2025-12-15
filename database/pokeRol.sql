@@ -172,9 +172,9 @@ CREATE TABLE IF NOT EXISTS pokemon_habitats (
 
 CREATE TABLE IF NOT EXISTS items (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT UNIQUE NOT NULL,
+    name TEXT NOT NULL,
     type INTEGER NOT NULL,
-    rarity TEXT CHECK(rarity IN ('ComÃºn', 'Poco comÃºn', 'Raro', 'Muy raro', 'InsÃ³lito')) NOT NULL,
+    rarity TEXT CHECK(rarity IN ('Común', 'Poco común', 'Raro', 'Muy raro', 'Insólito')) NOT NULL,
     cost TEXT,
     description TEXT NOT NULL,
     FOREIGN KEY(type) REFERENCES item_types(item_id)
