@@ -4,7 +4,7 @@ import createDB
 import utils
 
 modeJSON = True
-modeDevelop = False
+modeDevelop = True
 
 urlBase = "https://pokemonrpa.net/"
 urlPokedex = "pokedex"
