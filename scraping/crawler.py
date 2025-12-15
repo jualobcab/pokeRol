@@ -3,8 +3,8 @@ import dbUtils
 import createDB
 import utils
 
-modeJSON = False
-modeDevelop = True
+modeJSON = True
+modeDevelop = False
 
 urlBase = "https://pokemonrpa.net/"
 urlPokedex = "pokedex"
@@ -62,8 +62,8 @@ else:
     pokemons = utils.load_json("./json/pokemons.json")
     dbUtils.load_all_db_dicts()
 
-'''
+
 print("inserting pokemon")
 dbUtils.insertPokemons(pokemons)
 print("==============================================")
-'''
+
