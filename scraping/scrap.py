@@ -102,7 +102,41 @@ def scrap_pokedex(urlBase, urlPokedex):
                 else:
                     abilities.append(abilityId)
 
-            #TODO: linea evolutiva
+            # linea evolutiva
+            evolutions = []
+            pkmEvolutions = info.select_one(".evolution-container")
+            if pkmEvolutions:
+                evolutionGroup = next(
+                    (
+                        g for g in pkmEvolutions.select(".evolution-group")
+                        if g.select_one("span.evolution-label")
+                        and "Evoluciona a:" in g.select_one("span.evolution-label").text
+                    ),
+                    None
+                )
+                if evolutionGroup:
+                    pkmEvolutionCards = evolutionGroup.findAll("div", class_="evolution-card")
+                    for pkmEvolutionCard in pkmEvolutionCards:
+                        evolutionName = pkmEvolutionCard.select_one(".pokemon-name").text.strip()
+                        evolutionInfo = pkmEvolutionCard.find_all("div")[-1].text.strip().split(",",1)
+                        
+                        if evolutionName == 'Sliggoo de Hisui':
+                            evolutionLevel = 8
+                        elif evolutionName == 'Avalugg de Hisui':
+                            evolutionLevel = 10
+                        else:
+                            evolutionLevel = evolutionInfo[0].strip().split(" ")[1]
+                            
+                        evolutionExtraRequisites = None
+                        if len(evolutionInfo)>1:
+                            evolutionExtraRequisites = evolutionInfo[1].strip()
+                        
+                        evolutions.append({
+                            'pokemon_evolution': evolutionName,
+                            'evolution_level': int(evolutionLevel),
+                            'extra_requisites': evolutionExtraRequisites
+                        })
+
 
             # informacion secundaria
             pkmSecondaryInfo = info.select_one(".detail-section.otros .otros-table")
@@ -152,6 +186,7 @@ def scrap_pokedex(urlBase, urlPokedex):
                 "stats":stats,
                 "abilities":abilities,
                 "hiddenAbilities":hiddenAbilities,
+                "evolutions":evolutions,
                 "secondaryInfo":secondaryInfo,
                 "movesetPerLevel": movesetPerLevel,
                 "learnset": learnset

@@ -18,10 +18,10 @@ createDB.initialice()
 
 if modeDevelop:
     dbUtils.load_all_db_dicts()
-    dbUtils.save_all_db_dicts()
 
-    pokemons = utils.load_json("./json/pokemons.json")
-
+    print("scraping pokemon")
+    pokemons = scrap.scrap_pokedex(urlBase, urlPokedex)
+    utils.save_json("./json/pokemons.json",pokemons)
     print("inserting pokemon")
     dbUtils.insertPokemons(pokemons)
     print("==============================================")

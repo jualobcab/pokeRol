@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS pokemons (
     sex TEXT,
     sex_differences INTEGER NOT NULL DEFAULT 0,
     different_forms INTEGER NOT NULL DEFAULT 0,
+    description TEXT,
     FOREIGN KEY(size_id) REFERENCES sizes(id)
 );
 

@@ -582,8 +582,40 @@ def insertPokemons(pokemons):
 
     conn.commit()
 
+
+    # evolutions
+    for pokemon in pokemons:
+        for evolutionData in pokemon['evolutions']:
+            pokemon_id = getPokemonId(pokemon['name'])
+            pokemon_evolution_id = getPokemonId(evolutionData['pokemon_evolution'])
+            evolution_level = evolutionData['evolution_level']
+            extra_requisites = evolutionData['extra_requisites']
+
+            cursor.execute("""
+                INSERT OR REPLACE INTO evolutions (
+                    pokemon_id, pokemon_evolution_id, evolution_level, extra_requisites
+                )
+                VALUES (?, ?, ?, ?)
+            """, (pokemon_id,pokemon_evolution_id,evolution_level,extra_requisites))
+
+    conn.commit()
+
     conn.close()
 
+def getPokemonId(pokemonName,conn=None):
+    if not conn:
+        conn = sqlite3.connect(db_name)
+
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT id FROM pokemons WHERE name = ?
+    """, (pokemonName,))
+
+    row = cursor.fetchone()
+    pokemon_id = row[0] if row else None
+
+    return pokemon_id
 
 def getLearnsetMew():
     learnset = []
