@@ -1,0 +1,2940 @@
+{
+    "dataDB": [
+        {
+            "id": 1,
+            "name": "Absorbe agua",
+            "description": "Eres inmune al daño de Tipo Agua. Si eres afectado por un efecto que hace daño de Tipo Agua, la absorbes y ganas una cantidad de Puntos de Escudo iguales a tu Vitalidad más tu Resistencia.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 2,
+            "name": "Absorbe electricidad",
+            "description": "Eres inmune al daño de Tipo Eléctrico. Si eres afectado por un efecto que hace daño de Tipo Eléctrico, absorbes la electricidad y quedas cargado hasta el final de tu próximo turno. Mientras estás cargado, ganas un bono igual a tu BH para el daño de tus Movimientos de Tipo Eléctrico.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 3,
+            "name": "Absorbe fuego",
+            "description": "Eres inmune al daño de Tipo Fuego.  Si eres afectado por un efecto que hace daño de Tipo Fuego, absorbes el calor. Cuando absorbes calor tus llamas quedan potenciadas hasta el final de tu próximo turno. Mientras tus llamas están potenciadas, ganas un bono igual a tu BH para el daño de tus Movimientos de Tipo Fuego.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 4,
+            "name": "Acero templado",
+            "description": "Eres de Tipo Acero, además de tus otros dos Tipos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 5,
+            "name": "Acérrimo",
+            "description": "Eres inmune a ser Infatuado y a ser Enfurecido.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 6,
+            "name": "Aclimatación",
+            "description": "Eres inmune a todos los efectos provocados por los Movimientos con la etiqueta de Clima y por eventos climáticos similares. Además, cuando una criatura utiliza un Movimiento de Clima a menos de 5 metros de ti, puedes usar tu Reacción y tres PP para anular dicho Movimiento. Puedes usar esta Reacción una vez al Día.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 7,
+            "name": "Adaptable",
+            "description": "Ganas un bono al daño base de los Movimientos en los que tienes STAB igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 8,
+            "name": "Afortunado",
+            "description": "Tu Rango de Crítico aumenta en 2.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 9,
+            "name": "Agallas",
+            "description": "Si estás quemado, envenenado, paralizado o helado, el daño base de tus Movimientos aumenta en un dado y tus Tiradas de Ataque y de daño no se ven afectadas por los estados que sufres. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 10,
+            "name": "Ala delta",
+            "description": "Cuando sales del agua saltando tras tomar la Acción de Correr, ganas una Velocidad de Vuelo que dura hasta el final de tu turno y que es igual a tu Velocidad de nado más 2 metros. Cuando la Velocidad de Vuelo acaba, empiezas a planear. Durante cada uno de tus subsecuentes turnos te mueves horizontalmente una distancia igual a la Velocidad de vuelo que conseguiste y, por cada dos metros que planeas de esta forma, caes un metro hasta que llegues a suelo o mar, lo cual haces sin recibir daño de caída.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 11,
+            "name": "Alas vendaval",
+            "description": "Después de usar un Movimiento de Tipo Volador puedes moverte 2 metros volando sin provocar ataques de oportunidad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 12,
+            "name": "Alerta",
+            "description": "No puedes ser sorprendido.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 13,
+            "name": "Allanamiento",
+            "description": "Tus Movimientos y ataques ignoran la cobertura media y de 3/4. Además, si eres Tipo Fantasma, puedes atravesar superficies de menos de 1 metro de grosor, que cuentan para ti como Terreno Difícil. Si terminas tu turno dentro de una superficie de esta forma, eres expulsado por el lado más cercano y pierdes una cantidad de PV igual a la mitad de tus PV Máximos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 14,
+            "name": "Alma acerada",
+            "description": "Tus Movimientos de Tipo Acero y los de tus aliados a 1 metro de ti ganan un bono al daño igual tu BH. Una criatura puede verse beneficiada por esta habilidad hasta dos veces.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 15,
+            "name": "Alma cura",
+            "description": "Al principio de tu turno, puedes usar de 1 a 3 PP para hacer que una criatura a menos de 5 metros reduzca sus niveles de Envenenado, Paralizado, Helado, Quemado o Dormido en la cantidad de PP que has usado. Si has usado 3 PP, en su lugar deja de estar Envenenada, Paralizada, Helada, Quemada o Dormida.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 16,
+            "name": "Alma errante",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar tu Reacción para forzarla a que realice una Tirada de Salvación de ESP con Dificultad = 10 + BH + EST. Si la falla, elige una de sus habilidades. Esta es sustituida hasta el final de la Escena por Alma errante y tu pierdes Alma errante y ganas la habilidad que esta ha perdido. No puedes elegir que se pierdan habilidades que permiten cambiar de forma.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 17,
+            "name": "Amplificador",
+            "description": "Tus Movimiento con la Etiqueta de Sonido mejoran de las siguientes formas:",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 18,
+            "name": "Antibalas",
+            "description": "Recibes la mitad de daño de los Movimientos con la etiqueta de Bala y efectos similares.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 19,
+            "name": "Antibarrera",
+            "description": "Todos tus Movimientos que hacen daño ignoran los efectos de Escudo y hacen daño a los PV, incluso si la criatura tiene Puntos de Escudo. Además, si haces daño con uno de tus Movimientos a una criatura con efectos de Escudo o Puntos de Escudo, puedes usar 1 PP para acabar con este efecto o con los Puntos de Escudo prematuramente.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 20,
+            "name": "Anticipación",
+            "description": "Tienes premoniciones sobre tu futuro próximo. Al principio de cada Escena, tira 1d20. Cuando fueses a hacer una Tirada de d20 o una criatura fuese a hacer una Tirada de d20 contra ti o un efecto tuyo, puedes elegir sustituir que su tirada sea el resultado del d20 que tiraste.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 21,
+            "name": "Antídoto",
+            "description": "Cuando estás envenenado no tienes Desventaja en Tiradas de Salvación y Habilidad y, en lugar de recibir daño, ganas una cantidad de Puntos de Escudo igual a tu BH hasta final de cada uno de tus turnos, que duran hasta el final de la Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 22,
+            "name": "Armadura batalla",
+            "description": "Eres inmune al daño extra y a los efectos negativos provocados por golpes críticos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 23,
+            "name": "Armadura frágil",
+            "description": "Al recibir daño, puedes permitir que tu armadura se fracture en uno de sus puntos débiles. Si lo haces, tu Evasión se reduce en 2 hasta el final de la Escena, tus velocidades aumentan en 2 metros y los Ataques de oportunidad que generas que hacen en Desventaja. Este efecto no puede acumularse.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 24,
+            "name": "Audaz",
+            "description": "Cuando usas un Movimiento con la etiqueta de Retoceso, ganas un bono al daño de este Movimiento igual a tu Nivel.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 25,
+            "name": "Autoestima",
+            "description": "Cuando haces que una criatura caiga a 0 PV, te motivas. Hasta el final de tu próximo turno, tus Tiradas de Ataque se hacen en Ventaja y puedes usar 1 PP para aumentar el daño base de cualquier Movimiento en 1 dado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 26,
+            "name": "Baba",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque cuerpo a cuerpo o te está tocando, puedes usar tu Reacción y 1 PP para reducir sus velocidades en 2 metros hasta que use una Acción para quitarse la baba de encima. Este efecto puede acumularse y, si todas sus velocidades llegan a 0, la criatura queda apresada por las babas.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 27,
+            "name": "Batería",
+            "description": "Cuando una criatura usa un Movimiento de Tipo Eléctrico que hace daño a menos de 5 metros de ti, puedes usar 1 PP y tu Reacción para añadir un dado al daño base de dicho Movimiento. Si lo haces y el Movimiento hace una Tirada de Ataque, esta se hace en Ventaja. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 28,
+            "name": "Bromista",
+            "description": "Una vez por ronda, cuando usas un Movimiento que tiene coste de Acción y no hace daño ni tiene las Etiquetas de Potenciación o Escudo, puedes usar otro Movimiento con esas mismas características pagando su coste en PP usual más 1.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 29,
+            "name": "Caballero puerril",
+            "description": "Puedes hacer tiradas de Ataque cuerpo a cuerpo a 2 metros de distancia gracias a tu puerro. Además, cuando asestas un golpe crítico con un Movimiento en el que haces una Tirada de Ataque cuerpo a cuerpo con tu puerro, el daño base de dicho Movimiento aumenta en un dado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 30,
+            "name": "Cabeza roca",
+            "description": "Si fueses a perder PV por usar un Movimiento con la etiqueta de Retroceso, pierdes la mitad de esos PV.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 31,
+            "name": "Cacheo",
+            "description": "Como Acción Extendida puedes localizar a una criatura u objeto que has visto o sentido de alguna forma. Si está a una distancia inferior a 1 kilómetro, sabes su localización exacta hasta que Descanses o caigas inconsciente. Puedes usar esta Habilidad 1 vez al Día.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 32,
+            "name": "Calco",
+            "description": "Como Acción, hasta el final de la Escena ganas una de las Habilidades Comunes de un Pokémon a menos de 5 metros de ti",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 33,
+            "name": "Cálculo final",
+            "description": "Si uno de tus Movimientos que hace daño afecta a una criatura que va antes que tu en la Iniciativa, esta criatura recibe daño extra igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 34,
+            "name": "Cambio color",
+            "description": "Tras recibir daño de un Movimiento, puedes usar tu Reacción para volverte de ese Tipo hasta el final de la Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 35,
+            "name": "Capa tóxica",
+            "description": "Conoces el Movimiento Púas Tóxicas y no cuenta para el máximo de Movimientos que conoces. Este cuesta 3 PP para ti y, cuando recibes daño, puedes usar tu Reacción para usar Púas tóxicas centrado en ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 36,
+            "name": "Caparazón",
+            "description": "Eres inmune al daño extra y a los efectos negativos provocados por golpes críticos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 37,
+            "name": "Cara de hielo",
+            "description": "Cuando recibes daño, puedes ignoralo. Si lo haces, tu cubito de hielo se rompe hasta que lo hagas crecer de nuevo, lo que te cuesta una Acción Extedida de 1 minuto. Cuando tu cubito está roto, tus Velocidades aumentan en 2 metros.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 38,
+            "name": "Carrillo",
+            "description": "Puedes tener el efecto de dos comidas a la vez en lugar de sólo uno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 39,
+            "name": "Chorro arena",
+            "description": "Conoces el Movimiento Tormenta de arena  y no cuenta para el máximo de Movimientos que conoces. Además, puedes usarlo sin coste de Acción al principio de tu turno. Usar Tormenta de arena cuesta 3 PP para ti, en lugar de 4 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 40,
+            "name": "Clorofila",
+            "description": "Cuando estás bajo luz solar directa, tus velocidades aumentan en 2 metros y como Reacción puedes usar 1 PP para ganar Ventaja en una Tirada de Salvación de AGI o imponer Desventaja en una Tirada de Ataque de oportunidad que has provocado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 41,
+            "name": "Cobardía",
+            "description": "Si recibes daño de Tipo Fantasma, Siniestro o Bicho o quedas asustado, tus velocidades aumentan en 2 metros y dejas de provocar ataques de oportunidad hasta el final de la escena. Este efecto no puede acumularse más de 1 vez.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 42,
+            "name": "Cola armadura",
+            "description": "Conoces el Movimiento Cola férrea, no cuenta para el máximo de Movimientos que conoces y puedes usar tu MEN para lanzarlo. Además, cuando una criatura rival a menos de 1 metro de ti usa un Movimiento con su Acción o con su Reacción, puedes usar Cola férrea contra esta criatura como Reacción. Usar Cola Férrea como Reacción te cuesta 1 PP más de lo normal.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 43,
+            "name": "Cola surf",
+            "description": "Mientras estás en un campo eléctrico o en una zona cargada magnéticamente, tus velocidades aumentan en 2 metros. Además, como Reacción, puedes ganar Ventaja en una Tirada de Salvación de AGI o imponer Desventaja en un Ataque de oportunidad que has provocado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 44,
+            "name": "Colector",
+            "description": "Si una criatura lanza un Movimiento de Tipo agua a menos de 5 metros de ti, puedes usar tu Reacción y 2 PP para redirigir el efecto a ti. Si el Movimiento hace una Tirada de Ataque, tu te vuelves el objetivo y si requiere de que se hagan Tiradas de Salvación, sólo tu debes hacer la Tirada de Salvación. Eres inmune al daño de los Movimientos que rediriges a ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 45,
+            "name": "Cólera",
+            "description": "Cuando tus PV se reducen por debajo de la mitad de tus PV Máximos, tienes Ventaja en Tiradas de Ataque y añades un bono igual a tu BH al daño de tus Movimientos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 46,
+            "name": "Comandar",
+            "description": "Como Acción entras en la boca de un Dondozo aliado a 1 metro de ti. Tomas el control de él. El dondozo puede tomar dos Acciones y puede usar tus PP además de los suyos, pero tu no puedes tomar Acciones ni Reacciones.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 47,
+            "name": "Máquina de vapor",
+            "description": "Si fueses a recibir daño de Tipo Fuego o Tipo Agua antes de aplicar algún efecto que pudiera hacerte invulnerable a alguno de estos, este hace que aumente la temperatura del vapor que produces. Hasta el final de tu próximo turno, añade un dado al daño base de tus Movimientos. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 48,
+            "name": "Competitivo",
+            "description": "Cuando haces una Tirada de d20 en Desventaja, ganas Ventaja en tu próxima Tirada de d20.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 49,
+            "name": "Compiescolta",
+            "description": "Cuando una criatura a menos de 2 metros de ti fuese a recibir una Tirada de Ataque, puedes usar tu Reacción y 1 PP para moverte hasta la criatura y cambiar el objetivo de la Tirada de Ataque a ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 50,
+            "name": "Coraza ira",
+            "description": "Cuando tus PV caen por debajo de la mitad de tus PV máximos, tu Evasión se reduce en 2 y haces Tiradas de Salvación en Desventaja, tus Tiradas de Ataque se hacen en Ventaja y el daño base de tus Movimientos aumentan en un dado. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 51,
+            "name": "Coraza reflejo",
+            "description": "Cuando recibes daño de un Movimiento que lanza luz, puedes reflejar esa luz contra el usuario del Movimiento. Como Reacción y usando 2 PP, haces que la criatura reciba la cantidad daño que te ha infligido y, si esta cantidad es superior a 20 PV, la criatura hace una Salvación de RES contra un Dificultad = 10 + BH + EST. Si la falla, queda cegada hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 52,
+            "name": "Corrosión",
+            "description": "Tus Movimientos de Tipo veneno no son resistidos por las criaturas Tipo Veneno ni las criaturas acero son inmune a estos. Además, las criaturas acero y veneno pueden ser envenenadas por tu veneno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 53,
+            "name": "Cortante",
+            "description": "Cuando usas un Movimiento con la etiqueta de Cortante, añades un bono al daño igual a la mitad de tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 54,
+            "name": "Corte fuerte",
+            "description": "Ganas un bono igual a tu FUE para el daño de todos tus Movimientos que hacen Tiradas de Ataque cuerpo a cuerpo.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 55,
+            "name": "Cosecha",
+            "description": "Cuando naces, tienes un Tipo de baya asociado (tu DJ te lo dice, se elige al azar o tu DJ te deja elegirlo). Al principio de cada Día produces una de estas bayas. Además, puedes madurar una baya como Acción usando 2 PP. La baya y cualquier objeto creado con esta pierde sus efectos al final de la Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 56,
+            "name": "Cromolente",
+            "description": "El daño de tus Movimientos no puede ser reducido salvo por inmunidades.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 57,
+            "name": "Cuerpo áureo",
+            "description": "No puedes ser envenenado, paralizado, helado, quemado, confundido ni normido.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 58,
+            "name": "Cuerpo horneado",
+            "description": "Eres inmune al daño de Tipo Fuego y no puedes ser quemado. Cuando eres afectado por un efecto que hace daño de Tipo Fuego si no fuese por esta Habilidad, tu Evasión aumenta en 2 hasta el final de la Escena. Este efecto no puede acumularse.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 59,
+            "name": "Cuerpo llama",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar 1 PP y tu Reacción para forzarla a que realice una Tirada de Salvación de RES con Dificultad = 10 + BH + EST. Si la falla, gana 2 Niveles de Quemado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 60,
+            "name": "Cuerpo maldito",
+            "description": "Conoces el Movimiento Anulación y no cuenta para el máximo de Movimientos que conoces. Después de que una criatura use un Movimiento contra ti, puedes usar tu Reacción para usar Anulación por 2 PP sobre la criatura que te ha atacado para anular el dicho Movimiento. Luego, no puedes volver a usar Anulación sobre esta criatura hasta el final de la Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 61,
+            "name": "Cuerpo mortal",
+            "description": "Cuando recibes daño, puedes usar 2 PP para empezar a perecer junto a la criatura que te ha hecho daño. Al final de cada uno de vuestros turnos, ambos haceis una tirada de salvación de ESP que podéis elegir fallar. Cuando alcanceis los 4 fallos conjuntos, el que menos PV tenía cae a 0 PV y el que más PV tenía pierde tantos PV como tenía el otro.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 62,
+            "name": "Cuerpo puro",
+            "description": "Tu Evasión no puede reducir y no puedes tener Desventaja en Tiradas de Salvación de FUE, AGI y RES.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 63,
+            "name": "Cuerpo vívido",
+            "description": "Tu presencia es desconcertante. Cuando una criatura que te ve hace una Tirada de Ataque cuerpo a cuerpo contra ti puedes usar tu Reacción y un PP para forzarla a realizar una Tirada de Salvación de ESP con Dificultad = 10 + BH + PRE. Si la falla, gana un Nivel de Confusión.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 64,
+            "name": "Cura lluvia",
+            "description": "Si estás bajo la lluvia o dentro del agua, eres inmune a ser quemado, paralizado, envenenado o helado y, si lo estás, deja de estarlo.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 65,
+            "name": "Cura natural",
+            "description": "Al principio de tu turno reduces en 1 tus Niveles de Quemado, Envenenado, Paralizado o Helado. Además, puedes usar 2 PP para dejar de estar Quemado, Envenenado, Paralizado o Helado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 66,
+            "name": "Defensa hoja",
+            "description": "Si estás bajo luz solar directa, eres inmune a ser quemado, paralizado, dormido, helado o envenenado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 67,
+            "name": "Descarga",
+            "description": "Como Acción, compruebas en tu base de datos la información referente a una especie Pokémon y la comparas con un Pokémon que tienes delante. Elige entre conocer su nivel, PV Máximos, Lista de Movimientos base, sentidos, velocidades o el valor de una de sus estadísticas y luego comunicas esta información a tu entrenador.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 68,
+            "name": "Despiste",
+            "description": "Al final de tus turnos, reduces tus Niveles de Confusión, Asustado, Enfurecido e Infatuado en 1 Nivel más de lo normal.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 69,
+            "name": "Detonación",
+            "description": "Conoces el Movimiento Autodestrucción y no cuenta para el máximo de Movimientos que conoces. Cuando recibir daño fuese a hacerte caer inconsciente, puedes usar el Movimiento Autodestrucción como Reacción. Si lo haces, no ganas Niveles de Fatiga extra por usar Autodestrucción.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 70,
+            "name": "Dicha",
+            "description": "Los rangos de los efectos secundarios provocados por tus Tiradas de Ataque Naturales aumentan en 2. Por ejemplo, si el efecto era en 19+, se vuelve 17+.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 71,
+            "name": "Dinamo",
+            "description": "Cuando hacen una Tirada de Ataque cuerpo a cuerpo, puedes guardar parte de la energía por del impacto y convertirla en energía eléctrica por 1 PP. Si lo haces, hasta el final de tu próximo turno, añades un dado al daño base de tus Movimientos de Tipo Eléctrico. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 72,
+            "name": "Disemillar",
+            "description": "Conoces el Movimiento Campo de Hierba y no cuenta para el máximo de Movimientos que conoces. Además, cuando recibes daño se te caen algunas aceitunas y puedes usar tu Reacción para usar el Movimiento Campo de hierba.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 73,
+            "name": "Disfraz",
+            "description": "Cuando recibes daño por primera vez en una Escena, puedes ignorar ese daño. Si lo haces, tu traje se rompe hasta que lo repares, lo que te dura una Acción Extendida de 1 minuto. Cuando tu traje está roto, no puedes usar esta Habilidad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 74,
+            "name": "Don floral",
+            "description": "Cuando estás bajo luz solar directa cambias de forma al abrir tus pétalos. Cuando estás en esta forma, tu AGI se vuelve igual a tu FUE, tus Velocidades aumentan en 2 metros, tienes Ventaja en Tiradas de Salvación de AGI, los ataques de oportunidad que se hacen contra ti se hacen en Desventaja y calculas tu Evasión como 8 + BH + AGI.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 75,
+            "name": "Efecto espora",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar tu Reacción y 1 PP para forzarla a que realice una Tirada de Salvación de RES con Dificultad = 10 + BH + EST. Si la falla, tira 1d4. Si sale 1, gana 2 Niveles de Paralizado, si sale 2, gana 1 Nivel de Envenenado, si sale 3 Gana 2 Niveles de Dormido y, si sale 4, Gana 2 Niveles de Paralizado, Envenenado o Dormido a tu elección Considera este efecto como un Movimiento con la etiqueta de Polvo.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 76,
+            "name": "Electricidad estática",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar tu Reacción y 1 PP para forzarla a que realice una Tirada de Salvación de RES con Dificultad = 10 + BH + EST. Si la falla, gana 2 Niveles de Paralizado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 77,
+            "name": "Electrogénesis",
+            "description": "Conoces el Movimiento Campo eléctrico, que no cuenta para el máximo de Movimientos que conoces y puedes usarlo como parte de la Acción que tomas para usar un Movimiento de Tipo Eléctrico.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 78,
+            "name": "Electromotor",
+            "description": "Eres inmune al daño de Tipo Eléctrico. Si eres afectado por un efecto que hace daño de Tipo Eléctrico, absorbes la electricidad y quedas cargado hasta el final de tu próximo turno. Mientras estás cargado, tus velocidades aumentan en 2 metros, tienes Ventaja en Tiradas de Salvación de AGI y los Ataques de oportunidad en tu contra se hacen en Desventaja.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 79,
+            "name": "Encadenado",
+            "description": "Cuando usas un Movimiento con la etiqueta Golpea varias veces, este golpea un mínimo de 2 veces.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 80,
+            "name": "Energía eólica",
+            "description": "Si te ves afectado por un Movimiento con la etiqueta de Viento o hace mucho viento, generas energía eólica. Hasta el final de tu próximo turno, el coste en PP de tus Movimientos de Tipo eléctrico se reduce en 1 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 81,
+            "name": "Energía pura",
+            "description": "Puedes usar tu MEN en lugar de tu FUE en cualquier Tirada de d20 o de daño. Además, cuando usas uno de tus Movimientos que hace daño, puedes potenciar el poder del Movimiento por 1 PP para añadir un dado al daño base.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 82,
+            "name": "Enjambre",
+            "description": "Puedes usar tu MEN en lugar de tu FUE en cualquier Tirada de d20 o de daño. Además, cuando usas uno de tus Movimientos que hace daño, puedes potenciar el poder del Movimiento por 1 PP para añadir un dado al daño base.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 83,
+            "name": "Ensañamiento",
+            "description": "El Rango de Crítico de tus ataques contra objetivos envenenados aumenta en 2.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 84,
+            "name": "Entusiasmo",
+            "description": "Antes de hacer una Tirada de Ataque asociada a un Movimiento, puedes decidir hacerla en Desventaja. Si lo haces y golpea, duplicas la cantidad de dados que lanzas al calcular el daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 85,
+            "name": "Escama de hielo",
+            "description": "Si fueses a recibir daño super efectivo, puedes usar tu Reacción y 1 PP para que este daño sea neutral contra ti. Por cada vez que uses esta Reacción en una Escena su coste aumenta en 1 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 86,
+            "name": "Escama especial",
+            "description": "Si estás quemado, envenenado, paralizado o helado, tu Evasión aumenta en 2.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 87,
+            "name": "Esclusa de aire",
+            "description": "El cielo en un radio de 20 metros a tu alrededor siempre está despejado. Puedes usar tu Acción para multiplicar este radio por 10 hasta el final de la Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 88,
+            "name": "Escudo magma",
+            "description": "No puedes ser helado y recibes la mitad de daño de Tipo Hielo.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 89,
+            "name": "Espejo mágico",
+            "description": "Cuando usan un Movimiento que te afecta sólo a ti y que no hace daño, puedes usar tu Reacción y 2 PP para redirigirlo al usuario.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 90,
+            "name": "Espesura",
+            "description": "Cuando tus PV están por debajo de 1/4 de tus PV máximos, el daño base de tus Movimientos de Tipo planta aumenta en un dado. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 91,
+            "name": "Espíritu vital",
+            "description": "No puedes quedar dormido contra tu voluntad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 92,
+            "name": "Experto",
+            "description": "Después de Descansar, eliges un Movimiento que conoces y que lanzarlo te cuesta 1 PP o menos. Te vuelves Experto en Tiradas de Ataque asociadas al Movimiento elegido y, si tu Nivel es 8 o más, el daño base de este Movimiento aumenta en 1 dado y su tu Nivel es 16 o más, el daño base de este Movimiento vuelve a aumentar en 1 dado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 93,
+            "name": "Expulsarena",
+            "description": "Conoces el Movimiento Tormenta de arena y no cuenta para el Máximo de Movimientos que conoces. Además, cuando recibes daño, puedes usar tu Reacción para usar el Movimiento Tormenta de arena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 94,
+            "name": "Fauces furtivas",
+            "description": "Cuando golpeas a una criatura Sorprendida con uno de tus Movimientos con la Etiqueta de Mordisco, esta queda apresada por ti hasta que se libere tomando una Acción para realizar una Tirada de Salvación de Fuerza contra la Dificultad del Movimiento que la apresó.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 95,
+            "name": "Filtro",
+            "description": "Si fueses a recibir daño super efectivo, puedes usar tu Reacción y 1 PP para que este daño sea neutral contra ti. Por cada vez que uses esta Reacción en una Escena su coste aumenta en 1 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 96,
+            "name": "Firmeza",
+            "description": "Cuando una Tirada de Ataque cuerpo a cuerpo te golpea, tu Evasión aumenta en 2 hasta el principio de tu próximo turno. Este efecto puede acumularse indefinidamente.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 97,
+            "name": "Flaqueza",
+            "description": "Si estás por encima de la mitad de tus PV máximos, añade un dado al daño de todos tus Movimientos. Si estás por debajo de la mitad de tus PV máximos, tienes Desventaja en todas las Tiradas de d20.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 98,
+            "name": "Flexibilidad",
+            "description": "Tienes Ventaja en todas las Tiradas que hagas para liberarte de estar agarrado y  apresado. Además, eres inmune a ser paralizado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 99,
+            "name": "Francotirador",
+            "description": "Tu rango de crítico aumenta en 2.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 100,
+            "name": "Fuente energía",
+            "description": "Cuando una criatura usa un Movimiento que hace daño a menos de 2 metros de ti, puedes usar tu Reacción y 1 PP para añadir un dado al daño base de dicho Movimiento. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 101,
+            "name": "Fuerte afecto",
+            "description": "Al hacer que una criatura rival caiga a 0 PV, tu vínculo con tu entrenador se vuelve más poderoso. Puedes usar tu Reacción para entrar en la forma Greninja-Fuerte afecto.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 102,
+            "name": "Fuerza mental",
+            "description": "No puedes ser asustado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 103,
+            "name": "Fuga",
+            "description": "Tu Movimiento no provoca Ataques de Oportunidad. Además, puedes usar tu Acción para liberarte de estar agarrado o apresado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 104,
+            "name": "Funda",
+            "description": "Eres inmune a los Movimientos con la etiqueta de Polvo, la Habilidad Efecto espora y tu visión no puede verse afectada por el polvo, barro o sustancias similares.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 105,
+            "name": "Garra dura",
+            "description": "Añades un bono igual a tu BH al daño de los Movimientos que realizan Tiradas de Ataque Cuerpo a Cuerpo que pudieras realizar con tus garras.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 106,
+            "name": "Gas reactivo",
+            "description": "Emanas un gas neutralizador que anula las habilidades. Como Acción o como Reacción cuando una criatura realiza una Tirada de Ataque cuerpo a cuerpo contra ti y usando 1 PP, expulsas este vapor sobre una criatura a 2 metros o menos de ti. Esta criatura hace una Tirada de Salvación de ESP con Dificultad = 10 + BH + EST. Si falla la tirada, pierde una de sus habilidades hasta el final de la Escena. No puedes elegir que se pierdan habilidades que permiten cambiar de forma ni una Habilidad de un Pokémon Legendario.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 107,
+            "name": "Gélido",
+            "description": "Si estás en un entorno nevado o nieva sobre ti, eres inmune a ser quemado, paralizado, envenenado o helado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 108,
+            "name": "General supremo",
+            "description": "Cuando un aliado es debilitado a menos de 5 metros de ti, ganas Ventaja en una Tirada de Ataque antes del final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 109,
+            "name": "Geofagia",
+            "description": "Eres inmune al daño de Tipo tierra. Si un efecto fuese a provocarte daño de Tipo Tierra, te alimentas de este y ganas un bono igual a tu BH para el daño de tus Movimientos hasta el final de tu Próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 110,
+            "name": "Glifo",
+            "description": "Solo Unown puede tener esta habilidad y esta no puede cambiarse o perderse. Cuando te reunes con otros 999 especímenes de tu especie, podeis comenzar un ritual como Acción Extendida si vuestro amo os lo ordena o si una energía especial os estimula. Este ritual puede tener consecuencias catastróficas o invocar a un ente superior, dependiendo del ritual que ejecuteis.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 111,
+            "name": "Gran encanto",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar tu Reacción y 1 PP para forzarla a que realice una Tirada de Salvación de ESP con Dificultad = 10 + BH + PRE. Si la falla, queda infatuada por ti hasta el final de su próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 112,
+            "name": "Gula",
+            "description": "Comer es una Interacción para ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 113,
+            "name": "Hedor",
+            "description": "Cuando una criatura con olfato entra en un radio de 1 metro a tu alrededor puedes usar tu Reacción y 1 PP para liberar una peste tan inmunda que le da Desventaja en su próxima Tirada de Ataque contra ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 114,
+            "name": "Hélice caudal",
+            "description": "Al principio de tu turno, puedes decidir moverte sólo en línea recta. Si lo haces, tus velocidades aumentan en 2 metros y no provocas ataques de oportunidad hasta el final del turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 115,
+            "name": "Herbívoro",
+            "description": "Eres inmune al daño de Tipo planta. Si te afecta un efecto que hace daño de Tipo planta, te alimentas de este y ganas un bono igual a tu BH para el daño de tus Movimientos hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 116,
+            "name": "Herbogénesis",
+            "description": "Conoces el Movimiento Campo de hierba, que no cuenta para el máximo de Movimientos que conoces y puedes usarlo como parte de la Acción que tomas para usar un Movimiento de Tipo Planta.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 117,
+            "name": "Herrero",
+            "description": "Tienes un martillo que manejas con maestría. Cuando lo llevas en tus manos tus Movimientos que hacen Tiradas de Ataque cuerpo a cuerpo son más poderosos.  Si eres un Tinkatink o Tinkatuff el daño base de dichos Movimientos aumenta en 1 dado; si eres Tinkaton, aumenta en 2 dados y, además, el daño que haces con estos Movimientos se conisdera súper efectivo contra el Tipo Acero.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 118,
+            "name": "Hidratación",
+            "description": "Si al final de tu turno estás sumergido en agua o llueve sobre ti, dejas de estar quemado, paralizado, confuso, dormido, helado o envenenado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 119,
+            "name": "Hidrorrefuerzo",
+            "description": "El daño de Tipo agua es neutral contra ti. Además, si recibes daño de Tipo agua, tu Evasión aumenta en 2 hasta el final de tu próximo turno. Este efecto puede acumularse.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 120,
+            "name": "Hipnotismo",
+            "description": "Conoces el Movimiento Hipnosis y este no cuenta para el máximo de Movimientos que conoces. Cuando una criatura falla la Tirada de Salvación de tu Hipnosis, puedes decidir que, en lugar de que gane Niveles de Dormido, su mente quede vulnerable. Hasta el final de tu próximo turno, la criatura recibe el doble de daño de Tipo Psíquico y, si vuelve a quedar hipnotizada de esta forma por un Pokémon con la Habilidad Hipnótico, queda infatuada hasta que usen una Acción para despertarla del trance o hasta que reciba daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 121,
+            "name": "Hospitalidad",
+            "description": "La primera vez que sales de tu Poké Ball en una Escena, puedes dar de beber de tu té a una criatura a menos de 1 metro de ti. La criatura deja de estar envenenada si lo estaba.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 122,
+            "name": "Huida",
+            "description": "Cuando tus PV se reducen por debajo de la mitad de tus PV Máximos puedes volver a tu Poké Ball y que tu entrenador saque un nuevo Pokémon como Reacción. Mientras tus PV están por debajo de tus PV Máximos, tus velocidades aumentan en 2 metros y los Ataques de oportunidad que provocas se hacen en Desventaja.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 123,
+            "name": "Humedad",
+            "description": "Tu presencia humedece el entorno. Como Reacción y por 2 PP, puedes hacer que un Movimiento con la etiqueta de Explosión o una explosión originada a menos de 4 metros de ti falle (Las criaturas que los usan reciben el daño que estos Movimientos les provocan y gastan los recursos necesarios para usarlos).",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 124,
+            "name": "Humo blanco",
+            "description": "Emites un humo blanco tranquilizador. Al final de tus turnos, reduces tus Niveles de Confusión, Infatuación, Enfurecido, Asustado y Dormido en 1. Las criaturas que acaban su turno a 1 metro de ti que tu consideres también obtienen este beneficio.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 125,
+            "name": "Hurto",
+            "description": "Si una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar tu Reacción para hacer una Tirada de Juego de Manos (AGI) Dificultad = 12 + el Nivel de la criatura que te ha golpeado. Si la pasas, le robas un objeto que lleva encima pero que no tiene en una de sus extremidades.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 126,
+            "name": "Ignífugo",
+            "description": "Cuando recibes daño de Tipo Fuego, lo reduces a la mitad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 127,
+            "name": "Ignorante",
+            "description": "Al final de tus turnos, reduces tus Niveles de Confusión, Asustado e Infatuado en 2, en lugar de en 1.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 128,
+            "name": "Iluminación",
+            "description": "Como Acción puedes empezar a emitir luz en un radio de 10 metros. Además, puedes usar tu Reacción y 2 PP para liberar un fogonazo de luz para imponer Desventaja sobre una Tirada de Ataque realizada por una criatura a menos de 2 metros de ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 129,
+            "name": "Ilusión",
+            "description": "Al inicio de cada Escena y cada vez que todos dejan de verte, incluido cuando entras o sales de tu Poké Ball, puedes tomar el aspecto de una criatura que viste justo antes de desaparecer o que conoces muy bien. Cuando recibes daño, la ilusión se rompe y tomas tu aspecto real. También puedes romper tu ilusión en cualquier momento, sin coste de acciones alguno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 130,
+            "name": "Imán",
+            "description": "Como Acción, puedes usar 2 PP para atraer a todos los objetos metálicos que no están siendo vestidos por nadie y sobre las criaturas de Tipo acero. Si  una criatura a rango es de Tipo acero o tiene un objeto metálico, hace una Tirada de Salvación de FUE. Si la fallan, son atraidas hacia ti 4 metros o les arrebatas los objetos metálicos, que se quedan pegados a ti hasta el final del turno, respectivamente.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 131,
+            "name": "Impasible",
+            "description": "Cada vez que caes tumbado o te empujan, tu velocidad aumenta en 2 metros y tu Evasión aumenta en 2 hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 132,
+            "name": "Ímpetu ardiente",
+            "description": "El daño de tus Movimientos no se reduce por estar quemado y, si estás quemado, tus Tiradas de Ataque se hacen en Ventaja y añades un dado al daño de tus Movimientos. Si tu nivel es de 14 o más, el daño aumenta en 2 dados en lugar de 1.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 133,
+            "name": "Ímpetu arena",
+            "description": "Cuando estás en una tormenta de arena o mientras pisas una superficie de arena, tus velocidades aumentan en 2 metros y, usando tu Reacción y 1 PP, puedes ganar Ventaja en una Tirada de Salvación de AGI o imponer Desventaja en un Ataque de oportunidad que has provocado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 134,
+            "name": "Ímpetu tóxico",
+            "description": "Cuando estás envenenado, tus Tiradas de Ataque se hacen en Ventaja.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 135,
+            "name": "Impostor",
+            "description": "Conoces el Movimiento Transformación, que no cuenta para el máximo de Movimientos que conoces y la primera vez que lo usas en cada Escena, puedes usarlo sin coste de PP ni de Acción al principio de tu turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 136,
+            "name": "Impulso",
+            "description": "Si al final de un turno tus velocidades no son 0 y has te has movido la distancia máxima que tus velocidades te permiten, estas aumentan en 1 metro hasta que dejes de hacerlo. Este efecto puede acumularse 3 veces, hasta un máximo de 3 metros. Mientras esta habilidad está aumentando tus velocidades en 3 metros, tu Evasión aumenta en 2.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 137,
+            "name": "Indefenso",
+            "description": "Al principio de tu turno, puedes elegir hacer todas las Tiradas de Ataque Cuerpo a Cuerpo en Ventaja este turno. Si lo haces, todas las Tiradas de Ataque Cuerpo a Cuerpo que se hagan contra ti se hacen en Ventaja hasta el principio de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 138,
+            "name": "Inmunidad",
+            "description": "Estar Envenenado no provoca efectos negativos en ti. Además, cuando recibes daño de Tipo Veneno, este se reduce a la mitad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 139,
+            "name": "Insomnio",
+            "description": "No puedes quedar Dormido y no necesitas dormir para descansar, sino que te basta con no realizar actividades extenuantes.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 140,
+            "name": "Insonorizar",
+            "description": "Recibes la mitad de daño de los Movimientos con la etiqueta de Sonido y eres inmune a los demás efectos que provoquen los Movimientos de sonido.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 141,
+            "name": "Intimidación",
+            "description": "Tu presencia es intimidatoria. Cuando una criatura que te ve hace una Tirada de Ataque cuerpo a cuerpo contra ti puedes usar tu Reacción y 1 PP para forzarla a que realice una Tirada de Salvación de ESP con Dificultad = 10 + BH + PRE. Si la falla, gana 2 Niveles de Asustado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 142,
+            "name": "Intrépido",
+            "description": "Al final de cada uno de tus turnos, reduces tu Nivel de Asustado en 2, en lugar de en 1. Además, las criaturas de Tipo Fantasma no son inmunes a tus Movimientos de Tipo Normal ni Lucha.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 143,
+            "name": "Irascible",
+            "description": "Si recibes un golpe crítico, ganas 1 Nivel de Furia contra la criatura que te lo ha hecho. Además, mientras tengas Niveles de Furia, tu rango de crítico aumenta en 4.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 144,
+            "name": "Justiciero",
+            "description": "Si recibes daño de Tipo Siniestro, conviertes parte de su energía en determinación. Tienes Ventaja en tus Tiradas de Ataque hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 145,
+            "name": "Lechera",
+            "description": "Conoces el Movimientos Batido, que no cuenta para tu Máximo de Movimientos conocidos. Además, puedes usarlo 2 veces gratuitamente, las cuales no cuentan para el máximo de Movimientos de Restauración que puedes usar en un mismo Día.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 146,
+            "name": "Letargo perenne",
+            "description": "Siempre estás dormido y no puedes dejar de estarlo. Puedes actuar normalmente, a pesar de estar dormido.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 147,
+            "name": "Líbero",
+            "description": "Cuando vas a usar un Movimiento, puedes ganar el Movimiento de ese Tipo hasta el final de la Escena. Sólo puedes usar esta Habilidad una vez por Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 148,
+            "name": "Liviano",
+            "description": "Si no cargas ningún objeto ni estás sincronizado con ningún amuleto, tu velocidad aumenta en 2 metros y los Ataques de oportunidad que provocas se hacen en Desventaja.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 149,
+            "name": "Llovizna",
+            "description": "Conoces el Movimiento Danza Lluvia  y no cuenta para el máximo de Movimientos que conoces. Además, puedes usarlo sin coste de Acción al principio de tu turno. Usar Danza Lluvia cuesta 3 PP para ti, en lugar de 4 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 150,
+            "name": "Madrugar",
+            "description": "Si al principio de tu turno estás dormido por el efecto de un Movimiento o Habilidad, te despiertas.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 151,
+            "name": "Maduración",
+            "description": "Las bayas que consumes tienen el doble de usos que tienen de forma normal.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 152,
+            "name": "Mandíbula fuerte",
+            "description": "Añades un bono igual a tu BH al daño de los Movimientos con la etiqueta de Mordisco que usas.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 153,
+            "name": "Mano rápida",
+            "description": "Si al realizar una Tirada de Ataque la Tirada Natural es de 20 recuperas tu Acción del turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 154,
+            "name": "Manto frondoso",
+            "description": "Si estás sobre hierba, incluida la del Campo de hierba, tu Evasión aumenta en 2.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 155,
+            "name": "Manto níveo",
+            "description": "Cuando estás en un clima nevado o nieva sobre ti, tu Evasión aumenta en 2.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 156,
+            "name": "Mar llamas",
+            "description": "Cuando tus PV están por debajo de 1/4 de tus PV máximos, el daño base de tus Movimientos de Tipo fuego aumenta en un dado. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 157,
+            "name": "Más",
+            "description": "Si hay un Pokémon con la habilidad Menos a menos de 2 metros, todas tus Tiradas de Ataque y Salvación se hacen en Ventaja.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 158,
+            "name": "Medicina extraña",
+            "description": "Como Acción y por 1 PP, puedes dar de beber del veneno de tu caracola a una criatura a 1 metro de ti. Esta deja de estar envenenada, confusa, paralizada, quemada o helada.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 159,
+            "name": "Megadisparador",
+            "description": "Añades un bono igual a tu BH al daño de los Movimientos con la etiqueta de Pulso que usas.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 160,
+            "name": "Menos",
+            "description": "Si hay un Pokémon con la habilidad Más a menos de 2 metros, todas tus Tiradas de Ataque y Salvación se hacen en Ventaja.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 161,
+            "name": "Metal liviano",
+            "description": "Tu metal es ligero, lo que hace que te sea más fácil equilibrarte. No puedes caer tumbado en contra de tu voluntad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 162,
+            "name": "Metal pesado",
+            "description": "Eres tan pesado que las criaturas que son de un tamaño más que tu o más pequeñas no pueden moverte en contra de tu voluntad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 163,
+            "name": "Mimetismo",
+            "description": "Puedes tomar una Acción Extendida para camuflarte con el suelo. A discreción de tu DJ, te vuelves del Tipo asociado al material del suelo. Por ejemplo, cuando estás en un Campo, te vuelves del Tipo asociado al campo y cuando estás sobre arena te vuelves Tipo Tierra. Además, tienes Ventaja en Tiradas de Sigilo siempre que te no te muevas cuando estas camuflado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 164,
+            "name": "Momia",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar tu Reacción y 1 PP para forzarla a que realice una Tirada de Salvación de ESP con Dificultad = 10 + BH + MEN. Si la falla, elige una de sus habilidades. Esta es sustituida hasta el final de la Escena por Momia.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 165,
+            "name": "Monotema",
+            "description": "Cuando usas un Movimiento, puedes decidir no usar otro Movimiento por el resto de la Escena. Si lo haces, el daño base del Movimiento aumenta en un dado hasta el final de la Escena. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 166,
+            "name": "Mudar",
+            "description": "Al principio de tu turno, puedes mudar tu piel para dejar de estar quemado, envenenado, paralizado y helado. Puedes usar esta Habilidad una vez por Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 167,
+            "name": "Multiescamas",
+            "description": "Si fueses a recibir daño super efectivo, puedes usar tu Reacción y 1 PP para que este daño sea neutral contra ti. Por cada vez que uses esta Reacción en una Escena su coste aumenta en 1 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 168,
+            "name": "Multitipo",
+            "description": "Al principio de cada uno de tus turnos puedes cambiar tu Tipo Elemental a uno asociado a una Tabla Elemental que tienes asociada. Si no tienes ninguna, te vuelves de Tipo Normal.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 169,
+            "name": "Muro mágico",
+            "description": "Tienes Ventaja en todas las Tiradas de Salvación contra efectos que no te hacen daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 170,
+            "name": "Mutapetito",
+            "description": "Durante el combate, al final de cada uno de tus turnos, tira 1d20. Si sale 10-, entras en tu forma apetito. Si sale 11+, entras en tu forma saciada.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 171,
+            "name": "Mutatipo",
+            "description": "Cuando vas a usar un Movimiento, puedes ganar ese Tipo hasta el final de la Escena. Puedes usar esta habilidad una vez por Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 172,
+            "name": "Nado rápido",
+            "description": "Cuando estás usando tu velocidad de nado, no puedes ser agarrado y no provocas Ataques de oportunidad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 173,
+            "name": "Nebulogénesis",
+            "description": "Conoces el Movimiento Campo de niebla, que no cuenta para el máximo de Movimientos que conoces y puedes usarlo como parte de la Acción que tomas para usar un Movimiento de Tipo Hada.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 174,
+            "name": "Néctar dulce",
+            "description": "Conoces el Movimiento Dulce aroma, que no cuenta para el máximo de Movimientos que conoces. Después de usar Dulce Aroma puedes usar otro Movimiento con coste de una Acción que no te cueste más de 1 PP usar.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 175,
+            "name": "Nerviosismo",
+            "description": "Eres una criatura muy nerviosa. No puedes quedar dormida o infatuada.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 176,
+            "name": "Neuralizador",
+            "description": "Conoces el Movimiento Destello y este no cuenta para el máximo de Movimientos que conoces. Cuando una criatura falla la Tirada de Salvación de tu Destello, gana 1 Nivel de Confusión. Si, de esta forma, una criatura alcanza o supera los 5 Niveles de Confusión, entras en su mente, aprendes todo sus recuerdos y puedes hacer que olvide todos los que desees",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 177,
+            "name": "Nevada",
+            "description": "Conoces el Movimiento Paisaje nevado  y no cuenta para el máximo de Movimientos que conoces. Además, puedes usarlo sin coste de Acción al principio de tu turno. Usar Paisaje nevado cuesta 3 PP para ti, en lugar de 4 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 178,
+            "name": "Normalidad",
+            "description": "Cuando usas un Movimiento que no es de Tipo normal, puedes elegir que se vuelva de Tipo normal. Si lo haces y el Movimiento hace daño, ganas un bono al daño igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 179,
+            "name": "Ojo compuesto",
+            "description": "Tu visión es tan buena que puedes apuntar especialmente bien tus Tiradas de Ataque. Después de hacer una Tirada de Ataque, puedes decidir volver a tirarla por 2 PP. Si lo haces, debes tomar el segundo resultado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 180,
+            "name": "Ojo mental",
+            "description": "Al final de cada uno de tus turnos, reduces tu Nivel de Asustado en 2, en lugar de en 1. Además, las criaturas de Tipo fantasma no son inmunes a tus Movimientos de Tipo normal ni lucha.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 181,
+            "name": "Olor persistente",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar tu Reacción y 1 PP para emitir un hedor asqueroso para forzarla a que realice una Tirada de Salvación de ESP con Dificultad = 10 + BH + PRE. Si la falla, elige una de sus habilidades. La criatura queda tan asqueada del olor que pierde sus Habilidades hasta el final de la Escena.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 182,
+            "name": "Oportunista",
+            "description": "Si una criatura hace una Tirada de d20 en Ventaja contra ti o contra algún efecto que tu provocaste, tu ganas Ventaja contra ella en ese mismo Tipo de tirada hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 183,
+            "name": "Pararrayos",
+            "description": "Si una criatura lanza un Movimiento de Tipo eléctrico a menos de 5 metros de ti, puedes usar tu Reacción y 2 PP para redirigir el efecto a ti. Si el Movimiento hace una Tirada de Ataque, tu te vuelves el objetivo y si requiere de que se hagan Tiradas de Salvación, sólo tu debes hacer la Tirada de Salvación. Eres inmune al daño de los Movimientos que rediriges a ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 184,
+            "name": "Pareja de baile",
+            "description": "Cuando una criatura usa un Movimiento con la etiqueta de Danza, puedes usar tu Reacción y pagar el coste en PP del Movimiento para usar ese Movimiento tu también.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 185,
+            "name": "Patada recia",
+            "description": "Ganas un bono al daño de los Movimientos con la etiqueta de Puño igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 186,
+            "name": "Pelaje recio",
+            "description": "Cuando fueses a recibir daño por ser golpeado por una Tirada de Ataque, puedes usar tu Reacción y 1 PP para reducir ese daño en 10.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 187,
+            "name": "Peluche",
+            "description": "Cuando recibes daño de un Movimiento que hace Tiradas de Ataque Cuerpo a Cuerpo, reduces el daño que recibes en una cantidad igual a tu BH. Sin embargo, el daño de Tipo fuego es super efectivo contra ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 188,
+            "name": "Pelusa",
+            "description": "Cuando recibes daño, puedes usar tu Reacción para que parte de tu algodón caiga y se disperse por el suelo en 1 metro a tu alrededor. Este algodón es pegajoso y vuelve Terreno Difícil para todos menos para ti y para otros Eldegoss.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 189,
+            "name": "Pereza",
+            "description": "Al principio de cada uno de tus turnos, lanza 1d20.  Si el resultado es de 7-, te da pereza todo y no puedes tomar Acciones ni moverte a lo largo de este turno. Además, cuando esto ocurre ganas Puntos de Escudo iguales al doble de tu Nivel que duran hasta el principio de tu próximo turno y, al final de tu turno, si tienes Niveles de Envenenado, Paralizado, Quemado o Helado, estos se reducen en 1 más de los normal.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 190,
+            "name": "Perro guardián",
+            "description": "Si fueses a quedar asustado, en lugar ganas Ventaja en Tiradas de Ataque hasta el final de tu próximo turno. Además, cuando esto ocurre, puedes usar tu Reacción y 1 PP para enfurecerte. Cuando te enfureces de esta forma, el daño base de los Movimientos que uses antes del final de tu próximo turno aumenta en 1 dado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 191,
+            "name": "Pez pistola",
+            "description": "Tu entrenador puede agarrarte en una de sus manos y usarte como una pistola. Ponerte adecuadamente no es sencillo y cuesta una Acción a tu entrenador.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 192,
+            "name": "Piel celeste",
+            "description": "Cuando usas un Movimiento de Tipo normal, este se considera de Tipo Volador.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 193,
+            "name": "Piel eléctrica",
+            "description": "Cuando usas un Movimiento de Tipo normal, este se considera de Tipo Eléctrico.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 194,
+            "name": "Piel feérica",
+            "description": "Cuando usas un Movimiento de Tipo normal, este se considera de Tipo Hada.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 195,
+            "name": "Piel helada",
+            "description": "Cuando usas un Movimiento de Tipo normal, este se considera de Tipo Hielo.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 196,
+            "name": "Piel milagro",
+            "description": "Al final de tus turnos, reduces tu Nivel de Envenenado, Quemado, Helado, Paralizado y Dormido en 2, en lugar de en 1.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 197,
+            "name": "Piel seca",
+            "description": "Eres inmune al daño de agua y el Tipo Fuego es súper efectivo contra ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 198,
+            "name": "Piel tosca",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, tu piel la daña, recibiendo daño de tu Tipo primario igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 199,
+            "name": "Pies rápidos",
+            "description": "Si estas quemado, paralizado, confuso, dormido, helado o envenenado, tu velocidad de caminado aumenta en 2 metros y no generas ataques de oportunidad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 200,
+            "name": "Poder arena",
+            "description": "Durante las tormentas de arena y cuando estás en un desierto, recibes un bono al daño de tus Movimientos igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 201,
+            "name": "Poder fúngico",
+            "description": "Cuando usas un Movimiento que fuerza a una criatura a hacer una salvación pero que no hace daño, puedes usar tu Reacción y 2 PP para provocar Desventaja en la tirada de Salvación.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 202,
+            "name": "Poder solar",
+            "description": "Si estás bajo luz solar directa, cuando usas un Movimiento que hace daño puedes decidir perder una cantidad de PV igual a tu Vitalidad. Si lo haces, el daño del Movimiento aumenta en 2 dados.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 203,
+            "name": "Polvo escudo",
+            "description": "Una capa fina de polvo protector te recubre. Puedes ignorar los efectos secundarios provocados por hacer una Tirada de Ataque Natural superior a cierto valor (los críticos no son efectos secundarios).",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 204,
+            "name": "Pompa",
+            "description": "No puedes ser quemado. Cuando recibes daño de Tipo fuego, reducelo a la mitad. Tu bono de daño de STAB es el doble de tu BH, en lugar de tu BH, para los Movimientos de Tipo agua.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 205,
+            "name": "Potencia",
+            "description": "Ganas un bono igual a tu FUE para el daño base de todos tus Movimientos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 206,
+            "name": "Fuerza bruta",
+            "description": "Cuando usas un Movimiento que hace daño y tiene otro efecto, puedes decidir ignorar ese otro efecto. Si lo haces, el daño del Movimiento gana un bono igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 207,
+            "name": "Predicción",
+            "description": "Si estás bajo la lluvia, te vuelves Tipo agua. Si está nevando sobre ti, te vuelves Tipo hielo. Si estás bajo Sol Abrasador, te vuelves Tipo fuego.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 208,
+            "name": "Presión",
+            "description": "Cuando una criatura rival a menos de 3 metros de ti usa un efecto que gasta PP, este cuesta un 1 PP más. Una criatura no puede verse afectada por más de una instancia de esta Habilidad a la vez.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 209,
+            "name": "Prestidigitador",
+            "description": "Conoces el Movimiento Truco, que no cuenta para el máximo de movimientos que conoces. Cuando golpeas a una criatura con una Tirada de Ataque, puedes usar truco sobre dicha criatura sin coste de Acción.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 210,
+            "name": "Primer auxilio",
+            "description": "Cuando usas un Movimiento con la Etiqueta de Restauración, puedes usar 1 PP para usar otro Movimiento con coste de una Acción y que no te cuesta más de 1 PP usar.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 211,
+            "name": "Producedulce",
+            "description": "Al principio de cada Escena, puedes crear algún dulce mágico, usualmente crema, que puede ingerirse como Acción. Una criatura que consume este dulce reduce en 2 sus niveles de quemado, paralizado, helado, dormido y envenenado. Puedes crear más miel por 1 PP como Acción y, como parte de esta acción, consumirla o dársela a una criatura para que la consuma. Los dulces que creas con esta Habilidad pierden sus capacidades mágicas al final de la Escena, pero siguen sirviendo como alimento.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 212,
+            "name": "Psicogénesis",
+            "description": "Conoces el Movimiento Campo psíquico, que no cuenta para el máximo de Movimientos que conoces y puedes usarlo como parte de la Acción que tomas para usar un Movimiento de Tipo Psíquico.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 213,
+            "name": "Punk rock",
+            "description": "Cuando  usas un Movimiento con la Etiqueta de Sonido este recibe un bono al daño igual a tu BH. Además, reduces a la mitad el daño que te provocan los Movimientos con la etiqueta de sonido.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 214,
+            "name": "Punta acero",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, tus púas la dañan, recibiendo daño  de tu Tipo Primario igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 215,
+            "name": "Punto tóxico",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque Cuerpo a Cuerpo, puedes usar tu Reacción y 1 PP para forzarla a que realice una Tirada de Salvación de RES con Dificultad = 10 + BH + EST. Si la falla, gana 1 Nivel de Envenenado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 216,
+            "name": "Puño férreo",
+            "description": "Ganas un bono al daño de los Movimientos con la etiqueta de Puño igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 217,
+            "name": "Quitanieves",
+            "description": "Cuando estás en un terreno nevado o mientras nieva sobre ti, tus velocidades aumentan en 2 metros y puedes usar tu Reacción y 1 PP para ganar Ventaja en una Tirada de Salvación de AGI o imponer Desventaja en un Ataque de oportunidad que has provocado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 218,
+            "name": "Reacción química",
+            "description": "Cuando una criatura aliada cae insconsciente a menos de 5 metros de ti, puedes usar tu Reacción y 2 PP para ganar una de sus habilidades hasta el final de la Escena. No puedes copiar habilidades que hacen cambiar de forma con esta habilidad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 219,
+            "name": "Receptor",
+            "description": "Cuando una criatura aliada cae insconsciente a menos de 5 metros de ti, puedes usar tu Reacción y 1 PP para ganar una de sus habilidades hasta el final de la Escena. No puedes copiar habilidades que hacen cambiar de forma con esta habilidad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 220,
+            "name": "Recogemiel",
+            "description": "Al principio de cada Escena, has creado una nutritiva miel que puede ingerirse como Acción. Una criatura que consume esta miel reduce en 2 sus niveles de quemado, paralizado, helado, dormido y envenenado. La miel pierde sus efectos curativos al final de la Escena. Puedes crear más miel por 1 PP como Acción y, como parte de esta acción, consumirla o dársela a una criatura para que la consuma.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 221,
+            "name": "Regeneración",
+            "description": "Conoces el Movimiento Recuperación, que no cuenta para el máximo de Movimientos que conoces.Cada vez que entras a tu Poké Ball durante un combate cuando estás consciente, puedes usar Recuperación por 1 PP más de lo normal como.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 222,
+            "name": "Regia presencia",
+            "description": "Tu señorial presencia es intimidatoria. Cuando una criatura que te ve hace una Tirada de Ataque contra ti o uno de tus aliados a menos de 3 metros de ti, puedes usar tu Reacción y 2 PP para forzarla a que realice una Tirada de Salvación de ESP con Dificultad = 10 + BH + EST. Si la falla, gana 3 Niveles de Asustado de ti. Sólo puedes usar esta Reacción una vez por Escena contra una misma criatura.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 223,
+            "name": "Reina abeja",
+            "description": "Tu colmena está compuesta por Combee que te sirven y de los que obtienes poder. Como Acción, puedes convencer a un Combee para que te sirva superando una Tirada de Habilidad de Persuasión con Dificultad 10 + el bono de Tirada de Salvación de Espíritu del Combee. Esta habilidad no puede ser copiada.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 224,
+            "name": "Remoto",
+            "description": "Cuando usas un Movimiento que hace una Tirada de Ataque Cuerpo a Cuerpo, puedes cambiar su alcance a 5 metros y convertir las Tiradas de Ataques a Tiradas de Ataque a rango.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 225,
+            "name": "Resonancia",
+            "description": "Obtienes poder canalizando los sonidos que creas. Si un Movimiento puede usarse con la Estadística de Mente, tu puedes usarlo con tu Presencia. Si lo haces, este gana la etiqueta de Sonido.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 226,
+            "name": "Respondón",
+            "description": "Eres inmune a ser asustado y, además, si un efecto provocado por una criatura rival intenta asustarte, ganas Ventaja en tus Tiradas de d20 hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 227,
+            "name": "Retirada",
+            "description": "Cuando tus PV se reducen por debajo de la mitad de tus PV Máximos puedes volver a tu Poké Ball y que tu entrenador saque un nuevo Pokémon como Reacción. Mientras tus PV están por debajo de tus PV Máximos, tus velocidades aumentan en 4 metros y no provocas Ataques de oportunidad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 228,
+            "name": "Revés",
+            "description": "Cuando una criatura te hace daño con una tirada de ataque que te reduce a 0 PV, tus entrañas atacan a la criatura, haciendo que pierda tantos PV como los que tenías justo antes de recibir el daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 229,
+            "name": "Rezagado",
+            "description": "Cuando tiras iniciativa, puedes elegir en su lugar que sea 0. Si tienes un entrenador, su iniciativa también se vuelve 0. Si eliges que tu iniciativa sea 0, tienes Ventaja en todas las Tiradas de d20 que hagas hasta el final de tu primer turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 230,
+            "name": "Ritmo propio",
+            "description": "Al final de tus turnos, reduces tus Niveles de Confusión, Asustado, Enfurecido e Infatuado en 2, en lugar de en 1.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 231,
+            "name": "Rivalidad",
+            "description": "Si uno de tus Movimientos fuese a inflingir daño a una criatura con la que compartes un Tipo, añade un bono al daño igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 232,
+            "name": "Rizos rebeldes",
+            "description": "Cuando una criatura te golpea con una Tirada de Ataque cuerpo a cuerpo o te está tocando, puedes usar tu Reacción y 1 PP para reducir sus velocidades en 2 metros hasta que use una Acción para desenmarañar los pelos que le has dejado encima. Este efecto puede acumularse y, si todas sus velocidades llegan a 0, la criatura queda apresada por los cabellos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 233,
+            "name": "Robustez",
+            "description": "Tu cuerpo es tan resistente que puede soportar golpes devastadores. Una vez por Escena, reduces una instancia de daño en una cantidad igual a 5 veces tu Resistencia y eres inmune a los efectos secundarios provocados por este efecto.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 234,
+            "name": "Roca sólida",
+            "description": "Si fueses a recibir daño super efectivo, puedes usar tu Reacción y 1 PP para que este daño sea neutral contra ti. Por cada vez que uses esta Reacción en una Escena su coste aumenta en 1 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 235,
+            "name": "Rompemoldes",
+            "description": "Tus Movimientos ignoran las habilidades de las criaturas a las que afectan.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 236,
+            "name": "Rumia",
+            "description": "Cuando comes una comida, puedes beneficiarte de la habilidad que esta te otorga una vez más de lo normal.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 237,
+            "name": "Sacapecho",
+            "description": "Tu Evasión no puede reducirse. Además, cuando fueses a hacer una Tirada de Salvación de AGI, puedes usar tu Reacción y 2 PP para hacerla en Ventaja.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 238,
+            "name": "Saco de boxeo",
+            "description": "Puedes usar tu Mente como Estadística asociada a cualquier Movimiento. Además, cuando usas Contraataque o Manto Espejo, el coste de estos Movimientos se reduce en 1 y en 2 a partir de nivel 8. Esta Habilidad no puede ser copiada.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 239,
+            "name": "Sal purificadora",
+            "description": "Al final de tus turnos, reduces tu Nivel de Envenenado, Quemado, Helado o Paralizado en 2, en lugar de en 1. Además, reduces el daño de Tipo Fantasma que recibes a la mitad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 240,
+            "name": "Sebo",
+            "description": "Al final de tus turnos, reduces tu Nivel de Quemado y Helado en 2, en lugar de en 1. Además, reduces a la mitad los daños de los Tipos Fuego e Hielo.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 241,
+            "name": "Sequía",
+            "description": "Conoces el Movimiento Día soleado  y no cuenta para el máximo de Movimientos que conoces. Además, puedes usarlo sin coste de Acción al principio de tu turno. Usar Día soleado cuesta 3 PP para ti, en lugar de 4 PP.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 242,
+            "name": "Simbiosis",
+            "description": "Al principio del día, elige una criatura. Mientras la criatura esté a 2 metros o menos, puedes usar tu Reacción y 1 PP para recibir una instancia de daño que fuese a recibir y esta criatura puede hacer lo mismo por ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 243,
+            "name": "Simple",
+            "description": "Si tienes Ventaja o Desventaja en una Tirada, tiras 3d20 en lugar de 2 y eliges el mayor o menor, respectivamente.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 244,
+            "name": "Sincronía",
+            "description": "Si una criatura te deja helado, paralizado, confuso, envenenado o quemado, puedes usar 1 PP y tu Reacción para forzar que esta haga una tirada de Salvación de ESP con Dificultad = 10 + BH + EST. Si la falla, está bajo los efectos de este estado mientras tu lo estés, incluso si es inmune a este efecto.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 245,
+            "name": "Sombra trampa",
+            "description": "Cuando una criatura a menos de 5 metros de ti intenta volver a su Poké Ball, puedes gastar tu Reacción para pisar su sombra. La criatura hace una Tirada de Salvación de ESP con Dificultad = 10 + BH + EST. Si la falla, no puede volver a su Poké Ball hasta el principio de su próximo turno y no puede recibir una orden.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 246,
+            "name": "Superguarda",
+            "description": "Eres inmune a todo el daño que no es supereficaz contra ti. Esta Habilidad no puede copiarse.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 247,
+            "name": "Surcavientos",
+            "description": "Si te ves afectado por un Movimiento de viento o hace mucho viento, tus Velocidades aumentan en 2 metros y tienes Ventaja en tu próxima Tirada de Ataque hecha antes del final de tu próximo turno. Además, si no tienes una velocidad de Vuelo, la ganas hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 248,
+            "name": "Telepatía",
+            "description": "Puedes comunicarte telepáticamente con criaturas a menos de 10 metros de ti.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 249,
+            "name": "Tenacidad",
+            "description": "Cuando haces una Tirada de d20 en Desventaja, ganas Ventaja en tu próxima Tirada de d20.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 250,
+            "name": "Termoconversión",
+            "description": "No puedes ser quemado. Además, si recibes daño de Tipo fuego, expulsas un vapor que te potencia. Hasta el final de tu próximo turno, el daño base de tus Movimientos aumenta en 1 dado y, si eres de Nivel 14 o más, añades 1 dado extra al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 251,
+            "name": "Toque tóxico",
+            "description": "Cuando golpeas a una Criatura con una Tirada de Ataque Cuerpo a Cuerpo y la Tirada Natural es de 17+, esta gana 1 Nivel de Envenenado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 252,
+            "name": "Torrente",
+            "description": "Cuando tus PV están por debajo de 1/4 de tus PV máximos, el daño base de tus Movimientos de Tipo agua aumenta en un dado. Si eres de Nivel 14 o más, añades 2 dados en lugar de 1 al daño.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 253,
+            "name": "Tragamisil",
+            "description": "Tras usar surf o buceo en una superficie natural de agua, sales con un pokémon pez en la boca. Si te golpean con una Tirada de Ataque mientras lo tienes en la boca, lo escupes y este se va, pero si la tirada fue cuerpo a cuerpo golpea en la cara, por lo que recibe una cantidad de d4 de daño de daño Tipo Normal igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 254,
+            "name": "Trampa arena",
+            "description": "Si una criatura a menos de 4 metros de ti está tocando arena mientras tu también lo haces, puedes usar tu Acción para forzarla a hacer una Tirada de Salvación de Fuerza Dificultad = 10 + BH + FUE. Si la falla, la agarras a distancia usando la arena. No puedes mover a una criatura agarrada de esta forma pero queda apresada. Una criatura apresada de esta forma puede hacer una Tirada de Salvación de Fuerza o Agilidad para liberarse usando su Acción.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 255,
+            "name": "Transportarrocas",
+            "description": "Ganas un bono al daño para tus Movimientos de Tipo roca igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 256,
+            "name": "Tumbos",
+            "description": "Si estás confuso, tu Evasión aumenta en 4 y no puedes estar agarrado.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 257,
+            "name": "Unísono",
+            "description": "Cuando uno de tus aliados a menos de 2 metros de ti gana Ventaja en un una Tirada de Habilidad, Salvación o Ataque, tu también ganas Ventaja en tu próxima Tirada de d20 del mismo Tipo que tu aliado hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 258,
+            "name": "Velo agua",
+            "description": "No puedes ser quemado y reduces el daño de Tipo Fuego a la mitad.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 259,
+            "name": "Velo arena",
+            "description": "Cuando estás en un desierto o durante una tormenta de arena, tu Evasión aumenta en 2.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 260,
+            "name": "Velo aroma",
+            "description": "Tu y tus aliados a menos de 5 metros oleis un aroma tranquilizador que hace que seais inmune al Movimiento Anulación y a todo efecto similar.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 261,
+            "name": "Velo dulce",
+            "description": "Ni tu ni tus aliados a menos de 5 metro podeis caer dormidos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 262,
+            "name": "Velo flor",
+            "description": "Ni tu ni tus aliados de Tipo planta a menos de 5 metros podeis tener Desventaja en una Tirada de Salvación.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 263,
+            "name": "Velo pastel",
+            "description": "Emites un olor que funciona como antídoto. Tu y tus aliados a menos de 2 metros de ti recibís la mitad de daño de los Movimientos de Tipo veneno y reducis en 2 en lugar de en 1 el Nivel de Envenando que sufrís al final de vuestros turnos.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 264,
+            "name": "Ventosas",
+            "description": "Puedes hacer que tus ventosas te agarren al suelo. Cuando un Movimiento fuese a moverte cuando estás sobre el suelo y estás consciente, reduces este empuje en 2 metros.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 265,
+            "name": "Vigilante",
+            "description": "Cuando golpeas con una Tirada de Ataque a una criatura que aun no ha tomado un turno desde que inició el combate o desde que salió de su Poké Ball, esta tirada de ataque se considera un golpe crítico.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 266,
+            "name": "Viscosecreción",
+            "description": "Si una criatura te hace daño con un Movimiento que le hace ganar vida, en su lugar recibe daño de Tipo veneno igual a los PV que fuera a recuperar.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 267,
+            "name": "Viscosidad",
+            "description": "Tienes ventaja en las Tiradas de Habilidad de Combate hechas para agarrar a una criatura.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 268,
+            "name": "Vista lince",
+            "description": "Tienes Ventaja en las Tiradas de Salvación contra quedar cegado y para dejar de estarlo. Además, tu Grado de Habilidad en Percepción aumenta en 1.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 269,
+            "name": "Voz fluida",
+            "description": "Cuando usas un Movimiento con la etiqueta de Sonido, puedes considerarlo un Movimiento de Tipo agua. Si lo haces, el daño de tus Movimiento de Sonido aumenta en una cantidad igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        },
+        {
+            "id": 270,
+            "name": "Amor filial",
+            "description": "Tu cría sale de tu bolsa marsupial. Compartis tus PV y no puede alejarse más de 1 metro de ti o pierde su fuerza. Tu cría se mueve contigo y, cuando usas un Movimiento, esta lo copia. Tu cria tiene unas estadísticas iguales a la mitad de las tuyas y se considera de tus mismo Nivel.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 271,
+            "name": "Banco",
+            "description": "Los wishiwashi pueden unirse para formar un gran banco que genera la ilusión de que son una enorme criatura marina. Una vez al Día, un wishiwashi de Nivel 6 o más puede tomar una Acción Extendida para llamar a sus compañeros siempre que esté en un océano en el que los wishiwashi viven, uniéndose para crear un Banco de Wishiwashi, el cual sigue las órdenes del wishiwashi que llamó a los demás.  A todos los efectos, el Banco se comporta como un único Pokémon, salvo porque no pueden todos ser capturados en una misma Poké Ball. El Banco tiene su propia cantidad de PV máximos y PP máximos y cuando este se forma, tiene todos su PV y PP disponibles. Además, el Banco de Wishiwashi tiene el mismo Nivel, mismas Dotes, mismas Mejoras de Estadísticas, conoce los mismos Movimientos y se ve afectado por los mismos efectos, como Entrenamientos, que el Wishiwashi que invocó al Banco. Puedes ver las Estadísticas del Banco de wishiwashi en la Pokédex.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 272,
+            "name": "Bebedor de néctar",
+            "description": "Al beber néctar especial, cambias de forma y de Tipo primario. Si el néctar es amarillo, te vuelves Tipo eléctrico; si es rosa, Tipo psíquico; si es rojo, Tipo fuego; si es violeta, Tipo fantasma.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 273,
+            "name": "Cambio estación",
+            "description": "Tu cuerpo se adapta a las estaciones y hace que cambies tu aspecto. En primavera, esta habilidad tiene los efectos de Regeneración. En verano, esta habilidad tiene los efectos de Cosecha. En otoño, esta habilidad tiene los efectos de Irascible. En invierno, esta habilidad tiene los efectos de Quitanieves.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 274,
+            "name": "Cambio heroico",
+            "description": "Cuando desapareces de la vista de todas las criaturas que te ven, inclusive cuando entras a tu Poké Ball, y sales de nuevo en la misma Escena, puedes volver en tu forma heróica.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 275,
+            "name": "Electroinvasor",
+            "description": "Como Acción puedes entrar y salir de un aparato electrónico de hasta tamaño Grande. Cuando estás dentro de un aparato electrónico tomas control de este, puedes moverlo como si fuese tu propio cuerpo y, además, ganas los siguientes beneficios:",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 276,
+            "name": "Escudo limitado",
+            "description": "Cuando tus PV se reducen por debajo de la mitad, tu coraza se rompe, revelando tu interior. Tu Evasión se reduce en 2, tu Agilidad aumenta en 1,  tus velocidades aumentan en 4 metros y añades un bono igual a tu BH al daño de tus Movimientos.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 277,
+            "name": "Espada maldita",
+            "description": "Eres un arma maldita. Tus movimientos de Tipo Normal con la Etiqueta de Cortante se vuelven de Tipo Acero. Además, si una criatura lo permite, puedes tomar un control parcial sobre su cuerpo como una Acción, haciendo que pueda usarte como una extensión de si mismo, de forma que aprende a usar tus Movimientos y gana tus Habilidades Ocultas mientras estéis en este estado, que sólo tu puedes acabar como una Acción.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 278,
+            "name": "Modo Daruma",
+            "description": "Cuando caes por debajo de la mitad de tus PV, puedes entrar en modo daruma. Si lo haces hasta que dejes esta forma como Acción, ganas una velocidad de levitado igual a tu velocidad de caminado, pierdes tu velocidad de caminado, ganas el Tipo Psíquico, ganas un bono de todas tus Tiradas de Salvación de Resistencia y Presencia de +2 y tu FUE y tu MEN se intercambian.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 279,
+            "name": "Modo Daruma (Galar)",
+            "description": "Cuando caes por debajo de la mitad de tus PV, puedes entrar en modo daruma. Si lo haces hasta que dejes esta forma como Acción, tu velocidad de caminado aumenta en 4 metros, ganas el Tipo fuego y tu FUE y tu AGI se intercambian.",
+            "transformation": 1,
+            "legendary": 0
+        },
+        {
+            "id": 280,
+            "name": "Paleosíntesis",
+            "description": "Eres una Paradoja proveniente del pasado. Si estás bajo luz solar directa de Día Soleado o intensidad similar, tu Evasión y tus Velocidades aumentan en 2. Además, cuando esto ocurre puedes usar 1 PP para añadir un dado al daño base de tus Movimientos.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 281,
+            "name": "Transistor",
+            "description": "Añades un bono al daño de tus Movimientos de Tipo eléctrico igual a tu BH.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 282,
+            "name": "Abalorio debacle",
+            "description": "Eres un ser que trae consigo la ruina, una Leyenda Funesta. Cuando una criatura hace una Tirada de Ataque a rango a menos de 10 metros de ti, la hace en Ventaja y su Rango de crítico aumenta en 1.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 283,
+            "name": "Aro portales",
+            "description": "Como Acción Estándar, puedes usar tus aros para traer objetos de tamaño pequeño o inferior de otro lugar, otra realidad u otro momento de la línea temporal. Además, conoces el Movimiento Truco, que no cuenta para el máximo de Movimientos que conoces y no puedes fallar al usarlo.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 284,
+            "name": "Aura feérica",
+            "description": "Tu aura señorial y mágica impregna todo lo que te rodea. Por 3 PP, Puedes hacer que tus cuernos emitan luz como Acción. Cuando lo haces, las criaturas bañadas por esta luz recuperan 40 Puntos de Vida y reducen sus niveles de fatiga en 1.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 285,
+            "name": "Aura oscura",
+            "description": "Tu aura maéfica mancha todo lo que te rodea. Una vez por Escena, puedes extender tus alas como Acción. Cuando lo haces, todas las luces naturales se apagan y cubres el cielo de sombras hasta donde alcanza la vista. Todas las criaturas que están en el área afectada hacen una Tirada de Salvación de Resistencia Dificultad = 10 + tu BH + tu MEN. Si la fallan, sus PV máximos se reducen en 40 y ganan 2 Niveles de fatiga y tu recuperas todos tus PV y pierdes un Nivel de Fatiga por cada criatura que ha fallado la Tirada de Salvación. Una criatura que ve sus PV máximos reducidos a 0 de esta forma muere.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 286,
+            "name": "Cadena tóxica",
+            "description": "Cuando golpeas a una Criatura con una Tirada de Ataque y la Tirada Natural es de 17+, esta gana 2 Niveles de Envenenado.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 287,
+            "name": "Caldero debacle",
+            "description": "Eres un ser que trae consigo la ruina, una Leyenda Funesta. Cuando una criatura que no eres tu hace una Tirada de Salvación a menos de 10 metros de ti, la hace en Desventaja y si obtiene un 1 en la Tirada Natural y el efecto que provocó la Tirada inflige daño, recibe el doble de ese daño.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 288,
+            "name": "Carga cuark",
+            "description": "Eres una Paradoja proveniente del futuro. Cuando recibes daño de Tipo eléctrico o has tocado un Campo eléctrico, tu Evasión y tus Velocidades aumentan en 2 hasta el final de la Escena. Además, cuando esto ocurre puede añadir un dado al daño base de tus Movimientos. Además, cuando estas bajo este estado, puedes añadir un dado al daño base de tus Movimientos.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 289,
+            "name": "Coloso",
+            "description": "Eres tan descomunal y tan poderoso que no hay forma de detenerte. No te afecta el terreno difícil y no puedes ser agarrado o apresado.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 290,
+            "name": "Controlar volcán",
+            "description": "Cada Pokémon con esta Habilidad tiene un volcán propio asociado. Cuando te encuentras en el corazón de tu volcán, puedes tomar una Acción Extendida para hacer que entre en erupción o para que esta termine.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 291,
+            "name": "Coránima",
+            "description": "Eres un constructo que usa el poder del alma como combustible. Cuando una criatura cae a 0 PV a menos de 5 metros de ti, un minúsculo fragmento de su alma se une a tu Coránima, lo que te potencia hasta el final de tu próximo turno. Mientras estás potenciado, tus Tiradas de Ataque se hacen en Ventaja.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 292,
+            "name": "Creador de continentes",
+            "description": "Creaste los continentes del mundo y eres dueño y señor de ellos. Puedes controlar la placa tectónica en la que estás a tu voluntad, levantando montañas, provocando erupciones volcánicas y creando sistemas de cuevas.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 293,
+            "name": "Defensor de los ideales",
+            "description": "Eres el Defensor de los ideales y tus instintos te impulsan a proteger a los que creen fervientemente en los suyos y a castigar a todo aquel que, en su nombre, comete atrocidades. Conoces el porqué de las acciones de las criaturas que te rodean y sabes decidir si creen realmente los ideales que dicen defender o si son sólo una excusa para otro fin.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 294,
+            "name": "Dios supremo",
+            "description": "Eres el Dios supremo e, incluso en esta forma limitada de todo tu poder, eres omnipotente y perfecto. No puedes tener Mejoras de Estadísticas. Mientras estés conectado a tu fuente de poder ilimitada, ninguna criatura o efecto puede hacer nada en tu contra, no puedes recibir daño, puedes usar cualquier Movimiento cualquier cantidad de veces que quieras y tienes una cantidad de PP ilimitados.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 295,
+            "name": "Drenado vital",
+            "description": "Tu ciclo vital dura mil años y, para no morir, debes drenar la energía vital de miles de criaturas. Una vez cada 1000 años, cuando estás cerca de fallecer, puedes hacer que la oscuridad creada por tu Habilidad Aura oscura cercene los lazos de todo ser vivo en tu noche. Cualquier criatura con 4 o más Niveles de Fatiga en esta oscuridad fallece. Una vez has saciado tu ansia, vuelves a las montañas y te vuelves una crisálida de la que saldrás sólo cuando vuelvas a necesitar más energía vital.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 296,
+            "name": "Dulces sueños",
+            "description": "Las criaturas que duermen a menos de 5 metros de ti tienen sueños plácidos gracias a tu magia. Dichas criaturas son inmunes a ser Envenenadas, Paralizadas, Quemadas, Heladas y quedar Confusas o Asustadas. Además, son inmunes a todo el daño que reciben y no pueden soñar con pesadillas ni tener Niveles de Pesadilla.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 297,
+            "name": "Emperador del cielo",
+            "description": "Creaste la atmósfera como la conocemos y puedes controlarla. Como Acción, puedes eliminar cualquier condición climática y crear vientos huracanados en cualquier lugar que puedas ver que no pueden ser sustituidos por otra condición climática.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 298,
+            "name": "Espada de la justicia",
+            "description": "Eres una de las espadas de la justicia, protectores del bien y los Pokémon. Si recibes daño de Tipo Siniestro o proveniente de un humano, conviertes parte de su energía en determinación. Tienes Ventaja en tus Tiradas de Ataque hasta el final de tu próximo turno.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 299,
+            "name": "Espada debacle",
+            "description": "Eres un ser que trae consigo la ruina, una Leyenda Funesta. Cuando una criatura hace una Tirada de Ataque cuerpo a cuerpo a menos de 10 metros de ti, la hace en Ventaja y su rango de crítico aumenta en 1.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 300,
+            "name": "Espíritu guardián",
+            "description": "Eres un espíritu guardián de la tierra de la que eres nativo. Usar Movimientos con la Etiqueta de Campo no te cuesta PP y, cuando usas un Movimiento con la Etiqueta de Campo, puedes multiplicar el radio hasta por 10. Además, los campos que creas no pueden ser eliminados por ninguna criatura que no tenga esta misma Habilidad.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 301,
+            "name": "Estrella fugaz",
+            "description": "Te mantienes en un estado de letargo que se interrumpe por una semana cada mil años. Durante esta semana, puedes cumplir deseos materiales, por ejemplo, de riquezas, teleportándolas de algún lugar aleatorio del mundo hacia la persona que te los pide.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 302,
+            "name": "Fuerza cerebral",
+            "description": "Cuando uno de tus Movimientos hace daño super efectivo contra una criatura, el daño se triplica en lugar de duplicarse.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 303,
+            "name": "Golem",
+            "description": "No necesitas alimentarte ni dormir y puedes sumirte, como Acción, en un letargo hasta que se cumpla una condición que tu o tu entrenador establezcáis.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 304,
+            "name": "Guardia espectro",
+            "description": "Eres la heraldo de la luna, lo que te vuelve única y sobrenatural. Si fueses a recibir daño super efectivo, puedes usar tu Reacción y 1 PP para que este daño sea neutral contra ti. Por cada vez que uses esta Reacción en una Escena su coste aumenta en 1 PP.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 305,
+            "name": "Guardia metálica",
+            "description": "Eres el heraldo del sol, lo que te vuelve puro, perfecto, imperturbable e inmutable. No puedes tener Desventaja en Tiradas de d20 ni puede reducirse ninguna de tus características, Evasión o Velocidades.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 306,
+            "name": "Guardián de los mares",
+            "description": "Eres el protector de los mares y, aunque no eres de Tipo Agua, puedes respirar bajo esta, tienes STAB en los Movimientos de Tipo Agua y calificas para todo prerrequisito que diga que debes ser Tipo Agua.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 307,
+            "name": "Instinto combativo",
+            "description": "Mewtwo fue creado para ser inigualable en combate y sus instintos afilados para la lucha superan a los de cualquier criatura natural. Cuando un ataque falla contra Mewtwo, Mewtwo pasa una Tirada de Salvación o golpea con una Tirada de Ataque, gana 1 Punto de Instinto y cuando debilita a una criatura gana 2 Puntos de Instinto. Mewtwo puede tener un máximo de puntos de Instinto igual a su Mente y puede gastarlos de la siguiente forma:",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 308,
+            "name": "Invisibilidad",
+            "description": "Como Acción, te vuelves Invisible hasta que lances un Movimiento o recibas daño.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 309,
+            "name": "Latido oricalco",
+            "description": "Eres el rey de las Paradojas del pasado. Conoces el Movimiento Día soleado y no cuenta para el máximo de Movimientos que conoces. Además, puedes usarlo en cualquier momento y tantas veces como quieras. Además, cuando estas Acalorado, añades un dado al daño base de tus Movimientos y, a partir de Nivel 14, añades un dado extra.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 310,
+            "name": "Llama eterna",
+            "description": "Conoces el Movimiento Plegaria vital y este no cuenta para el máximo de Movimientos que conoces. Además, no hay un límite a la cantidad de veces que puedes usar Plegaria vital. Cuando usas Plegaria vital sobre una criatura, este se vuelve ceniza y renace con todos sus PP, PV, sin Niveles de Fatiga y libre de todo Estado o efecto nocivo que la afectase.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 311,
+            "name": "Lianas",
+            "description": "Puedes crear largas lianas de tus brazos y cuello. Puedes usar estas lianas como extemidades de tu cuerpo. Puedes agarrar objetos, realizar agarres y empujar a 4 metros de ti. Además, cuando realizas un Movimiento que pudieras realizar con una de tus extremidades o con tus lianas que hace una Tirada de Ataque cuerpo a cuerpo, puedes hacer esta Tirada de Ataque contra criaturas a menos de 4 metros de ti.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 312,
+            "name": "Mal sueño",
+            "description": "Una criatura que termina su turno Dormida a menos de 10 metros de ti gana 1 Nivel de Pesadilla. Una criatura sólo pierde Niveles de Pesadilla al descansar a más de 10 metros de ti o si usa una Pluma lunar de Cresselia (pierde todos sus Niveles de Pesadilla) como Acción. Una criatura con Niveles de Pesadilla sueña con pesadillas terribles que no la dejan descansar.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 313,
+            "name": "Mandíbula dragón",
+            "description": "Añades un bono al daño de tus Movimientos de Tipo dragón igual a tu BH.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 314,
+            "name": "Mar del albor",
+            "description": "Puedes usar Danza lluvia sin coste, al principio de tu turno sin coste de acción y tantas veces como quieras. Cuando lo haces, llueve sobre un radio de 200 kilómetros.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 315,
+            "name": "Morasombra",
+            "description": "Eres uno con la sombra y te sientes como en casa cuando estás bajo esta. Si no te mueves ni tomas acciones cuando estás bajo la sombra, te vuelves Invisible.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 316,
+            "name": "Motor hadrónico",
+            "description": "Eres la Paradoja del futuro más poderosa. Conoces el Movimiento Campo eléctrico, que no cuenta para el máximo de Movimientos que conoces y puedes usarlo como parte de la Acción de usar un Movimiento de Tipo Eléctrico. Además, cuando estas sobre un campo eléctrico, añades 1 dado al daño base de tus Movimientos y, a partir de Nivel 14, añades 1 daño extra.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 317,
+            "name": "Neurosimbiosis",
+            "description": "Como Acción, puedes ponerte sobre una persona, poniendo tu cabeza alrededor de la un humano. Si esta persona está inconsciente o acepta de forma voluntaria, puedes empezar a inyectarles una neurotoxina que la vuelve poderosa y violenta. La Fuerza, la Agilidad y la Mente de la persona aumentan en 2 hasta un máximo de 8. Además, la criatura no puede dormir, quedar dormida ni puede quedar asustada y, cuando gana niveles de Furia, gana el doble de estos niveles.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 318,
+            "name": "Nómada del tiempo",
+            "description": "Eres capaz de ver las diferentes líneas temporales y, como Acción, puedes viajar entre estas, cambiando de realidad y también viajando al pasado o al futuro. Puedes trasladar a una cantidad de criaturas contigo igual a tu Mente cuando viajas por el tiempo o entre líneas temporales.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 319,
+            "name": "Paladín de la verdad",
+            "description": "Eres el Paladín de la verdad y tus instintos te impulsan a defenderla y castigar a todo aquel que busque mancillarla. Es imposible que seas engañado e, instintivamente, sabes cuando algo es verdad.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 320,
+            "name": "Paso purificador",
+            "description": "Puedes caminar sobre el agua como si fuese sólido. Además, tu mero contacto con una superficie de agua la purifica de cualquier enfermedad, veneno o vertido tóxico en un radio de 3 metros a tu alrededor.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 321,
+            "name": "Primer eslabón",
+            "description": "Eres una criatura que precede a la evolución y tu material genético contiene al de todos los Pokémon que han evolucionado con el paso de las eras. Conoces el Movimiento Transformación, que no cuenta para el máximo de Movimientos que conoces y puedes usarlo sin coste de acción al principio de cada uno de tus turnos.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 322,
+            "name": "Puño invisible",
+            "description": "Ignoras todos los efectos de los Movimientos con la etiqueta de Escudo.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 323,
+            "name": "Ráfaga delta",
+            "description": "Los Movimientos de Clima  y efectos climáticos se anulan en un radio de 200 kilómetros a tu alrededor y son sustituidos por una ráfaga de viento que hacen que las Tiradas de Ataque a rango hechos en tu dirección se hagan en Desventaja.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 324,
+            "name": "Reina carbink",
+            "description": "Eres la reina de los carbink y estos te adoran y sirven siempre. Como Acción estándar, puedes hacer una Tirada de Persuasión contra todos los carbink que te oyen y estos hacen una Tirada de Salvación de ESP contra tu Tirada de Persuasión. Si la fallan, hacen lo que sea que les pidas de buena gana.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 325,
+            "name": "Relincho blanco",
+            "description": "Cuando haces que una criatura caiga a 0 PV, relinchas y te motivas. Hasta el final de tu próximo turno, tus Tiradas de Ataque se hacen en Ventaja y puedes pagar 1 PP para aumentar el daño base de cualquier Movimiento en 1 dado.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 326,
+            "name": "Relincho negro",
+            "description": "Cuando haces que una criatura caiga a 0 PV, relinchas y te motivas. Hasta el final de tu próximo turno, tus Tiradas de Ataque se hacen en Ventaja y puedes pagar 1 PP para aumentar el daño base de cualquier Movimiento en 1 dado.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 327,
+            "name": "Rey de los mares",
+            "description": "Como dueño y señor de los mares que eres, estos te obedecen. Puedes controlar las mareas, las olas y las corrientes marinas. A tu voluntad y al principio de tus turnos, puedes hacer que el nivel del mar aumente en hasta 10 metros de su nivel normal en una región con radio de 10 kilómetros a tu alrededor.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 328,
+            "name": "Rompeaura",
+            "description": "Si Xerneas o Yveltal están en tu rango de visión, anulas sus Habilidades.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 329,
+            "name": "Señor de la distorsión",
+            "description": "Eres el dios de la antimateria y de la distorsión. Como Acción Extendida puedes hacer que una región de hasta 1 Kilómetro se vuelva permanentemente una región bajo los efectos de Zona Extraña o de Gravedad (Si hay varias superficies sólidas, tu eliges que dirección es el suelo a efecto de esta gravedad).",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 330,
+            "name": "Señor del espacio",
+            "description": "Eres el dios del espacio, el cual sólo existe si está a tu alcance y se doblega ante tu voluntad. Como Acción Extendida, puedes teleportarte a ti, a cualquier localización y a cualquier criatura que elijas a otra posición del universo. Además, en cualquier momento puedes liberar tu poder sobre el tejido de la realidad en un área de hasta 1 kilómetro. Al principio de cada uno de tus turnos, puedes decidir dilatar o colapsar el espacio en un radio dentro del área de hasta 3 metros de radio. Si eliges dilatarlo, todas las distancias en este área se duplican y si decides colapsarlo se acortan a la mitad. Por lo tanto, moverse por estas zonas cuesta el doble o la mitad de velocidad que de forma normal. Si una zona dilatada y otra colapsada se solapan el efecto se anula.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 331,
+            "name": "Señor del tiempo",
+            "description": "Eres el dios del tiempo, el cual se mueve con tus latidos y cede ante tu voluntad. Como Acción Extendida, puedes viajar a cualquier momento de la línea del tiempo de tu realidad. Además, al principio de cada uno de tus turnos, puedes invocar tu poder temporal para que este se manifieste en tu entorno, volviéndolo maleable y haciendo que una región de hasta 1 kilómetro a tu alrededor se vea afectada por un Espacio raro especial.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 332,
+            "name": "Ser de la emoción",
+            "description": "Eres el ser místico que otorgó emociones a la humanidad. Como Acción Extendida puedes bendecir o maldecir a un humano a menos de 1 metro de ti:",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 333,
+            "name": "Ser de la sabiduría",
+            "description": "Eres el ser místico que otorgó la inteligencia y sabiduría a la humanidad. Como Acción Extendida puedes bendecir o maldecir a un humano a menos de 1 metro de ti:",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 334,
+            "name": "Ser de la voluntad",
+            "description": "Eres el ser místico que otorgó la determinación y voluntad a la humanidad. Como Acción Extendida puedes bendecir o maldecir a un humano a menos de 1 metro de ti:",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 335,
+            "name": "Sistema alfa",
+            "description": "Tu Tipo cambia dependiendo del disco que lleves instalado.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 336,
+            "name": "Tablilla debacle",
+            "description": "Eres un ser que trae consigo la ruina, una Leyenda Funesta. Cuando una criatura hace una Tirada de Ataque cuerpo a cuerpo a menos de 10 metros de ti, la hace en Desventaja.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 337,
+            "name": "Teraformación",
+            "description": "La energía teracristal origina de ti y de los miembros de tu especie. El único Teratipo que puedes tener es el Teratipo Astral. Puedes decidir Teracristalizar al principio de tu turno sin necesidad de un entrenador. Además, cuando Teracristalizas, liberas tanta energía teracristal que haces que todas las criaturas a menos de 20 metros de ti con un Teratipo teracristalicen y el aire se llena de pequeños cristales de energía terastal cristalizada, anulando todos los efectos de Clima y Campo que afectan el área.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 338,
+            "name": "Terravoltaje",
+            "description": "Cargas con el electrizante poder de los ideales. El daño de tus Movimientos de Tipo eléctrico no puede reducirse salvo por inmunidades.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 339,
+            "name": "Tiempo primal",
+            "description": "Cuando portas una Diamansfera, tomas tu Forma Origen, cambiando las Estadísticas y otros rasgos de esta.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 340,
+            "name": "Tierra del ocaso",
+            "description": "Puedes usar Día Soleado sin coste de acción ni PP al principio de tus turnos y tantas veces como quieras. Cuando lo haces, el clima se despeja en un radio de 200 kilómetros.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 341,
+            "name": "Tinovictoria",
+            "description": "Eres el adalid de la fortuna y la victoria. Cuando fallas una Tirada de d20, puedes volver a lanzarla, pudiendo convertir el fallo en un acierto. Además, si la Tirada Natural es de 9-, se considera un 10. Puedes usar esta Habilidad una cantidad de veces igual a la mitad de tu Mente al Día y recuperas un uso si ganas un combate Pokémon o si ganas en algo significativo (a discreción del DJ).",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 342,
+            "name": "Títere tóxico",
+            "description": "Cuando una criatura queda envenenada por uno de tus Movimientos o por uno de tus Mochis cadena puedes hacer que se considere confusa o infatuada por ti, a tu elección, hasta que deje de estar Envenenada.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 343,
+            "name": "Turbollama",
+            "description": "Contienes el fuego de la verdad. El daño de tus Movimientos de Tipo Fuego no puede reducirse salvo por inmunidades.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 344,
+            "name": "Ultraimpulso",
+            "description": "Vienes de una realidad alternativa. Cuando haces daño a una criatura que la hace caer a 0 PV, elige uno de los siguientes efectos, que duran hasta el final de tu próximo turno: Tu Evasión aumenta en 2, Tienes Ventaja en tu próxima Tirada de Ataque, Tienes Ventaja en tu próxima Tirada de Salvación o tus Velocidades aumentan en 4 metros.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 345,
+            "name": "Unidad ecuestre",
+            "description": "Cuando montas a Glastrier o Spectrier usando las Riendas unión tomáis vuestros turnos a la vez, en tu orden en la Iniciativa, y no pueden desmontarte de tu montura. Además, mientras montas a Glastrier o Spectrier de esta forma, si tu Nivel es inferior al de tu Montura, se vuelve el de tu Montura, tus Estadísticas aumentan en 2 y si fueses a recibir daño o verte afectado por un efecto nocivo, este se redirige a tu montura a no ser que ese efecto también le haya causado daño o ese efecto a tu montura.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 346,
+            "name": "Velocidad rayo",
+            "description": "Eres uno con la electricidad, lo que te vuelve inménsamente veloz. Si tomas la Acción de Correr, tu Movimiento se triplica en lugar de duplicarse.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 347,
+            "name": "Vida eterna",
+            "description": "Eres un ente divino intrínsicamente ligado a la energía vital. Tu vida es eterna. Si fueras a fallecer, en su lugar entras en un estado de estasis en el que te vuelver un árbol que es inmune a todo tipo de daño y efecto nocivo por 1 día. Tras pasar un día, te destransformas como si hubieras Descansado y con 0 Niveles de Fatiga.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 348,
+            "name": "Evocarrecuerdos",
+            "description": "Cuando te pones una de tus Máscaras, entras en su Forma correspondiente. Cambiar o ponerse una máscara adecuadamente es cuenta como una Acción extendida para ti.",
+            "transformation": 0,
+            "legendary": 1
+        },
+        {
+            "id": 349,
+            "name": "Espacio primal",
+            "description": "Cuando portas una Lustresfera, tomas tu Forma Origen, cambiando las Estadísticas y otros rasgos de esta.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 350,
+            "name": "Agrupamiento",
+            "description": "Los Núcleos de Zygarde sólo tienen 1 PV y no pueden tener PP y pueden unirse como Acción para tomar diferentes formas. Varias formas también pueden unirse, contando como una cantidad de núcleos equivalentes a los necesarios para formarse. Cuando varias formas o Núcleos se unen, el Zygarde resultante tiene todos sus PV y PP y elige el reparto de sus Mejoras de Estadísticas y toma Dotes a su elección.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 351,
+            "name": "Escudo recio",
+            "description": "Cuando llevas tu escudo y recibes daño, reduce ese daño en una cantidad igual a tu BH y entras en tu Forma escudo supremo. Si dejas de tenerla vuelves a tu Forma guerrero avezado, la normal. Cuando estás en tu Forma escudo supremo conoces el Movimiento Embate supremo.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 352,
+            "name": "Espada indómita",
+            "description": "Cuando llevas tu espada, el daño base de tus Movimientos aumenta en un dado y entras en tu Forma espada suprema. Si dejas de tenerla vuelves a tu Forma guerrero avezado, la normal. Cuando estás en tu Forma espada indómita conoces el Movimiento Tajo supremo.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 353,
+            "name": "Armadura prisma",
+            "description": "No puedes recibir golpes críticos. Además, si fueses a recibir daño super efectivo, puedes usar tu Reacción y 2 PP para que este daño sea neutral contra ti.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 354,
+            "name": "Cascarón",
+            "description": "Eres el cascarón del Dragón primordial y tu poder se mantiene sellado en el frío que generas. A través de la Punta ADN y como Acción Extendida puedes liberar las espinas de tus alas y clavarlas en Reshiram o Zekrom, forzándolos a volverse el Orbe blanco o el Orbe negro, respectivamente.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 355,
+            "name": "Contención",
+            "description": "Para que no pudieras hacer tanto daño, contuvieron tu poder en una vasija mística e irrompible, la Vasija castigo. Debido a esto, usualmente tomas tu forma contenida. Una criatura que no seas tu puede frotar la vasija cerda de ti como Acción para hacer que tomes tu Forma Desatada y puede volver a frotarla para que vuelvas a tu forma Contenida.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 356,
+            "name": "Cristal eón",
+            "description": "Tienes una pluma cristalizada en tu pecho que te otorga poder psíquico. Puedes comunicarte telepáticamente con cualquier criatura a menos de 50 metros de ti.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 357,
+            "name": "Distorsión primal",
+            "description": "Cuando portas una Griseosfera, tomas tu Forma Origen, cambiando las Estadísticas y otros rasgos de esta. Esta Habilidad no puede copiarse ni anularse.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 358,
+            "name": "Eternamax",
+            "description": "Eres un ser hambriento de poder y destrucción. Cuando absorber mucha energía Dinamax, entras en tu Forma Dinamax Infinito hasta que caigas inconsciente. Cuando estás en esta forma, no sigues ninguna orden y buscas destruirlo todo.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 359,
+            "name": "Forma brío",
+            "description": "A Nivel 14, tu entrenamiento termina. Aprendes el Movimiento Sable místico y, mientras conozcas este Movimiento, Adoptas tu Forma brío. Cuando estás en esta forma tomas las Estadísticas de dicha forma y añades 1 dado al daño de todos tus Movimientos.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 360,
+            "name": "Fuerza de la naturaleza",
+            "description": "Conoces el Movimiento Danza Lluvia  y no cuenta para el máximo de Movimientos que conoces. Además, puedes usarlo sin coste de Acción al principio de tu turno. Usar Danza Lluvia no te cuesta PP y, cuando lo haces, si eres Thundurus creas una tormenta eléctrica que hace que todos los Movimientos de Tipo Eléctrico a rango aumenten su daño en 1 dado, si eres Tornadus creas vientos huracanados que empujan a todas las criaturas 2 metros si están en tierra o 4 metros si están en el aire en una dirección que eliges al principio de cada uno de tus turnos y si eres Landorus puedes anular los efectos de los dos anteriores y hacer que no puedan volver a usar Danza lluvia hasta el final de la Escena.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 361,
+            "name": "Fuerza de la naturaleza (Enamorus)",
+            "description": "Eres la fuerza de la primavera. Conoces el Movimiento Campo de hierba, que no cuenta para el máximo de Movimientos que conoces y puedes usarlo como parte de la Acción que tomas para usar un Movimiento de Tipo Planta o Hada.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 362,
+            "name": "Gracídea",
+            "description": "Tu poder floral te permite adoptar una nueva forma, tu Forma Cielo, cuando es de día como Acción. Puedes volver a tu forma normal o Forma Tierra como Acción cuando quieras o cuando se hace de noche. Cuando adoptas tu Forma Cielo tus Estadísticas, Habilidades y rasgos cambian a los de su entrada de la Pokédes y aprendes el Movimiento Vendaval.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 363,
+            "name": "Mochis cadena",
+            "description": "Como Acción y por 1 PP, puedes crear un Mochi cadena, una comida tóxica que, al ser ingerida como Acción, otorga 2 Niveles de envenenado. Puedes dar de comer uno de estos mochi a una Criatura Incapacitada. Una Criatura que consume estos mochis a lo largo del tiempo se vuelve cada vez más codiciosa y, si decides controlarla con tu Habilidad de Títere tóxico y es un Pokémon, puedes transformarlo como Acción extendida, de forma que le provocas los siguientes cambios:",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 364,
+            "name": "Musa",
+            "description": "Cuando usas tu Movimiento Canto arcáico cambias de tu Forma Lírica a tu Forma Danza hasta que caes Inconsciente, usas otra vez Canto arcáico o hasta el final de la Escena. Cuando entras en tu Forma Danza pierdes tus Velocidades de Vuelo y Levitado, tu Velocidad de Caminado aumenta en 2 metros, tu Espíritu se reduce en 2 (tu cantidad de PP máximos no cambia), tu Agilidad aumenta en 2, dejas de poder calcular tu Evasión como 11 + ESP + BH y puedes calcularla como 9 + AGI + BH.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 365,
+            "name": "Muta-ADN",
+            "description": "Tu ADN es tan maleable que puedes cambiar entre varias formas al principio de tu turno. Las formas que puedes elegir son:",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 366,
+            "name": "Teracambio",
+            "description": "Si eres de Nivel 14 o más, cuando tiras Iniciativa, cuando sales de una Poké Ball por primera vez en una Escena o como una Acción fuera de Combate, puedes entrar tu forma Teracristal. La primera vez que recibes daño después de entrar en esta forma, este se considera Poco eficaz contra ti, incluso si usualmente no lo es.",
+            "transformation": 1,
+            "legendary": 1
+        },
+        {
+            "id": 367,
+            "name": "Patada férrea",
+            "description": "Ganas un bono al daño de los Movimientos con la etiqueta de Patada igual a tu BH.",
+            "transformation": 0,
+            "legendary": 0
+        }
+    ],
+    "Absorbe agua": 1,
+    "Absorbe electricidad": 2,
+    "Absorbe fuego": 3,
+    "Acero templado": 4,
+    "Acérrimo": 5,
+    "Aclimatación": 6,
+    "Adaptable": 7,
+    "Afortunado": 8,
+    "Agallas": 9,
+    "Ala delta": 10,
+    "Alas vendaval": 11,
+    "Alerta": 12,
+    "Allanamiento": 13,
+    "Alma acerada": 14,
+    "Alma cura": 15,
+    "Alma errante": 16,
+    "Amplificador": 17,
+    "Antibalas": 18,
+    "Antibarrera": 19,
+    "Anticipación": 20,
+    "Antídoto": 21,
+    "Armadura batalla": 22,
+    "Armadura frágil": 23,
+    "Audaz": 24,
+    "Autoestima": 25,
+    "Baba": 26,
+    "Batería": 27,
+    "Bromista": 28,
+    "Caballero puerril": 29,
+    "Cabeza roca": 30,
+    "Cacheo": 31,
+    "Calco": 32,
+    "Cálculo final": 33,
+    "Cambio color": 34,
+    "Capa tóxica": 35,
+    "Caparazón": 36,
+    "Cara de hielo": 37,
+    "Carrillo": 38,
+    "Chorro arena": 39,
+    "Clorofila": 40,
+    "Cobardía": 41,
+    "Cola armadura": 42,
+    "Cola surf": 43,
+    "Colector": 44,
+    "Cólera": 45,
+    "Comandar": 46,
+    "Máquina de vapor": 47,
+    "Competitivo": 48,
+    "Compiescolta": 49,
+    "Coraza ira": 50,
+    "Coraza reflejo": 51,
+    "Corrosión": 52,
+    "Cortante": 53,
+    "Corte fuerte": 54,
+    "Cosecha": 55,
+    "Cromolente": 56,
+    "Cuerpo áureo": 57,
+    "Cuerpo horneado": 58,
+    "Cuerpo llama": 59,
+    "Cuerpo maldito": 60,
+    "Cuerpo mortal": 61,
+    "Cuerpo puro": 62,
+    "Cuerpo vívido": 63,
+    "Cura lluvia": 64,
+    "Cura natural": 65,
+    "Defensa hoja": 66,
+    "Descarga": 67,
+    "Despiste": 68,
+    "Detonación": 69,
+    "Dicha": 70,
+    "Dinamo": 71,
+    "Disemillar": 72,
+    "Disfraz": 73,
+    "Don floral": 74,
+    "Efecto espora": 75,
+    "Electricidad estática": 76,
+    "Electrogénesis": 77,
+    "Electromotor": 78,
+    "Encadenado": 79,
+    "Energía eólica": 80,
+    "Energía pura": 81,
+    "Enjambre": 82,
+    "Ensañamiento": 83,
+    "Entusiasmo": 84,
+    "Escama de hielo": 85,
+    "Escama especial": 86,
+    "Esclusa de aire": 87,
+    "Escudo magma": 88,
+    "Espejo mágico": 89,
+    "Espesura": 90,
+    "Espíritu vital": 91,
+    "Experto": 92,
+    "Expulsarena": 93,
+    "Fauces furtivas": 94,
+    "Filtro": 95,
+    "Firmeza": 96,
+    "Flaqueza": 97,
+    "Flexibilidad": 98,
+    "Francotirador": 99,
+    "Fuente energía": 100,
+    "Fuerte afecto": 101,
+    "Fuerza mental": 102,
+    "Fuga": 103,
+    "Funda": 104,
+    "Garra dura": 105,
+    "Gas reactivo": 106,
+    "Gélido": 107,
+    "General supremo": 108,
+    "Geofagia": 109,
+    "Glifo": 110,
+    "Gran encanto": 111,
+    "Gula": 112,
+    "Hedor": 113,
+    "Hélice caudal": 114,
+    "Herbívoro": 115,
+    "Herbogénesis": 116,
+    "Herrero": 117,
+    "Hidratación": 118,
+    "Hidrorrefuerzo": 119,
+    "Hipnotismo": 120,
+    "Hospitalidad": 121,
+    "Huida": 122,
+    "Humedad": 123,
+    "Humo blanco": 124,
+    "Hurto": 125,
+    "Ignífugo": 126,
+    "Ignorante": 127,
+    "Iluminación": 128,
+    "Ilusión": 129,
+    "Imán": 130,
+    "Impasible": 131,
+    "Ímpetu ardiente": 132,
+    "Ímpetu arena": 133,
+    "Ímpetu tóxico": 134,
+    "Impostor": 135,
+    "Impulso": 136,
+    "Indefenso": 137,
+    "Inmunidad": 138,
+    "Insomnio": 139,
+    "Insonorizar": 140,
+    "Intimidación": 141,
+    "Intrépido": 142,
+    "Irascible": 143,
+    "Justiciero": 144,
+    "Lechera": 145,
+    "Letargo perenne": 146,
+    "Líbero": 147,
+    "Liviano": 148,
+    "Llovizna": 149,
+    "Madrugar": 150,
+    "Maduración": 151,
+    "Mandíbula fuerte": 152,
+    "Mano rápida": 153,
+    "Manto frondoso": 154,
+    "Manto níveo": 155,
+    "Mar llamas": 156,
+    "Más": 157,
+    "Medicina extraña": 158,
+    "Megadisparador": 159,
+    "Menos": 160,
+    "Metal liviano": 161,
+    "Metal pesado": 162,
+    "Mimetismo": 163,
+    "Momia": 164,
+    "Monotema": 165,
+    "Mudar": 166,
+    "Multiescamas": 167,
+    "Multitipo": 168,
+    "Muro mágico": 169,
+    "Mutapetito": 170,
+    "Mutatipo": 171,
+    "Nado rápido": 172,
+    "Nebulogénesis": 173,
+    "Néctar dulce": 174,
+    "Nerviosismo": 175,
+    "Neuralizador": 176,
+    "Nevada": 177,
+    "Normalidad": 178,
+    "Ojo compuesto": 179,
+    "Ojo mental": 180,
+    "Olor persistente": 181,
+    "Oportunista": 182,
+    "Pararrayos": 183,
+    "Pareja de baile": 184,
+    "Patada recia": 185,
+    "Pelaje recio": 186,
+    "Peluche": 187,
+    "Pelusa": 188,
+    "Pereza": 189,
+    "Perro guardián": 190,
+    "Pez pistola": 191,
+    "Piel celeste": 192,
+    "Piel eléctrica": 193,
+    "Piel feérica": 194,
+    "Piel helada": 195,
+    "Piel milagro": 196,
+    "Piel seca": 197,
+    "Piel tosca": 198,
+    "Pies rápidos": 199,
+    "Poder arena": 200,
+    "Poder fúngico": 201,
+    "Poder solar": 202,
+    "Polvo escudo": 203,
+    "Pompa": 204,
+    "Potencia": 205,
+    "Fuerza bruta": 206,
+    "Predicción": 207,
+    "Presión": 208,
+    "Prestidigitador": 209,
+    "Primer auxilio": 210,
+    "Producedulce": 211,
+    "Psicogénesis": 212,
+    "Punk rock": 213,
+    "Punta acero": 214,
+    "Punto tóxico": 215,
+    "Puño férreo": 216,
+    "Quitanieves": 217,
+    "Reacción química": 218,
+    "Receptor": 219,
+    "Recogemiel": 220,
+    "Regeneración": 221,
+    "Regia presencia": 222,
+    "Reina abeja": 223,
+    "Remoto": 224,
+    "Resonancia": 225,
+    "Respondón": 226,
+    "Retirada": 227,
+    "Revés": 228,
+    "Rezagado": 229,
+    "Ritmo propio": 230,
+    "Rivalidad": 231,
+    "Rizos rebeldes": 232,
+    "Robustez": 233,
+    "Roca sólida": 234,
+    "Rompemoldes": 235,
+    "Rumia": 236,
+    "Sacapecho": 237,
+    "Saco de boxeo": 238,
+    "Sal purificadora": 239,
+    "Sebo": 240,
+    "Sequía": 241,
+    "Simbiosis": 242,
+    "Simple": 243,
+    "Sincronía": 244,
+    "Sombra trampa": 245,
+    "Superguarda": 246,
+    "Surcavientos": 247,
+    "Telepatía": 248,
+    "Tenacidad": 249,
+    "Termoconversión": 250,
+    "Toque tóxico": 251,
+    "Torrente": 252,
+    "Tragamisil": 253,
+    "Trampa arena": 254,
+    "Transportarrocas": 255,
+    "Tumbos": 256,
+    "Unísono": 257,
+    "Velo agua": 258,
+    "Velo arena": 259,
+    "Velo aroma": 260,
+    "Velo dulce": 261,
+    "Velo flor": 262,
+    "Velo pastel": 263,
+    "Ventosas": 264,
+    "Vigilante": 265,
+    "Viscosecreción": 266,
+    "Viscosidad": 267,
+    "Vista lince": 268,
+    "Voz fluida": 269,
+    "Amor filial": 270,
+    "Banco": 271,
+    "Bebedor de néctar": 272,
+    "Cambio estación": 273,
+    "Cambio heroico": 274,
+    "Electroinvasor": 275,
+    "Escudo limitado": 276,
+    "Espada maldita": 277,
+    "Modo Daruma": 278,
+    "Modo Daruma (Galar)": 279,
+    "Paleosíntesis": 280,
+    "Transistor": 281,
+    "Abalorio debacle": 282,
+    "Aro portales": 283,
+    "Aura feérica": 284,
+    "Aura oscura": 285,
+    "Cadena tóxica": 286,
+    "Caldero debacle": 287,
+    "Carga cuark": 288,
+    "Coloso": 289,
+    "Controlar volcán": 290,
+    "Coránima": 291,
+    "Creador de continentes": 292,
+    "Defensor de los ideales": 293,
+    "Dios supremo": 294,
+    "Drenado vital": 295,
+    "Dulces sueños": 296,
+    "Emperador del cielo": 297,
+    "Espada de la justicia": 298,
+    "Espada debacle": 299,
+    "Espíritu guardián": 300,
+    "Estrella fugaz": 301,
+    "Fuerza cerebral": 302,
+    "Golem": 303,
+    "Guardia espectro": 304,
+    "Guardia metálica": 305,
+    "Guardián de los mares": 306,
+    "Instinto combativo": 307,
+    "Invisibilidad": 308,
+    "Latido oricalco": 309,
+    "Llama eterna": 310,
+    "Lianas": 311,
+    "Mal sueño": 312,
+    "Mandíbula dragón": 313,
+    "Mar del albor": 314,
+    "Morasombra": 315,
+    "Motor hadrónico": 316,
+    "Neurosimbiosis": 317,
+    "Nómada del tiempo": 318,
+    "Paladín de la verdad": 319,
+    "Paso purificador": 320,
+    "Primer eslabón": 321,
+    "Puño invisible": 322,
+    "Ráfaga delta": 323,
+    "Reina carbink": 324,
+    "Relincho blanco": 325,
+    "Relincho negro": 326,
+    "Rey de los mares": 327,
+    "Rompeaura": 328,
+    "Señor de la distorsión": 329,
+    "Señor del espacio": 330,
+    "Señor del tiempo": 331,
+    "Ser de la emoción": 332,
+    "Ser de la sabiduría": 333,
+    "Ser de la voluntad": 334,
+    "Sistema alfa": 335,
+    "Tablilla debacle": 336,
+    "Teraformación": 337,
+    "Terravoltaje": 338,
+    "Tiempo primal": 339,
+    "Tierra del ocaso": 340,
+    "Tinovictoria": 341,
+    "Títere tóxico": 342,
+    "Turbollama": 343,
+    "Ultraimpulso": 344,
+    "Unidad ecuestre": 345,
+    "Velocidad rayo": 346,
+    "Vida eterna": 347,
+    "Evocarrecuerdos": 348,
+    "Espacio primal": 349,
+    "Agrupamiento": 350,
+    "Escudo recio": 351,
+    "Espada indómita": 352,
+    "Armadura prisma": 353,
+    "Cascarón": 354,
+    "Contención": 355,
+    "Cristal eón": 356,
+    "Distorsión primal": 357,
+    "Eternamax": 358,
+    "Forma brío": 359,
+    "Fuerza de la naturaleza": 360,
+    "Fuerza de la naturaleza (Enamorus)": 361,
+    "Gracídea": 362,
+    "Mochis cadena": 363,
+    "Musa": 364,
+    "Muta-ADN": 365,
+    "Teracambio": 366,
+    "Patada férrea": 367
+}

@@ -1,0 +1,15 @@
+{
+    "Poké ball": 1,
+    "Medicina": 2,
+    "Potenciador": 3,
+    "Planta": 4,
+    "Baya": 5,
+    "Comida": 6,
+    "Objeto evolutivo": 7,
+    "Amuleto": 8,
+    "Equipo": 9,
+    "Fósil": 10,
+    "Objetos míticos": 11,
+    "Objetos de entrenador": 12,
+    "Objetos de entrenador (Consumible)": 13
+}
