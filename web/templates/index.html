@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de Pokémons - PokéRol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 PokéRol - Creador de Pokémons</h1>
+        </header>
+
+        <div class="form-container">
+            <h2>Crear Nuevo Pokémon</h2>
+
+            <form method="POST" action="/" class="pokemon-form">
+                <!-- Campo oculto para almacenar el ID del pokemon base cuando es mega evolución -->
+                <input type="hidden" id="base_pokemon_id" name="base_pokemon_id" value="">
+                
+                <div class="form-group">
+                    <label for="dex_num">Número de Pokédex *</label>
+                    <input type="number" id="dex_num" name="dex_num" required min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Nombre *</label>
+                    <input type="text" id="name" name="name" required maxlength="100">
+                </div>
+
+                <!-- Sistema de Mega Evolución -->
+                <div class="form-group">
+                    <div class="mega-container">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="is_mega" name="is_mega">
+                            <span class="mega-text">⭐ Este es un Mega Pokémon</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Sistema de Intercalar Pokemon -->
+                <div class="form-group">
+                    <div class="intercalar-container">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="intercalar_pokemon" name="intercalar_pokemon">
+                            <span class="intercalar-text">🔄 Intercalar Pokémon (desplazar números superiores +1)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Buscador de Pokémons base (solo visible cuando is_mega está marcado) -->
+                <div class="form-group" id="pokemon-search-container" style="display: none;">
+                    <label for="pokemon-search">Buscar Pokémon base:</label>
+                    <div class="search-container">
+                        <input type="text" id="pokemon-search" name="pokemon-search" placeholder="Buscar por nombre o número de Pokédex...">
+                        <div class="search-results" id="search-results"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="size_id">Tamaño *</label>
+                    <select id="size_id" name="size_id" required>
+                        <option value="">Selecciona un tamaño</option>
+                        {% for size in sizes %}
+                            <option value="{{ size.id }}">{{ size.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="evasion">Evasión *</label>
+                        <div class="stat-input">
+                            <input type="text" id="evasion_num" name="evasion_num" required placeholder="Número">
+                            <select id="evasion_star" name="evasion_star">
+                                <option value="">Sin estrella</option>
+                                <option value=" ☆"> ☆</option>
+                                <option value=" ★"> ★</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="vitality">Vitalidad *</label>
+                        <div class="stat-input">
+                            <input type="text" id="vitality_num" name="vitality_num" required placeholder="Número">
+                            <select id="vitality_star" name="vitality_star">
+                                <option value="">Sin estrella</option>
+                                <option value=" ☆"> ☆</option>
+                                <option value=" ★"> ★</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="strength">Fuerza *</label>
+                        <div class="stat-input">
+                            <input type="text" id="strength_num" name="strength_num" required placeholder="Número">
+                            <select id="strength_star" name="strength_star">
+                                <option value="">Sin estrella</option>
+                                <option value=" ☆"> ☆</option>
+                                <option value=" ★"> ★</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="agility">Agilidad *</label>
+                        <div class="stat-input">
+                            <input type="text" id="agility_num" name="agility_num" required placeholder="Número">
+                            <select id="agility_star" name="agility_star">
+                                <option value="">Sin estrella</option>
+                                <option value=" ☆"> ☆</option>
+                                <option value=" ★"> ★</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="endurance">Resistencia *</label>
+                        <div class="stat-input">
+                            <input type="text" id="endurance_num" name="endurance_num" required placeholder="Número">
+                            <select id="endurance_star" name="endurance_star">
+                                <option value="">Sin estrella</option>
+                                <option value=" ☆"> ☆</option>
+                                <option value=" ★"> ★</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mind">Mente *</label>
+                        <div class="stat-input">
+                            <input type="text" id="mind_num" name="mind_num" required placeholder="Número">
+                            <select id="mind_star" name="mind_star">
+                                <option value="">Sin estrella</option>
+                                <option value=" ☆"> ☆</option>
+                                <option value=" ★"> ★</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="spirit">Espíritu *</label>
+                        <div class="stat-input">
+                            <input type="text" id="spirit_num" name="spirit_num" required placeholder="Número">
+                            <select id="spirit_star" name="spirit_star">
+                                <option value="">Sin estrella</option>
+                                <option value=" ☆"> ☆</option>
+                                <option value=" ★"> ★</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="presence">Presencia *</label>
+                        <div class="stat-input">
+                            <input type="text" id="presence_num" name="presence_num" required placeholder="Número">
+                            <select id="presence_star" name="presence_star">
+                                <option value="">Sin estrella</option>
+                                <option value=" ☆"> ☆</option>
+                                <option value=" ★"> ★</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="min_level">Nivel Mínimo *</label>
+                        <input type="number" id="min_level" name="min_level" required min="1" max="20" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="capture_rate">Ratio de Captura *</label>
+                        <input type="number" id="capture_rate" name="capture_rate" required min="1" max="255">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="types">Tipos *</label>
+                    <div class="checkbox-group">
+                        {% for type in types %}
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="types" value="{{ type.id }}">
+                                {{ type.name }}
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="abilities">Habilidades</label>
+                    <div class="checkbox-group">
+                        {% for ability in abilities %}
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="abilities" value="{{ ability.id }}">
+                                {{ ability.name }}
+                                {% if ability.legendary %}<span class="legendary">★</span>{% endif %}
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="hidden_abilities">Habilidades Ocultas</label>
+                    <div class="checkbox-group">
+                        {% for ability in abilities %}
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="hidden_abilities" value="{{ ability.id }}">
+                                {{ ability.name }}
+                                {% if ability.legendary %}<span class="legendary">★</span>{% endif %}
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="habitats">Hábitats</label>
+                    <div class="checkbox-group">
+                        {% for habitat in habitats %}
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="habitats" value="{{ habitat.id }}">
+                                {{ habitat.name }}
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="proficiencies">Proficiencias</label>
+                    <div class="checkbox-group">
+                        {% for proficiency in proficiencies %}
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="proficiencies" value="{{ proficiency.id }}">
+                                {{ proficiency.name }}
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="senses">Sentidos</label>
+                    <div class="senses-group">
+                        {% for sense in senses %}
+                            <div class="sense-item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="senses" value="{{ sense.id }}">
+                                    {{ sense.name }}
+                                </label>
+                                <input type="text" name="sense_quantity_{{ sense.id }}" placeholder="Cantidad/Rango" class="sense-quantity" id="sense_quantity_{{ sense.id }}">
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="environments">Velocidades por Entorno</label>
+                    <div class="environments-group">
+                        {% for environment in environments %}
+                            <div class="env-item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="environments" value="{{ environment.id }}">
+                                    {{ environment.name }}
+                                </label>
+                                <input type="text" name="env_quantity_{{ environment.id }}" placeholder="Velocidad" class="env-quantity" id="env_quantity_{{ environment.id }}">
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="diet">Dieta *</label>
+                    <input type="text" id="diet" name="diet" required placeholder="ej: Carnívoro">
+                </div>
+
+                <div class="form-group">
+                    <label for="sex">Sexo *</label>
+                    <select id="sex" name="sex" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="M">M</option>
+                        <option value="H">H</option>
+                        <option value="M/H">M/H</option>
+                        <option value="???">???</option>
+                    </select>
+                </div>
+
+                <!-- Sección de Movimientos (solo visible cuando is_mega está marcado) -->
+                <div class="form-group" id="movements-section" style="display: none;">
+                    <h3>📚 Movimientos del Pokémon Base</h3>
+                    
+                    <div class="movements-container">
+                        <!-- Movimientos por Nivel -->
+                        <div class="movement-group">
+                            <h4>⬆️ Movimientos por Nivel</h4>
+                            <div id="moveset-per-level" class="moveset-list">
+                                <!-- Se llenará dinámicamente -->
+                            </div>
+                        </div>
+                        
+                        <!-- Learnset Completo -->
+                        <div class="movement-group">
+                            <h4>🎯 Learnset Completo</h4>
+                            <div id="learnset" class="moveset-list">
+                                <!-- Se llenará dinámicamente -->
+                            </div>
+                        </div>
+                        
+                        <div class="movement-info">
+                            <p><em>ℹ️ Estos movimientos se asignarán automáticamente al crear la mega evolución.</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Descripción del Pokémon..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">🎯 Crear Pokémon</button>
+                    <a href="/list" class="btn btn-secondary">📋 Ver Pokémons</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='pokemon-form.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pokémons - PokéRol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 PokéRol - Lista de Pokémons</h1>
+        </header>
+
+        <div class="list-container">
+            <div class="list-header">
+                <h2>Pokémons Creados ({{ pokemons|length }})</h2>
+                <a href="/" class="btn btn-primary">➕ Crear Nuevo</a>
+            </div>
+
+            {% if pokemons %}
+                <div class="pokemon-grid">
+                    {% for pokemon in pokemons %}
+                        <div class="pokemon-card">
+                            <div class="pokemon-header">
+                                <h3>#{{ pokemon.dex_num }} {{ pokemon.name }}</h3>
+                                <span class="size-badge">{{ pokemon.size_name }}</span>
+                            </div>
+                            
+                            <div class="pokemon-types">
+                                {% for type_name in pokemon.type_names %}
+                                    <span class="type-badge">{{ type_name }}</span>
+                                {% endfor %}
+                            </div>
+                            
+                            <div class="pokemon-stats">
+                                <div class="stat-row">
+                                    <span>❤️ Vitalidad:</span> {{ pokemon.vitality }}
+                                </div>
+                                <div class="stat-row">
+                                    <span>⚡ Evasión:</span> {{ pokemon.evasion }}
+                                </div>
+                                <div class="stat-row">
+                                    <span>💪 Fuerza:</span> {{ pokemon.strength }}
+                                </div>
+                                <div class="stat-row">
+                                    <span>🏃 Agilidad:</span> {{ pokemon.agility }}
+                                </div>
+                            </div>
+                            
+                            <div class="pokemon-info">
+                                <p><strong>Nivel mínimo:</strong> {{ pokemon.min_level }}</p>
+                                <p><strong>Ratio captura:</strong> {{ pokemon.capture_rate }}</p>
+                                {% if pokemon.diet %}
+                                    <p><strong>Dieta:</strong> {{ pokemon.diet }}</p>
+                                {% endif %}
+                                {% if pokemon.sex %}
+                                    <p><strong>Sexo:</strong> {{ pokemon.sex }}</p>
+                                {% endif %}
+                            </div>
+                            
+                            {% if pokemon.abilities %}
+                                <div class="pokemon-abilities">
+                                    <strong>Habilidades:</strong>
+                                    {% for ability_name in pokemon.abilities %}
+                                        <span class="ability-badge">{{ ability_name }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            
+                            {% if pokemon.hidden_abilities %}
+                                <div class="pokemon-abilities">
+                                    <strong>Habilidades Ocultas:</strong>
+                                    {% for ability_name in pokemon.hidden_abilities %}
+                                        <span class="ability-badge hidden-ability">{{ ability_name }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            
+                            {% if pokemon.habitats %}
+                                <div class="pokemon-habitats">
+                                    <strong>Hábitats:</strong>
+                                    {% for habitat in pokemon.habitats %}
+                                        <span class="habitat-badge">{{ habitat }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            
+                            {% if pokemon.proficiencies %}
+                                <div class="pokemon-proficiencies">
+                                    <strong>Proficiencias:</strong>
+                                    {% for prof in pokemon.proficiencies %}
+                                        <span class="prof-badge">{{ prof }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            
+                            {% if pokemon.senses %}
+                                <div class="pokemon-senses">
+                                    <strong>Sentidos:</strong>
+                                    <ul class="sense-list">
+                                        {% for sense in pokemon.senses %}
+                                            <li>{{ sense }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                            
+                            {% if pokemon.velocities %}
+                                <div class="pokemon-velocities">
+                                    <strong>Velocidades:</strong>
+                                    <ul class="velocity-list">
+                                        {% for velocity in pokemon.velocities %}
+                                            <li>{{ velocity }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                            
+                            {% if pokemon.description %}
+                                <div class="pokemon-description">
+                                    <p>{{ pokemon.description }}</p>
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state">
+                    <p>🔍 No hay pokémons creados aún.</p>
+                    <a href="/" class="btn btn-primary">Crear el primer Pokémon</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
