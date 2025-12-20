@@ -288,11 +288,12 @@ function loadPokemonData(pokemonId) {
             // Cargar movimientos
             loadPokemonMovements(data);
             
-            alert(`🎉 ¡Datos de ${pokemon.name} cargados correctamente!\n\nTodos los campos se han rellenado automáticamente. Ahora puedes modificar lo que necesites para crear la mega evolución.`);
+            console.log(`🎉 Datos de ${pokemon.name} cargados correctamente`);
+            console.log('Todos los campos se han rellenado automáticamente');
         })
         .catch(error => {
             console.error('Error cargando datos del pokémon:', error);
-            alert('Error al cargar los datos del pokémon');
+            console.error('Error al cargar los datos del pokémon');
         });
 }
 
@@ -467,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Mostrando search container y movements section');
             searchContainer.style.display = 'block';
             movementsSection.style.display = 'block';
-            alert('✨ Sistema de mega evolución activado. Busca un pokémon base en el campo de búsqueda para cargar todos sus datos automáticamente.');
+            console.log('✨ Sistema de mega evolución activado');
         } else {
             console.log('Ocultando search container y movements section');
             searchContainer.style.display = 'none';
@@ -486,7 +487,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (baseIdInput) baseIdInput.value = '';
             // Limpiar el campo de búsqueda
             if (searchInput) searchInput.value = '';
-            alert('Sistema de mega evolución desactivado.');
+            console.log('Sistema de mega evolución desactivado');
         }
     });
     
@@ -512,6 +513,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.pokemon-form');
     if (form) {
         form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevenir envío normal
+            
             let errors = [];
             
             // Validar que al menos 1 tipo esté seleccionado
@@ -551,10 +554,37 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Mostrar errores si los hay
             if (errors.length > 0) {
-                e.preventDefault();
+                console.error('Errores encontrados:', errors);
                 alert('Errores encontrados:\n• ' + errors.join('\n• '));
                 return false;
             }
+            
+            // Si no hay errores, enviar por AJAX
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('✅ ' + data.message);
+                    form.reset(); // Limpiar formulario
+                    // Ocultar secciones de mega evolución si estaban visibles
+                    if (searchContainer) searchContainer.style.display = 'none';
+                    if (movementsSection) movementsSection.style.display = 'none';
+                } else {
+                    alert('❌ Error: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('❌ Error de conexión. Inténtalo de nuevo.');
+            });
         });
     }
 });

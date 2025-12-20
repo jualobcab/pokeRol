@@ -485,6 +485,11 @@ def index():
         
         success, message = create_pokemon(form_data)
         
+        # Si es una petición AJAX, devolver JSON
+        if request.headers.get('Content-Type') == 'application/json' or request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+            return jsonify({'success': success, 'message': message})
+        
+        # Para peticiones normales del formulario
         if success:
             return redirect(url_for('index'))
         else:
