@@ -241,8 +241,23 @@ def create_pokemon(form_data):
             
             pokemon_id = cursor.lastrowid
             
+            # Limpiar registros previos por si hay datos corruptos de intentos anteriores
+            cursor.execute("DELETE FROM pokemon_types WHERE pokemon_id = ?", (pokemon_id,))
+            cursor.execute("DELETE FROM pokemon_abilities WHERE pokemon_id = ?", (pokemon_id,))
+            cursor.execute("DELETE FROM pokemon_hidden_abilities WHERE pokemon_id = ?", (pokemon_id,))
+            cursor.execute("DELETE FROM pokemon_habitats WHERE pokemon_id = ?", (pokemon_id,))
+            cursor.execute("DELETE FROM pokemon_proficiencies WHERE pokemon_id = ?", (pokemon_id,))
+            cursor.execute("DELETE FROM pokemon_senses WHERE pokemon_id = ?", (pokemon_id,))
+            cursor.execute("DELETE FROM pokemon_velocities WHERE pokemon_id = ?", (pokemon_id,))
+            
             # Insertar tipos (validación ya realizada arriba)
+            # Eliminar duplicados manteniendo el orden
+            unique_types = []
             for type_id in types:
+                if type_id not in unique_types:
+                    unique_types.append(type_id)
+            
+            for type_id in unique_types:
                 cursor.execute(
                     "INSERT INTO pokemon_types (pokemon_id, type_id) VALUES (?, ?)",
                     (pokemon_id, type_id)
